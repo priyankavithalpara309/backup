@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- Font Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;406;500;600;612;700&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+        rel="stylesheet">
+    <!-- Font End -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="header">
+            <div class="container d-flex header_section justify-spacebetween">
+                <button class="btn_primary panel1"><i class="fa fa-arrow-left pr-5"></i> <span class="panel">Retour au
+                        Store panel</span></button>
+                <div class="round_rectengle">
+                    <span>Mettre en ligne</span>
+                </div>
+                <div class="exp_imp d-flex">
+                    <button class="btn_secondary mr-10"><span class="exporter">Exporter</span> <i
+                            class='fa fa-upload pl-5'></i></button>
+                    <button class="btn_secondary"><span class="importer">importer</span> <i
+                            class='fa fa-download pl-5'></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--body section-->
+    <main>
+        <div class="bg_img">
+            <div class="container header_section2">
+                <div class="d-flex f-col align-items-center">
+                    <h1 class="h1">Crrsp - Ecublens</h1>
+                    <div>
+                        <button class="btn_primary mr-10" id="menu"><span class="pr-12">CRRSPEMENT </span><i class="fa fa-angle-down" id="menu_arrow"></i>                                                           
+                        </button>                        
+                        <ul class="inner_menu">
+                            <li><a href="#" class="in_menu">item 1</a></li>
+                            <li><a href="#" class="in_menu">item 2</a></li>
+                            <li><a href="#" class="in_menu">item 3</a></li>
+                        </ul>                                                 
+                        <button class="btn_primary btn_live">Live</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-flexend">
+                    <button class="btn_third changer"><span class="changer1">Changer l'image</span> <i
+                            class="fa fa-pen pl-5"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container menu_slider d-flex align-items-center justify-spacebetween">
+                <div class="slider flex align-items-center">
+                    <div class="cover">
+                        <ul class="scroll-text">
+                            <li class="child">
+                                <a href="#" class="child_text">
+                                    <h3>Burgers Qui CRRAQUENT</h3>
+                                </a>
+                            </li>
+                            <li class="child">
+                                <a href="#" class="child_text">
+                                    <h3>Formules Burger</h3>
+                                </a>
+                            </li>
+                            <li class="child">
+                                <a href="#" class="child_text">
+                                    <h3>Experiences CRRSP</h3>
+                                </a>
+                            </li>
+                            <li class="child">
+                                <a href="#" class="child_text">
+                                    <h3>Salades CRROUSTILLANTES</h3>
+                                </a>
+                            </li>
+                            <li class="child">
+                                <a href="#" class="child_text">
+                                    <h3>Nugge</h3>
+                                </a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex justify-flexend">
+                    <button class="previous" onclick="scrolll()"><i class="fa fa-arrow-left"></i></button>
+                    <button class="next" onclick="scrollr()"><i class="fa fa-arrow-right"></i></button>
+                    <button class="add next"><i class="fa fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="container list_section d-flex justify-spacebetween">
+                <div class="card_section">
+                    <div class="card">
+                        <div class="card_title d-flex justify-spacebetween">
+                            <div class="list list_item flex align-items-center" id="arrow1">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <i class="fa-solid fa-ellipsis-vertical pr-20 pl-5"></i>
+                                <i class="fa fa-angle-down"></i>
+                                <h2>Burgers Qui CRRAQUENT</h2>
+                            </div>
+                            <div>
+                                <button class="setting" id="setting"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                <div class="setting_menu" id="setting_menu">
+                                    <ul>
+                                        <li><a href="#">Modifier le nom</a></li>
+                                        <li><a href="#">Régler horaires</a></li>
+                                        <li><a href="#">Dupliquer</a></li>
+                                        <li><a href="#">Supprimer</a></li>
+                                        <li><a href="#">Changer l’ordre</a></li>
+                                        <li><a href="#">Rendre indisponible</a></li>
+                                    </ul>
+                                </div>                                                       
+                            </div>                                 
+                        </div>    
+                        <div class="hide detail_sec justify-spacebetween d-flex" id="section1">
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Salad'Crrsp Cosmique</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 21.-</h4>
+                                </div>
+                                <img src="images/barger2.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +2 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4 class="">CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger.jpg" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +2 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4 class="">CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger3.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +4 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 25.-</h4>
+                                </div>
+                                <img src="images/barger4.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger5.jfif" class="img">
+                            </a>
+
+                        </div>                    
+                    </div>
+                    <div class="card">
+                        <div class="card_title d-flex justify-spacebetween">
+                            <div class="list list_item flex align-items-center" id="arrow2">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <i class="fa-solid fa-ellipsis-vertical pr-20 pl-5"></i>
+                                <i class="fa fa-angle-down"></i>
+                                <h2>Formules Burger</h2>
+                            </div>
+                            <div>
+                                <button class="setting" id="setting1"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                <div class="setting_menu" id="setting_menu1">
+                                    <ul>
+                                        <li><a href="#">Modifier le nom</a></li>
+                                        <li><a href="#">Régler horaires</a></li>
+                                        <li><a href="#">Dupliquer</a></li>
+                                        <li><a href="#">Supprimer</a></li>
+                                        <li><a href="#">Changer l’ordre</a></li>
+                                        <li><a href="#">Rendre indisponible</a></li>
+                                    </ul>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="hide detail_sec justify-spacebetween d-flex" id="section2">
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Salad'Crrsp Cosmique</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 21.-</h4>
+                                </div>
+                                <img src="images/barger2.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +2 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4 class="">CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger.jpg" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +2 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4 class="">CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger3.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +4 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 25.-</h4>
+                                </div>
+                                <img src="images/barger4.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger5.jfif" class="img">
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title d-flex justify-spacebetween">
+                            <div class="list list_item flex align-items-center" id="arrow3">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <i class="fa-solid fa-ellipsis-vertical pr-20 pl-5"></i>
+                                <i class="fa fa-angle-down down"></i>
+                                <h2>Experiences CRRSP</h2>
+                            </div>
+                            <div>
+                                <button class="setting" id="setting2"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                <div class="setting_menu" id="setting_menu2">
+                                    <ul>
+                                        <li><a href="#">Modifier le nom</a></li>
+                                        <li><a href="#">Régler horaires</a></li>
+                                        <li><a href="#">Dupliquer</a></li>
+                                        <li><a href="#">Supprimer</a></li>
+                                        <li><a href="#">Changer l’ordre</a></li>
+                                        <li><a href="#">Rendre indisponible</a></li>
+                                    </ul>
+                                </div>                                                       
+                            </div>  
+                        </div>
+                        <div class="hide detail_sec justify-spacebetween d-flex" id="section3">
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Salad'Crrsp Cosmique</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 21.-</h4>
+                                </div>
+                                <img src="images/barger2.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +2 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4 class="">CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger.jpg" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +2 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4 class="">CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger3.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +4 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 25.-</h4>
+                                </div>
+                                <img src="images/barger4.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger5.jfif" class="img">
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title d-flex justify-spacebetween">
+                            <div class="list list_item flex align-items-center" id="arrow4">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <i class="fa-solid fa-ellipsis-vertical pr-20 pl-5"></i>
+                                <i class="fa fa-angle-down down"></i>
+                                <h2>Salades CRROUSTILLANTES</h2>
+                            </div>
+                            <div>
+                                <button class="setting" id="setting3"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                <div class="setting_menu" id="setting_menu3">
+                                    <ul>
+                                        <li><a href="#">Modifier le nom</a></li>
+                                        <li><a href="#">Régler horaires</a></li>
+                                        <li><a href="#">Dupliquer</a></li>
+                                        <li><a href="#">Supprimer</a></li>
+                                        <li><a href="#">Changer l’ordre</a></li>
+                                        <li><a href="#">Rendre indisponible</a></li>
+                                    </ul>
+                                </div>                                                       
+                            </div>  
+                        </div>
+                        <div class="hide detail_sec justify-spacebetween d-flex" id="section4">
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Salad'Crrsp Cosmique</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 21.-</h4>
+                                </div>
+                                <img src="images/barger2.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +2 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4 class="">CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger.jpg" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +2 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4 class="">CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger3.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +4 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 25.-</h4>
+                                </div>
+                                <img src="images/barger4.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger5.jfif" class="img">
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title d-flex justify-spacebetween">
+                            <div class="list list_item flex align-items-center" id="arrow5">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <i class="fa-solid fa-ellipsis-vertical pr-20 pl-5"></i>
+                                <i class="fa fa-angle-down down"></i>
+                                <h2>Nugge</h2>
+                            </div>
+                            <div>
+                                <button class="setting" id="setting4"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                <div class="setting_menu" id="setting_menu4">
+                                    <ul>
+                                        <li><a href="#">Modifier le nom</a></li>
+                                        <li><a href="#">Régler horaires</a></li>
+                                        <li><a href="#">Dupliquer</a></li>
+                                        <li><a href="#">Supprimer</a></li>
+                                        <li><a href="#">Changer l’ordre</a></li>
+                                        <li><a href="#">Rendre indisponible</a></li>
+                                    </ul>
+                                </div>                                                       
+                            </div>  
+                        </div>
+                        <div class="hide detail_sec justify-spacebetween d-flex" id="section5">
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Salad'Crrsp Cosmique</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 21.-</h4>
+                                </div>
+                                <img src="images/barger2.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +2 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4 class="">CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger.jpg" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +2 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4 class="">CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger3.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade Classic +4 CHF</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 25.-</h4>
+                                </div>
+                                <img src="images/barger4.jfif" class="img">
+                            </a>
+                            <a href="#" class="item flex align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                    class="fa-solid fa-ellipsis-vertical pl-5"></i>
+                                <div class="item_detail">
+                                    <h4 class="h4_title">Formule Crrsp Cosmique Salade</h4>
+                                    <p class="para">Une salade gourmande composée de notre poulet croustillant suisse
+                                        Yet
+                                        garnie
+                                        de notre double bacon bonbon, et de nos</p>
+                                    <h4>CHF 23.-</h4>
+                                </div>
+                                <img src="images/barger5.jfif" class="img">
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_section text-center">
+                    <button class="btn_third">plus d'actions</button>
+                    <div class="para2">
+                        <p>Cliquez ci-dessous pour enregistrer le(s) changement(s) dordre que vous avez effectue</p>
+                    </div>
+                    <button class="btn_third btn_Sauvegarder mb-12"><i class='fa fa-bars pr-5'></i> Sauvegarder</button>
+                    <button class="btn_third btn_creer mb-12">Créer une promotion <i class="fa fa-plus-circle"
+                            aria-hidden="true"></i></button>
+                    <button class="btn_third btn_voir mb-12">Voir promotions en cours</button>
+                    <button class="btn_third btn_pull_menu mb-12">Pull Menu</button>
+                    <button class="btn_third mb-12">Delete All Item</button>
+                    <button class="btn_third btn_delete mb-12">Delete All Modifcateurs</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

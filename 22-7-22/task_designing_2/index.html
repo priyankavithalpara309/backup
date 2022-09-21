@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="header_first">
+            <div class="container header_sec1 d-flex justify-spacebetween">
+                <div>
+                    <ul>
+                        <li class="help"><a href="#" target="_blank">Need Help?</a></li>
+                        <li class="phone f-500"><a href="#" target="_blank"><img src="images/phone.svg" alt="phone"
+                                    class="img_align">
+                                888-722-5543</a></li>
+                        <li class="chat f-500"><a href="#" target="_blank"><img src="images/chat.svg" alt="chat"
+                                    class="img_align">
+                                Chat</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="p_white">Insert Promotion Here</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#" class="f-500" target="_blank">Log In</a></li>
+                        <span class="pipe">|</span>
+                        <li><a href="#" class="f-500" target="_blank">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_second">
+            <div class="container header_sec2">
+                <div class="d-flex align-items-center justify-spacebetween">
+                    <a href="#" target="_blank"><img src="images/logo-header.svg" alt="logo" class="logo"></a>
+                    <!--search_box-->
+                    <div id="search_box" class="search_box d-flex justify-spacebetween align-items-center">
+                        <input type="text" class="search" placeholder="Search by product name, brand name or part #">
+                        <a href="#" target="_blank"><img src="images/search.svg" class="search_icon" alt="Search"></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="search_btn ser" id="btn_search1"><img src="images/search.svg" class="search_icon"
+                                alt="Search"></button>
+                        <button class="close ser" id="close1"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        <button class="btn_primary q_btn1"><img class="quote_img" src="images/Quote.svg"
+                                alt="Quote"></button>
+
+                        <!-- popup-->
+
+
+                        <!--Request a Quote-->
+                        <button class="btn_primary q_btn2 d-flex "><img class="quote_img" src="images/Quote.svg"
+                                alt="Quote"> Request a Quote</button>
+                        <!-- <button class="cart_box" id="cart1"><img src="images/cart.svg" alt="cart"></button> -->
+                        <a href="#" target="_blank" id="cart1" class="cart_box1 d-flex">
+                            <div class="cart_img1">
+                                <img src="images/cart_img.svg" alt="cart">
+                            </div>
+                            <div>
+                                <span class="number">1</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="ser_box" class="ser_box d-flex">
+                    <input type="text" class="search1" placeholder="Search by product name, brand name or part #">
+                    <a href="#" target="_blank"><img src="images/search.svg" alt="Search" class="ser_img"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--navbar-->
+    <nav>
+        <div class="container">
+            <div class="menu_cart">
+                <button class="btn_menu">
+                    <img src="images/menu.svg" alt="menu">
+                </button>
+                <a href="#" target="_blank" id="cart2" class="cart_box1 d-flex">
+                    <div class="cart_img1">
+                        <img src="images/cart_img.svg" alt="cart">
+                    </div>
+                    <div>
+                        <span class="number">1</span>
+                    </div>
+                </a>
+                <!-- <button class="cart_box" id="cart2"><img src="images/cart.svg" alt="cart"></button> -->
+            </div>
+            <div class="menu_section">
+                <ul class="main-nav">
+                    <li><a href="#" class="menu">Products &nbsp;<img src="images/arrow_down.svg" alt="arrow down"></a>
+                        <ul class="inner_menu">
+                            <li><a href="#" class="menu">product 1</a></li>
+                            <li><a href="#" class="menu">product 2</a></li>
+                            <li><a href="#" class="menu">product 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu">Brands &nbsp;<img src="images/arrow_down.svg" alt="arrow down"></a>
+                        <ul class="inner_menu">
+                            <li><a href="#" class="menu">Brands 1</a></li>
+                            <li><a href="#" class="menu">Brands 2</a></li>
+                            <li><a href="#" class="menu">Brands 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu">Rentals</a></li>
+                    <li><a href="#" class="menu">Deals</a></li>
+                    <li><a href="#" class="menu">Services &nbsp;<img src="images/arrow_down.svg" alt="arrow down"></a>
+                        <ul class="inner_menu">
+                            <li><a href="#" class="menu">Services 1</a></li>
+                            <li><a href="#" class="menu">Services 2</a></li>
+                            <li><a href="#" class="menu">Services 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu">Resources &nbsp;<img src="images/arrow_down.svg" alt="arrow down"></a>
+                        <ul class="inner_menu">
+                            <li><a href="#" class="menu">Resources 1</a></li>
+                            <li><a href="#" class="menu">Resources 2</a></li>
+                            <li><a href="#" class="menu">Resources 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu">Company</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--body section-->
+    <main>
+        <div class="container">
+            <div>
+                <div class="slider">
+                    <div class="slide">
+                        <img class="slide_img" src="images/bg.svg" alt="image1">
+                        <div class="slide_text d-f-center f-col">
+                            <h1 class="h1_width">Your Instrumentation Experts</h1>
+                            <p class="p_text">Specializing in flow, level, pressure and temperature measurement and
+                                control.</p>
+                            <button class="btn_secondary shop_now">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="slide_img" src="images/bg.svg" alt="image1">
+                        <div class="slide_text d-f-center f-col">
+                            <h1 class="h1_width">Your Instrumentation Experts</h1>
+                            <p class="p_text">Specializing in flow, level, pressure and temperature measurement and
+                                control.</p>
+                            <button class="btn_secondary shop_now">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="slide_img" src="images/bg.svg" alt="image1">
+                        <div class="slide_text d-f-center f-col">
+                            <h1 class="h1_width">Your Instrumentation Experts</h1>
+                            <p class="p_text">Specializing in flow, level, pressure and temperature measurement and
+                                control.</p>
+                            <button class="btn_secondary shop_now">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="slide_img" src="images/bg.svg" alt="image1">
+                        <div class="slide_text d-f-center f-col">
+                            <h1>Your Instrumentation Experts</h1>
+                            <p class="p_text">Specializing in flow, level, pressure and temperature measurement and
+                                control.</p>
+                            <button class="btn_secondary shop_now">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category_section">
+                <h2>Popular Categories</h2>
+                <ul class="category d-flex justify-center">
+                    <li class="category_item">
+                        <a href="#" class="d-flex f-col">
+                            <img src="images/Flow.svg" alt="flow" title="flow">
+                            <button class="btn_primary cat_btn">
+                                <p class="cat_text">Flow</p>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <a href="#" class="d-flex f-col">
+                            <img src="images/Level.svg" alt="level" title="level">
+                            <button class="btn_primary cat_btn">
+                                <p class="cat_text">Level</p>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <a href="#" class="d-flex f-col">
+                            <img src="images/Pressure.svg" alt="Pressure" title="Pressure">
+                            <button class="btn_primary cat_btn">
+                                <p class="cat_text">Pressure</p>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <a href="#" class="d-flex f-col">
+                            <img src="images/Temperature.svg" alt="Temperature" title="Temperature">
+                            <button class="btn_primary cat_btn">
+                                <p class="cat_text">Temperature</p>
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="category_item">
+                        <a href="#" class="d-flex f-col">
+                            <img src="images/Ultrasonic_Flow_Meters.svg" alt="Ultrasonic Flow Meters"
+                                title="Ultrasonic Flow Meters">
+                            <button class="btn_primary cat_btn">
+                                <p class="cat_text">Ultrasonic Flow Meters</p>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <a href="#" class="d-flex f-col">
+                            <img src="images/Electromagnetic_Flow_Meters.svg" alt="Electromagnetic Flow Meters"
+                                title="Electromagnetic Flow Meters">
+                            <button class="btn_primary cat_btn">
+                                <p class="cat_text">Electromagnetic Flow Meters</p>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <a href="#" class="d-flex f-col">
+                            <img src="images/Open_Channel_Flow_Meters.svg" alt="Open Channel Flow Meters"
+                                title="Open Channel Flow Meters">
+                            <button class="btn_primary cat_btn">
+                                <p class="cat_text">Open Channel Flow Meters</p>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <a href="#" class="d-flex f-col">
+                            <img src="images/Turbine_Flow_Meters.svg" alt="Turbine Flow Meters"
+                                title="Turbine Flow Meters">
+                            <button class="btn_primary cat_btn">
+                                <p class="cat_text">Turbine Flow Meters</p>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+                <div class="all_cat">
+                    <button class="btn_secondary">View All Categories</button>
+                </div>
+            </div>
+            <div class="product_sec category_section">
+                <h2>Shop Products</h2>
+                <div class="tabs d-flex justify-center">
+                    <ul>
+                        <li class="tab_1 active" id="tab1" href="tab1">Featured</li>
+                        <li class="tab_1" id="tab2" href="tab2">New</li>
+                        <li class="tab_1" id="tab3" href="tab3">Most Popular</li>
+                    </ul>
+                </div>
+                <ul class="slide_content">
+                    <li id="tab1" class="active">
+                        <div id="prev1">
+                            < </div>
+                                <div id="next1"> > </div>
+                                <ul class="slideshow">
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Greyline.svg" alt="Greyline">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Greyline</h5>
+                                            <p class="prod_text1">Greyline DFM 6.1 Doppler Flow Meter</p>
+                                            <p class="prod_text2">Starting at <span>$2,645.00</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Badger_Meter.svg" alt="Badger_Meter">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Badger Meter</h5>
+                                            <p class="prod_text1">Badger ModMAG M3000 Electromagnetic Flow Meter</p>
+                                            <p class="prod_text2">Starting at <span>$2,404.00</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Fuji_Electric.svg" alt="Fuji_Electric">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Fuji Electric</h5>
+                                            <p class="prod_text1">Fuji Electric FSV-2 Ultrasonic Flow Meter</p>
+                                            <p class="prod_text2">Starting at <span>$2,399.00</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Greyline2.svg" alt="Greyline2">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Greyline</h5>
+                                            <p class="prod_text1">Greyline DFS 5.1 Doppler Flow Switch</p>
+                                            <p class="prod_text2">Starting at <span>$895.00</span></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                    </li>
+
+                    <li id="tab2">
+                        <div id="next1"> > </div>
+                        <div id="prev1">
+                            < </div>
+                                <ul class="slideshow">
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Greyline.svg" alt="Greyline">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Greyline</h5>
+                                            <p class="prod_text1">Greyline DFM 6.1 Doppler Flow Meter</p>
+                                            <p class="prod_text2">Starting at <span>$2,645.00</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Badger_Meter.svg" alt="Badger_Meter">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Badger Meter</h5>
+                                            <p class="prod_text1">Badger ModMAG M3000 Electromagnetic Flow Meter</p>
+                                            <p class="prod_text2">Starting at <span>$2,404.00</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Greyline.svg" alt="Greyline">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Greyline</h5>
+                                            <p class="prod_text1">Greyline DFM 6.1 Doppler Flow Meter</p>
+                                            <p class="prod_text2">Starting at <span>$2,645.00</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Greyline2.svg" alt="Greyline2">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Greyline</h5>
+                                            <p class="prod_text1">Greyline DFS 5.1 Doppler Flow Switch</p>
+                                            <p class="prod_text2">Starting at <span>$895.00</span></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                    </li>
+                    <li id="tab3">
+                        <div id="next1"> > </div>
+                        <div id="prev1">
+                            < </div>
+                                <ul class="slideshow">
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Greyline2.svg" alt="Greyline2">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Greyline</h5>
+                                            <p class="prod_text1">Greyline DFS 5.1 Doppler Flow Switch</p>
+                                            <p class="prod_text2">Starting at <span>$895.00</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Greyline.svg" alt="Greyline">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Greyline</h5>
+                                            <p class="prod_text1">Greyline DFM 6.1 Doppler Flow Meter</p>
+                                            <p class="prod_text2">Starting at <span>$2,645.00</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Badger_Meter.svg" alt="Badger_Meter">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Badger Meter</h5>
+                                            <p class="prod_text1">Badger ModMAG M3000 Electromagnetic Flow Meter</p>
+                                            <p class="prod_text2">Starting at <span>$2,404.00</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="product f-col">
+                                        <div class="product_img">
+                                            <img src="images/Greyline.svg" alt="Greyline">
+                                            <div class="btn_grp">
+                                                <button class="btn_secondary">View Details</button>
+                                                <button class="btn_primary">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_details">
+                                            <h5>Greyline</h5>
+                                            <p class="prod_text1">Greyline DFM 6.1 Doppler Flow Meter</p>
+                                            <p class="prod_text2">Starting at <span>$2,645.00</span></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                    </li>
+                </ul>
+                <div class="all_cat">
+                    <button class="btn_secondary">View All Products</button>
+                </div>
+            </div>
+            <div class="Brand_section">
+                <h2 class="brand_nm">Featured Brands</h2>
+                <div class="d-flex justify-center">
+                    <div class="brand_box">
+                        <a href="#"><img src="images/logo-badger-meter.svg" alt="logo-badger-meter"></a>
+                    </div>
+                    <div class="brand_box">
+                        <a href="#"><img src="images/logo-blancett.svg" alt="logo-blancett"></a>
+                    </div>
+                    <div class="brand_box b_none">
+                        <a href="#"><img src="images/logo-cdi-meters.svg" alt="logo-cdi-meters"></a>
+                    </div>
+                    <div class="brand_box b_none">
+                        <a href="#"><img src="images/logo-fuji-electric.svg" alt="logo-fuji-electric"></a>
+                    </div>
+                    <div class="brand_box">
+                        <a href="#"><img src="images/logo-greyline.svg" alt="logo-greyline"></a>
+                    </div>
+                    <div class="brand_box">
+                        <a href="#"><img src="images/logo-ifm.svg" alt="logo-ifm"></a>
+                    </div>
+                    <div class="brand_box b_none">
+                        <a href="#"><img src="images/noncontact-meters.svg" alt="noncontact-meters"></a>
+                    </div>
+                    <div class="brand_box b_none">
+                        <a href="#"><img src="images/seametrics.svg" alt="seametrics"></a>
+                    </div>
+                </div>
+
+                <div class="all_cat">
+                    <button class="btn_secondary">View All Brands</button>
+                </div>
+            </div>
+            <div class="quote_section">
+                <div class="quote">
+                    <div class="img_quote">
+                        <img src="images/quote1.svg" alt="quote1">
+                    </div>
+                    <div class="quote_content">
+                        <h2 class="quote_text">Request a Quote</h2>
+                        <p class="quote_text1">Connect with our expert application engineers and find a solution to your
+                            flow, level, pressure or temperature needs.</p>
+                        <button class="btn_secondary btn_quote">Request a Quote</button>
+                    </div>
+                </div>
+            </div>
+            <div class="quote_section text-center">
+                <h2>About Instruments Direct</h2>
+                <p class="about_text">Your Instrumentation Experts</p>
+                <p class="about_text1">Instruments Direct has the largest rental fleet of ultrasonic flow meters in the
+                    USA with free roundtrip express shipping. Having over 35 years of experience, our knowledgeable
+                    engineers and specialists can help you select the right flow meter for your application every time.
+                    We carry an extensive inventory of flow meters and instrumentation with free lifetime technical
+                    support to meet your prompt delivery requirements.</p>
+                <a href="#" target="_blank" class="link">Learn More</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer_section1">
+            <div class="container footer1 d-flex align-items-center">
+                <div class="connect_us">
+                    <h3>Connect With Us</h3>
+                    <p class="connect_text">Sign up to receive expert tips, deals, discounts and more!</p>
+                </div>
+                <div class="email">
+                    <input type="text" class="input" placeholder="Enter your email">
+                    <button class="btn_primary btn_subscribe">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer_section2">
+            <div class="container">
+                <div class="f-row1 d-flex">
+                    <div class="shipping d-flex align-items-center">
+                        <img src="images/Shipping.svg" alt="shipping">
+                        <p class="shipping_text">Free Shipping</p>
+                    </div>
+                    <div class="support d-flex align-items-center">
+                        <img src="images/Support.svg" alt="support">
+                        <p class="shipping_text">Lifetime Tech Support</p>
+                    </div>
+                    <div class="fleet d-flex align-items-center">
+                        <img src="images/Fleet.svg" alt="fleet">
+                        <p class="shipping_text">Large Rental Fleet</p>
+                    </div>
+                    <div class="experience d-flex align-items-center">
+                        <img src="images/Experience.svg" alt="experience">
+                        <p class="shipping_text">35+ Years Experience</p>
+                    </div>
+                </div>
+                <div class="f-row2 d-flex">
+                    <div class="company">
+                        <h4>Company <img src="images/down.png" id="arrow1" alt="down arrow"></h4>
+                        <ul class="list f-col section1">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Location</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="account">
+                        <h4>Account <img src="images/down.png" id="arrow2" alt="down arrow"></h4>
+                        <ul class="list f-col section2">
+                            <li><a href="#">Log In</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </div>
+                    <div class="order">
+                        <h4>Orders <img src="images/down.png" id="arrow3" alt="down arrow"></h4>
+                        <ul class="list f-col section3">
+                            <li><a href="#">Request a Quote</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Warranty</a></li>
+                        </ul>
+                    </div>
+                    <div class="resources">
+                        <h4>Resources <img src="images/down.png" id="arrow4" alt="down arrow"></h4>
+                        <ul class="list f-col section4">
+                            <li><a href="#">Credit Application</a></li>
+                            <li><a href="#">Pipe Chart</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f-row3">
+                    <div class="d-f-center f-col">
+                        <ul class="contect">
+                            <li>
+                                <a href="#" class="d-flex align-items-center">
+                                    <img src="images/phone-footer.svg" alt="phone-footer">
+                                    888-722-5543</a>
+                            </li>
+                            <li><a href="#" class="d-flex align-items-center p-l-50"><img src="images/chat-footer.svg"
+                                        alt="chat-footer"> Chat with an Expert</a>
+                            </li>
+                            <li><a href="#" class="d-flex align-items-center p-l-50"><img src="images/Quote.svg"
+                                        alt="quote"> Request a Quote</a></li>
+                            <li><a href="#" class="d-flex align-items-center p-l-50"><img src="images/mail-footer.svg"
+                                        alt="mail-footer"> Email Us</a></li>
+                        </ul>
+                        <div class="footer_logo">
+                            <a href="#"><img src="images/logo-footer.svg" alt="logo-footer"></a>
+                        </div>
+                        <div class="social_logos">
+                            <a href="#"><img src="images/youtube.svg" alt="youtube"></a>
+                            <a href="#"><img src="images/linkedin.svg" alt="linkedin"></a>
+                        </div>
+                        <div class="copyright">
+                            <p>© 2021 Instruments Direct, Inc. All rights reserved.</p>
+                            <p>Terms | Privacy Policy</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

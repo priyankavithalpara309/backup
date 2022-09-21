@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+body {
+  font-family: "Quicksand";
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn_primary {
+  background-color: white;
+  color: rgb(14, 80, 117);
+  padding: 12px 15px;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.panel1:hover {
+  border: 1px solid rgb(14, 80, 117);
+}
+
+.btn_secondary {
+  background-color: rgb(58, 115, 144);
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn_secondary:hover {
+  background-color: white;
+  color: rgb(58, 115, 144);
+}
+
+.btn_third {
+  background-color: rgb(2, 80, 117);
+  color: white;
+  padding: 10px 2px;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn_third:hover {
+  background-color: white;
+  color: rgb(2, 80, 117);
+  border: 1px solid rgb(2, 80, 117);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-f-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.justify-spacebetween {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-flexend {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+  transition: 0.4s all;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}/*# sourceMappingURL=common.css.map */
