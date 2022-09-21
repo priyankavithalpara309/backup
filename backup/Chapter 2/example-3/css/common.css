@@ -1,0 +1,28 @@
+body{
+    margin: 0 auto;
+}
+.container {
+    margin: 0 auto;        
+    width: 100%;
+    max-width: 1920px;    
+}
+
+h4{
+    font-family: Montserrat;  
+    font-size: 30px;    
+}
+.d-flex{
+    display: flex;        
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify_center
+{
+    justify-content: center;  
+    align-items: center;     
+}

@@ -1,0 +1,48 @@
+.header{
+    height: 300px;
+    width: 1600px;            
+    background-color: #EEEEEE;
+    margin: 67px 160px 30px 160px;   
+}
+
+.box{
+    width: 240px;
+    height: 240px;
+    background-color: #EBEBEB;
+}
+
+.text1{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.text2{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.text3{
+    font-size: 16px;
+    font-weight: 700;    
+}
+
+.text4{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.content{
+    flex-direction: column;
+}
+
+.col:last-child{
+    margin-right:0;
+}
+
+.strike
+{
+    text-decoration-line: line-through;
+    color: #757575;
+    font-size: 14px;
+    margin-left: 16px;
+}

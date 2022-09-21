@@ -1,0 +1,85 @@
+.first_section{
+    background-color: #EBEBEB;
+    height: 40px;    
+}
+
+.text1{
+    font-size: 14px;
+    color: #344563;
+    align-items: center;    
+}
+.search_box{
+    flex-wrap: nowrap;      
+}
+.search{
+    margin-top: 40px;   
+    height: 48px;                       
+    width: 100%;   
+    background-color: #FFFFFF;                         
+    padding: 5px 20px;       
+    border: 1px solid #EBECF0;            
+    flex-grow: 8;
+}
+
+.search_button{  
+    margin-top: 40px;   
+    height: 48px;  
+    width: 48px;   
+    font-size: 20px;     
+    background-color: #757575;                       
+    color: #FFFFFF;            
+}
+
+.circle{
+    background-color: #C4C4C4;
+    margin-top: 47px;
+    margin-left: 30px;
+    height: 36px;
+    width: 36px;        
+    border-radius: 50%;
+}
+
+.login{    
+    margin-top: 45px;
+    font-weight: 600;
+    font-size: 14px;    
+    padding-left: 10px;
+}
+
+.myaccount{    
+    font-size: 12px;
+    font-weight: 400;      
+    padding-left: 10px;
+    margin-top: -10px;
+}
+.nav{
+    margin-top: 40px;
+    background-color: #757575;
+    width:100%;
+}
+ul {
+    list-style-type: none;        
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;    
+  }
+  
+  li a {    
+    display: block; 
+    line-height: 20px;
+    color: white;         
+    padding: 14px 20px;
+    font-size: 12px;    
+    text-align: center;    
+    text-decoration: none;
+  }
+  
+  .active{
+    margin-left: 100px;
+    background-color: #C4C4C4;    
+    color: black;
+  }

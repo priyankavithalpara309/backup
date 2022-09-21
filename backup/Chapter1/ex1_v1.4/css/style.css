@@ -1,0 +1,142 @@
+/* section one css start */
+
+.banner-slider{
+    background: #666666;
+    width: 100%;
+    height: 748px;
+}
+
+/* section one css end */
+
+/* section tow css start */
+
+.left-section{
+    max-width: 770px;
+    width: 100%;
+}
+.right-section{
+    width: calc(100% - 770px);
+}
+.left-section .blue-box{
+    background: #8ECDE8;
+    opacity: 0.7;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.right-section .green-box{
+    background: #B0E47C;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+    height: 342px;
+}
+.right-section .green-box:nth-child(2){
+    margin-bottom: 0px;
+}
+ul li{
+    font-size: 96px;
+    line-height: 112px;
+    color: #000000;
+}
+.row .col-md-6:first-child .left-side, .row .col-md-6:first-child .left-side * {
+    height: 100%;
+}
+/* section tow css end */
+
+/* section three css start */
+
+.slider-conten {
+    background: #E9D945;
+}
+.slider-conten .slide-item {
+    width: 510px;
+    height: 510px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #fff;
+}
+.slider-conten .justify-center{
+    flex-direction: row-reverse;
+    margin: 76px 0px;
+}
+/* section three css end */
+
+/* section four css start */
+
+.gray-box-conten .gray-box{
+    background: #C4C4C4; 
+    max-width: calc(50% - 20px);
+    width: 100%;
+    height: 324px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.main-footer {
+    margin-top: 8px;
+}
+.gray-box-conten{
+    flex-direction: row-reverse;
+}
+/* section four css end */
+
+/* footer section css strat */
+
+.footer-box{
+    background: #87EBB5;
+    height: 106px;;
+}
+
+/* footer section css end */
+
+/* ex1_v1.1 css */
+
+.right-section .right-side ul{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+}
+.right-section .order-one{
+    order: 2;
+}
+.right-section .order-tow{
+    order: 3;
+}
+.right-section .order-three{
+    order: 1;
+}

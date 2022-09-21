@@ -1,0 +1,733 @@
+/* 1600 view*/
+@media only screen and (max-width:1919px) {}
+
+/* 1440 view*/
+@media only screen and (max-width:1599px) {}
+
+/* 1366 view*/
+@media only screen and (max-width:1439px) {}
+
+/* 1280 view*/
+
+@media only screen and (max-width: 1365px) {
+    .slide_content {
+        padding: 26px 111px 15px 100px;
+    }
+
+    .quote_content {
+        padding-top: 70px;
+    }
+
+    .quote_section,
+    .footer1,
+    .f-row1,
+    .f-row2 {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .Brand_section {
+        padding: 60px 100px;
+    }
+
+}
+
+@media only screen and (max-width: 1279px) {}
+
+/* iPad 1024 (Landscape) view*/
+@media only screen and (max-width:1199px) {
+
+    .quote_content {
+        padding: 60px 0 0 50px;
+    }
+
+    .slide_content {
+        padding: 26px 81px 15px 70px;
+    }
+
+    .email {
+        padding: 0 0 0 30px;
+    }
+
+    .slide_content li div#prev1 {
+        left: 50px;
+    }
+
+    .slide_content li div#next1 {
+        right: 50px;
+    }
+
+    /* .experience {
+        padding-right: 150px;
+    } */
+}
+
+@media only screen and (max-width:1084px) {
+
+    .quote_content {
+        padding-top: 40px;
+    }
+}
+
+/* iPad 768 (portrait) view*/
+@media only screen and (max-width: 1023px) {
+
+    .cart_box {
+        padding: 6px;
+    }
+
+    .email {
+        padding: 0 0 0 20px;
+    }
+
+    /* .experience {
+        padding-right: 100px;
+    } */
+}
+
+/* iPad 768 (portrait) view*/
+
+@media only screen and (max-width: 991px) {
+    .category_item {
+        width: calc(23% - 1em);
+        /* flex: 30%; */
+    }
+
+    .header_sec1 {
+        padding: 12px 30px;
+    }
+
+    .header_sec2 {
+        padding: 18px 30px;
+    }
+
+    .menu_section a {
+        padding: 10px 0;
+    }
+
+    .search_box {
+        margin-left: 24px;
+        padding: 16px;
+    }
+
+    .quote {
+        flex-wrap: wrap;
+    }
+
+    .quote_content {
+        width: 100%;
+        padding: 20px 40px 30px 40px;
+    }
+
+    .img_quote {
+        width: 100%;
+    }
+
+    .quote_text1 {
+        padding-right: 0;
+    }
+
+    .f-row1 {
+        display: none;
+    }
+
+    .footer_section1 {
+        flex-direction: column;
+    }
+
+    .connect_us {
+        width: 100%;
+    }
+
+    .connect_us h3,
+    .connect_us p {
+        text-align: center;
+    }
+
+    .email {
+        width: 80%;
+        padding: 30px 0 30px 0;
+    }
+}
+
+/*/ iPhone-6 plus 736 (Landscape) view /*/
+@media only screen and (max-width: 767px) {
+
+    .help,
+    .phone {
+        padding-right: 20px;
+    }
+
+
+    .register {
+        padding-right: 40px;
+    }
+
+    h1 {
+        font-size: 35px;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 28px;
+    }
+
+    .p_text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .cart_box1 {
+        margin-left: 12px;
+        padding: 6px 16px 6px 5px;
+    }
+
+    .cart {
+        margin-right: 40px;
+    }
+
+
+    .slider .slick-next,
+    .slider .slick-prev {
+        padding: 8px 11px;
+    }
+
+    .slider .slick-prev {
+        left: 35px;
+    }
+
+    .slider .slick-next {
+        right: 35px;
+    }
+
+    .category_section {
+        padding: 50px 30px 40px 30px
+    }
+
+    .category_item {
+        width: calc(47% - 1em);
+        /* flex: 30%; */
+    }
+
+    .btn_p {
+        padding: 13px;
+    }
+
+    .cart_box {
+        margin-left: 12px;
+        padding: 6px;
+    }
+
+    .q_btn2 {
+        display: none;
+    }
+
+    .q_btn1 {
+        display: block;
+    }
+
+    .category {
+        flex-wrap: wrap;
+    }
+
+    .slide_content {
+        padding: 26px 71px 15px 60px;
+    }
+
+    .slide_content li div#prev1 {
+        left: 30px;
+    }
+
+    .slide_content li div#next1 {
+        right: 30px;
+    }
+
+    .product_sec {
+        padding-top: 50px;
+    }
+
+    .Brand_section {
+        padding: 60px 28px;
+    }
+    
+    .quote_section,
+    .footer1 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .quote_content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .quote_text1,
+    .about_text1,
+    .link,
+    .connect_text,
+    .input {
+        font-size: 14px;
+    }
+
+    .btn_quote {
+        padding: 12px 16px
+    }
+
+    .btn_subscribe {
+        font-size: 14px;
+        line-height: 0;
+        padding: 12px 12px;
+    }
+
+
+
+    /* .brand_box {
+        margin-right: 0;
+    } */
+
+    .brand_box {
+        flex: 40%;
+        max-width: 100%;
+    }
+
+    /* .brand_box:first-child {
+        margin-left: 0;
+    } */
+
+    .b_none {
+        display: none;
+    }
+
+    .f-row2 {
+        padding: 40px 50px 40px 50px;
+    }
+
+    .contect li a {
+        padding: 10px 0 0 0;
+    }
+
+    .contect {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_logo {
+        padding-top: 50px;
+    }
+}
+
+
+/*/ iPhone-6 667 (Landscape) view /*/
+
+@media only screen and (max-width: 735px) {}
+
+/*/ iPhone-5 568 (Landscape) view /*/
+
+@media only screen and (max-width: 666px) {
+
+    .help,
+    .phone {
+        padding-right: 12px;
+    }
+
+    .p_white,
+    .slick-prev,
+    .slick-next {
+        display: none;
+    }
+
+    .p_text {
+        display: none;
+    }
+
+    /* .shop_now {
+        padding: 10px;
+    } */
+
+    #btn_search1 {
+        display: block;
+    }
+
+
+    .cart_box1 {
+        padding: 4px 15px 1px 4px;
+    }
+
+    nav {
+        border-top: 1px solid #E6E9EF;
+    }
+
+    .search,
+    #cart1,
+    #ser_box,
+    .search_box {
+        display: none;
+    }
+
+    #cart2 {
+        margin-left: 0;
+        display: flex;
+    }
+
+
+    .btn_menu {
+        display: block;
+    }
+
+    .btn_menu img {
+        max-width: 30px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        display: none;
+        background: white;
+        box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+        /* align-items: flex-start; */
+        /* z-index: 10; */
+        /* position: absolute; */
+    }
+
+    .main-nav>li {
+        width: 100%;
+        /* padding-left: 10px;
+        padding-right: 10px; */
+        border-bottom: 1px solid #E6E9EF;
+        border-left: 1px solid #E6E9EF;
+    }
+
+    .inner_menu {
+        width: 100%;
+    }
+
+    .nav_container {
+        border-top: 1px solid #E6E9EF;
+        ;
+    }
+
+    .menu_cart {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 30px;
+    }
+
+
+    /* .cat_btn{
+        padding: 14px 0;
+    } */
+
+}
+
+
+/*/ iPhone-4 480 (Landscape) view /*/
+@media only screen and (max-width: 567px) {
+
+    .Brand_section {
+        padding: 60px 50px;
+    }
+
+    .quote_section {
+        padding-left: 62px;
+        padding-right: 62px;
+    }
+
+    .tab_1 {
+        padding: 20px 20px;
+        font-size: 14px;
+        line-height: 0;
+    }
+}
+
+
+/*/ iPhone-6 plus 414 (portrait) view /*/
+@media only screen and (max-width: 479px) {
+    /* .search_box {
+        flex: none;
+        display: block;
+        margin: 6px 6px 6px 0;
+    } */
+
+
+
+    /* #btn_search1{
+        display: block;
+    }
+    .cart_box1 {       
+        padding: 4px 15px 1px 4px;
+    } */
+
+    /* .shop_now {
+        font-size: 12px;
+        padding: 6px; 
+         margin-top: 6px;
+    } */
+
+    .slider .slick-next,
+    .slider .slick-prev {
+        padding: 4px 6px;
+        font-size: 15px;
+    }
+
+    .slider .slick-prev {
+        left: 5px;
+    }
+
+    .slider .slick-next {
+        right: 5px;
+    }
+
+    .register {
+        padding-right: 10px;
+    }
+
+
+    .header_sec1 {
+        justify-content: center;
+    }
+
+    .help,
+    .phone,
+    .chat,
+    #request1 {
+        display: none;
+    }
+
+    .search_icon {
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        /* padding: 12px; */
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .category_section {
+        padding: 30px 15px 40px 15px
+    }
+
+    /* .cat_btn {
+        font-size: 14px;
+    } */
+
+    /* .all_cat,
+    .all_brand {
+        padding: 30px 0 0 0;
+    }
+
+    .all_prod {
+        padding: 30px 0 30px 0;
+    } */
+
+    .product_img img,
+    .product_details {
+        max-width: 247px;
+    }
+
+    .btn_secondary {
+        /* padding: 8px 20px; */
+        font-size: 14px;
+    }
+
+    .product_sec {
+        padding-top: 30px;
+    }
+
+    .Brand_section {
+        padding: 30px;
+    }
+
+    .quote_section {
+        padding: 0 44px 30px 44px;
+    }
+
+    .footer1 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .quote_text1,
+    .about_text1,
+    .link,
+    .connect_text,
+    .input {
+        font-size: 12px;
+    }
+
+    .about_text {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .f-row2 {
+        padding: 20px;
+    }
+
+    .contect li a {
+        padding: 5px 0 0 0;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .footer_logo {
+        padding-top: 30px;
+    }
+
+    .tabs {
+        padding-top: 30px;
+    }
+
+    .tabs ul li {
+        margin-right: 8px;
+    }
+
+
+    .slide_content {
+        padding: 26px 51px 15px 40px;
+    }
+
+    .slide_content li div#next1,
+    div#prev1 {
+        padding: 4px 8px;
+        font-size: 20px;
+    }
+
+    .slide_content li div#prev1 {
+        left: 16px;
+    }
+
+    .slide_content li div#next1 {
+        right: 16px;
+    }
+
+    .prod_text2 {
+        padding: 8px 0 8px 19px;
+    }
+
+    h5 {
+        padding: 8px 0 0 19px
+    }
+
+    .p_text {
+        font-size: 14px;
+    }
+
+    .f-row2 {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .cart {
+        display: none;
+    }
+
+    .search_section {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn_grp .btn_secondary {
+        padding: 16px 66px;
+        font-size: 13px;
+    }
+
+    #arrow1,
+    #arrow2,
+    #arrow3,
+    #arrow4,
+    .ser_box {
+        display: inline-block;
+    }
+
+    .f-row2 div h4 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list {
+        padding: 3px 0 3px 0;
+    }
+
+
+
+    .btn_grp .btn_primary {
+        padding: 16px 64px;
+    }
+}
+
+
+/*/ iPhone-6 375 (portrait) view /*/
+
+@media only screen and (max-width: 413px) {
+    /* .slider .slide_text {
+        top: 8px;
+    }
+
+    .slide_text h1 {
+        display: none;
+    } */
+}
+
+
+/*/ iPhone-4 320 (portrait) view /*/
+@media only screen and (max-width: 375px) {
+    .menu_cart {
+        padding: 6px 8px;
+    }
+
+    .header_sec2 {
+        padding: 16px 8px;
+    }
+
+    .tab_1 {
+        padding: 20px 6px;
+    }
+
+    .Brand_section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .quote_section {
+        padding: 0 32px 30px 32px;
+    }
+
+    .slide_content {
+        padding: 26px 40px 15px 30px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .category_item {
+        width: calc(100% - 1em);
+    }
+
+    nav {
+        top: 120px;
+    }
+
+    .nav_top {
+        top: 176px;
+    }
+
+}

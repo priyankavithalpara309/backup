@@ -1,0 +1,116 @@
+body{
+    margin: 0 auto;    
+    font-family: Montserrat;            
+}
+.container {    
+    max-width: 1920px;
+    width: 1920px;    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.ml-160{
+    margin-left: 160px;
+}
+
+.ml-20{
+    margin-left: 20px;
+}
+
+.ml-56{
+    margin-left: 56px;
+}
+
+.mt-38{
+    margin-top: 38px;
+}
+
+.mr-160{
+    margin-right: 160px;
+}
+
+.mr_32{
+    margin-right: 32px;
+}
+
+.h_text{
+    font-size: 18px;   
+    font-weight: 500;
+}
+
+.banner_text{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.row{
+    display: flex;
+}
+
+.row1{
+    display: flex;
+    margin: 90px 251px 24px 20px;    
+}
+
+.about{
+    margin: 1038px 160px 90px 160px;
+}
+
+.col1{
+    display: flex;
+}
+
+.col2{
+    width: 100%;     
+}
+
+.col-md-12{
+    width: 100%; 
+}
+
+.col-md-6{
+    width: 50%;
+}
+
+.col-md-9{
+    width: 75%;
+}
+
+.col-md-4{
+    width: 33.33%;
+}
+
+.col-md-3{
+    width: 25%;
+}
+
+.d-flex{
+    display: flex;        
+}
+
+.flex
+{
+    display: flex;        
+    justify-content: center;  
+    align-items: center;     
+}
+
+.justify_space-between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.justify_center{
+    justify-content: center;    
+    align-items: center;
+}
+
+.flex_start{
+    justify-content: flex-start;
+}
+
+.flex_end{
+    justify-content: flex-end;
+}

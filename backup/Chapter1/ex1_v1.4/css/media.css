@@ -1,0 +1,242 @@
+
+/* 1600 view*/
+@media only screen and (max-width:1919px){
+
+}
+
+/* 1440 view*/
+@media only screen and (max-width:1599px){
+    
+}
+
+/* 1366 view*/
+@media only screen and (max-width:1439px){
+
+}
+
+/* 1280 view*/
+@media only screen and (max-width:1365px){
+    .slider-conten .slide-item{
+        margin: 40px;
+    }
+    .slider-conten .justify-center {
+        margin: 25px 0px;
+    }
+    .container{
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+    /* .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    } */
+}
+
+
+@media only screen and (max-width:1279px){
+    .slider-conten .slide-item{
+        max-width: calc(50% - 60px);
+        width: 100%;
+        height: 380px;
+        margin: 20px;
+    }
+    .slider-conten ul{
+        width: 100%;
+    }
+    .slider-conten .justify-center{
+        margin: 20px 0px;
+    }
+}
+/* iPad 1024 (Landscape) view*/
+@media only screen and (max-width:1199px){
+    .left-section {
+        max-width: 640px;
+        width: 100%;
+    }
+    .right-section {
+        width: calc(100% - 640px);
+    }
+}
+
+/* iPad 768 (portrait) view*/
+@media only screen and (max-width: 1023px) {
+    .mt-48 {
+        margin-top: 24px;
+    }
+    .mb-48 {
+        margin-bottom: 24px;
+    }
+    ul li {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .slider-conten .slide-item{
+        max-width: calc(50% - 36px);
+        width: 100%;
+        height: 272px;
+        margin: 12px;
+    }
+    .slider-conten ul {
+        width: 100%;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: center;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: center;
+    }
+    .blue-box {
+        min-height: 200px;
+    }
+    .left-section,.right-section {
+        max-width: 100%;
+        width: 100%;
+    }
+    .right-section .green-box {
+        width: 33.33%;
+        height: 164px;
+        margin: 24px 24px 0px 0px;
+    }
+    .right-section ul{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .right-section ul li:nth-child(3){
+        margin-right: 0px;
+    }
+    .banner-slider {
+        height: 300px;
+    }
+    .gray-box-conten .gray-box{
+        max-width: calc(50% - 12px);
+        width: 100%;
+        height: 152px;
+    }
+    .gray-box-conten .gray-box:last-child {
+        margin-right: 0px;
+    }
+    .footer-box {
+        height: 54px;
+    }
+    .right-section .right-side ul{
+        flex-direction: row;
+    }
+    .right-section .order-one{
+        order: 2;
+    }
+    .right-section .order-tow{
+        order: 1;
+    }
+    .right-section .order-three{
+        order: 3;
+    }
+    .right-section .right-side ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .slider-conten .justify-center {
+        margin: 12px 0px;
+    }
+    .main-footer {
+        margin-top: 0px;
+    }
+}
+
+/*/ iPhone-6 plus 736 (Landscape) view /*/
+@media only screen and (max-width: 767px) {
+    .gray-box-conten .gray-box {
+        margin: 0px 0px 16px 0px;
+    }
+    .slider-conten .justify-center {
+        margin: 0px;
+    }
+    .col-md-6, .col-md-12 {
+        padding: 0;
+    }
+    section, footer {
+        margin: 16px;
+    }
+    .banner-slider {
+        height: 180px;
+    }
+    .right-section .green-box {
+        width: calc(50% - 8px);
+        height: 120px;
+        margin: 16px 0px;
+    }
+    .right-section .green-box:last-child{
+        width: 100%;
+        margin: 0px !important;
+    }
+    .right-section ul{
+        justify-content: space-between;
+    }
+    .slider-conten .slide-item {
+        max-width: 100%;
+        height: 160px;
+        margin: 8px;
+    }
+    .slider-conten .justify-center {
+        margin: 8px;
+    }
+    .gray-box-conten .gray-box{
+        max-width: 100%;
+        height: 120px;
+    }
+    .footer-box {
+        height: 52px;
+    }
+    .right-section .right-side ul {
+        flex-wrap: wrap;
+    }
+    .main-footer {
+        margin-top: 0px;
+    }
+    .mt-48 {
+        margin-top: 16px;
+    }
+    .mb-48 {
+        margin-bottom: 16px;
+    }
+    .section-four.mb-48{
+        margin-bottom: 0px;
+    }
+    .main-footer {
+        margin-bottom: 0px;
+    }
+}
+
+/*/ iPhone-6 667 (Landscape) view /*/
+@media only screen and (max-width: 735px) {
+
+}
+
+/*/ iPhone-5 568 (Landscape) view /*/
+@media only screen and (max-width: 666px) {
+
+}
+
+/*/ iPhone-4 480 (Landscape) view /*/
+@media only screen and (max-width: 567px) {
+
+}
+
+/*/ iPhone-6 plus 414 (portrait) view /*/
+@media only screen and (max-width: 479px) {
+
+}
+
+/*/ iPhone-6 375 (portrait) view /*/
+@media only screen and (max-width: 413px) {
+
+}
+
+/*/ iPhone-4 320 (portrait) view /*/
+@media only screen and (max-width: 374px) {
+
+}

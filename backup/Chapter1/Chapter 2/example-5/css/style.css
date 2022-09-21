@@ -1,0 +1,63 @@
+.first_section{
+    height: 70px;
+    width: 100%;            
+    background-color: #EEEEEE; 
+}
+
+.search{    
+    margin-top: 61px;               
+    justify-content: flex-start;
+}
+
+.input{        
+    width: 512px;
+    height: 50px;
+    background-color: #EEEEEE;
+}
+
+.m_lr{
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.menu{
+    margin-top: 61px;    
+    justify-content: flex-end;
+}
+.cart{
+    margin-right: 85px;
+}
+.login{
+    margin-right: 53px;
+}
+.register{    
+    margin-right: 74px;
+}
+
+.nav{
+    margin-top: 61px;    
+    width: 100%;
+}
+
+ul{   
+    background-color: #EEEEEE;    
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;     
+}
+ul li{
+    display: inline-block;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px 40px;
+    color: #000000;
+    font-size: 18px;
+}
+
+.active{
+    margin-left: 160px;
+    background-color: #C4C4C4;        
+  }
