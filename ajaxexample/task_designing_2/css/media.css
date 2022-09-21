@@ -1,0 +1,90 @@
+
+/* 1600 view*/
+@media only screen and (max-width:1919px){
+
+}
+
+/* 1440 view*/
+@media only screen and (max-width:1599px){
+    
+}
+
+/* 1366 view*/
+@media only screen and (max-width:1439px){
+
+}
+
+/* 1280 view*/
+
+@media only screen and (max-width: 1365px) {
+    /*.slider .slide_text{
+        top:100px;
+    }*/
+}
+
+@media only screen and (max-width: 1279px) {
+    
+}
+
+/* iPad 1024 (Landscape) view*/
+@media only screen and (max-width:1199px) {
+    .slider .slide_text{
+        top:80px;
+    }
+}
+
+@media only screen and (max-width:1084px) {
+    /*.slider .slide_text{
+        top:60px;
+    }*/
+}
+
+/* iPad 768 (portrait) view*/
+@media only screen and (max-width: 1023px) {
+
+} 
+
+/* iPad 768 (portrait) view*/
+
+@media only screen and (max-width: 991px) {
+   
+}
+
+/*/ iPhone-6 plus 736 (Landscape) view /*/
+@media only screen and (max-width: 767px) {
+ 
+}
+
+/*/ iPhone-6 667 (Landscape) view /*/
+
+@media only screen and (max-width: 735px) {
+}
+
+/*/ iPhone-5 568 (Landscape) view /*/
+
+@media only screen and (max-width: 666px) {
+}
+
+
+/*/ iPhone-4 480 (Landscape) view /*/
+@media only screen and (max-width: 567px) {
+         
+}
+
+
+/*/ iPhone-6 plus 414 (portrait) view /*/
+@media only screen and (max-width: 479px) {
+   
+}
+
+
+/*/ iPhone-6 375 (portrait) view /*/
+
+@media only screen and (max-width: 413px) {
+}
+
+
+/*/ iPhone-4 320 (portrait) view /*/
+@media only screen and (max-width: 375px) {
+  
+}
