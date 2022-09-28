@@ -1,0 +1,51 @@
+body{
+    margin: 100px 160px 99px 160px;    
+    font-family: Montserrat;    
+}
+.container {    
+    max-width: 1920px;
+    width: 1920px;    
+}
+
+.row{
+    display: flex;
+}
+
+.col-md-12{
+    width: 100%; 
+}
+
+.col-md-6{
+    width: 50%;
+}
+
+.d-flex{
+    display: flex;        
+}
+
+.flex
+{
+    display: flex;        
+    justify-content: center;  
+    align-items: center;     
+}
+
+h4{
+    font-weight: 500;
+    font-size: 24px;    
+}
+
+h5{
+    font-weight: 400;
+    font-size: 18px;    
+}
+
+.justify_space-between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.justify_center{
+    justify-content: center;
+    align-items: center; 
+}

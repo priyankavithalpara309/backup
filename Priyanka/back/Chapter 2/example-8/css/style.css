@@ -1,0 +1,184 @@
+.header{    
+    background-color: #EEEEEE;
+    width: 100%;
+}
+
+.contact{
+    margin-left: 27px;
+}
+
+.search{    
+    margin-top: 61px;               
+    justify-content: flex-start;
+}
+
+.input{   
+    padding: 16px;     
+    width: 512px;
+    height: 50px;
+    border: 1px solid #EEEEEE;     
+}
+
+.cart_circle{
+    background-color: #EEEEEE;
+    margin: 65px 84px 67px 776px;    
+    height: 40px;
+    width: 40px;        
+    border-radius: 50%;       
+}
+
+.cart{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 9px;    
+}
+
+.login{
+    font-size: 18px;
+    font-weight: 500px;
+    margin-right: 59px;
+}
+
+.register{
+    font-size: 18px;
+    font-weight: 500px;
+}
+
+.nav{    
+    width: 100%;
+}
+
+ul{   
+    background-color: #EEEEEE;    
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;     
+}
+ul li{
+    display: inline-block;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px 40px;
+    color: #000000;
+    font-size: 18px;
+}
+
+.active{    
+    background-color: #C4C4C4;        
+  }
+
+.btn{        
+    margin-left: -4px;        
+}
+
+.btn_menu{
+    color: white;    
+}
+
+.sidebar{    
+    background-color: #EEEEEE;
+    height: 1192px;
+}
+
+.list{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 32px 24px 0 32px;
+}
+
+.banner{
+    width: 100%;
+    height: 540px;
+    background-color: #EEEEEE;
+    margin-left: 20px;
+    margin-top: 24px;
+}
+
+.circle{
+    background-color: #EEEEEE; 
+    height: 104px;
+    width: 104px;        
+    border-radius: 50%;  
+    margin-left: 112px;       
+    margin-top: 26px;
+}
+
+.best{    
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.see_all{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.box{    
+    width: 240px;
+    height: 240px;
+    background-color: #EEEEEE; 
+}
+
+.promo_banner{
+    width: 100%;
+    height: 300px;
+    background-color: #EEEEEE;
+    margin-right: 32px;    
+}
+
+.last_banner{
+    margin-right: 0;
+}
+
+.box1{
+    width: 100%;
+    height: 500px;
+    background-color: #EEEEEE;
+}
+
+.content{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;    
+    margin-left: 32px;    
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.readmore{
+    align-items: flex-end;
+}
+
+.box2{
+    height: 300px;
+    width: 100%;
+    background-color: #EEEEEE;    
+}
+
+.footer{    
+    flex-direction: column;
+    background-color: #EEEEEE;
+    height: 350px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.newslatter_box{
+    display: flex;
+    background-color: #E4E4E4;
+    height: 150px;
+    width: 1328px;                
+    padding-left: 135px;
+    align-items: center;
+}
+
+.input_box{
+    height: 48px;
+    width: 376px;
+    margin-left: 243px;
+}

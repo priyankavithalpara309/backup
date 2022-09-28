@@ -1,0 +1,428 @@
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;           
+    font-weight: 500;    
+}
+
+.t1{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search{   
+    margin-left: 60px;            
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.input{
+    width: 60%;    
+    height: 50px;
+    background-color: #EEEEEE;
+}
+
+.menu{
+    
+    justify-content: flex-end;    
+}
+
+.cart_circle{
+    background-color: #EEEEEE;    
+    height: 40px;
+    width: 40px;        
+    border-radius: 50%;           
+}
+
+.cart{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;           
+}
+
+.login{    
+    font-size: 18px;
+    font-weight: 500;    
+    margin-left: 60px;
+}
+
+.register{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 60px;
+}
+
+.cart1{
+    display: none;
+}
+
+.nav_menu{
+    margin-top: 61px;
+}
+
+.nav{        
+    width: 100%;    
+}
+
+.nav_menu .icon_1{
+    display: none;
+}
+
+
+ul{   
+    background-color: #EEEEEE;    
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;     
+}
+ul li{
+    display: inline-block;
+}
+li a{
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;    
+    color: #000000; 
+    font-size: 12px;   
+}
+
+.active{    
+    background-color: #C4C4C4;        
+    margin-left: 60px;
+  }
+
+  .icon
+  {
+      text-decoration: none;
+      color: #000000;
+      margin: 8px;
+      font-size: 24px;      
+  }
+
+.carousel_banner{
+    width: 100%;
+    height: 500px;
+    background-color: #EEEEEE;
+}
+
+.banner{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.col1{
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.col2{
+    width: 100%;
+    margin-left: 32px;
+    justify-content: flex-start;   
+}
+
+.box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 95px;
+    background-color: #F1F1F1;   
+    margin-right: 32px;
+}
+
+.circle{
+    margin-top: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+    background-color: #C4C4C4;    
+    height: 48px;
+    width: 48px;        
+    border-radius: 50%;
+}
+
+.text1,
+.news_text1{
+    font-size: 18px;
+    color: #172B4D;
+    font-weight: 600;
+}
+
+.text2,
+.news_text2{
+    font-size: 14px;
+    color: #5E6C84;
+    font-weight: 500;
+}
+
+.box:last-child{
+    margin-right: 0;
+}
+
+.col_1,
+.col_2,
+.col_3{
+    width: 33.33%;
+    display: flex;    
+    flex-direction: column;    
+}
+
+.banner1,
+.banner3{         
+    width: 100%;    
+    height: 240px;
+    background-color: #F1F1F1;    
+    text-align: center;    
+}
+
+.banner2{     
+    width: 100%;
+    height: 512px;
+    text-align: center;
+    background-color: #F1F1F1;    
+    
+}
+
+.f1{
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 60px;
+}
+
+.seeall{ 
+    margin-right: 10px;
+    font-size: 16px;  
+    font-weight: 500;
+}
+#seeall{
+    display: none;  
+}
+
+.promotion{
+    width: 100%;
+    height: 300px;
+    background-color: #EEEEEE;
+}
+
+.product_banner{
+    font-size: 24px;
+    font-weight: 400;   
+}
+
+.img_box {
+    background-color: #EBEBEB;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+}
+
+.img_box_text{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.img1,
+ .img2,
+ .img3,
+ .img4,
+ .img5,
+ .img6 {
+     margin-right: 33px;
+     width: 16.67%;
+ }
+ 
+ .img1 {
+     margin-left: 0;
+ }
+ 
+ .img6 {
+     margin-top: 0;
+     margin-right: 0;     
+ }
+ 
+ .product_text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.price{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.strike
+{
+    text-decoration-line: line-through;
+    color: #757575;
+    font-size: 14px;    
+}
+
+.new{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new_banner{
+    width: 100%;
+    height: 300px;
+    background-color: #EEEEEE;
+}
+
+.new_images{
+    display: flex;
+    justify-content: center;
+}
+
+.image1,
+ .image2,
+ .image3
+ {
+     margin-top: 30px;
+     margin-right: 32px;
+     width: 100%;
+ }
+ 
+ .image1 {
+     margin-left: 0;
+ }
+ 
+ .image3 {     
+     margin-right: 0;     
+ }
+
+ .why_us{
+     margin: 96px 0 30px 60px;
+ }
+
+ .description{
+     margin-top: -33px;
+ }
+
+ .why_us_title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #172B4D;
+ }
+
+
+  .list>ul{
+    overflow: visible;
+    margin-left: 30px;
+    background-color:white;        
+ }
+
+ .li::before {     
+     content: '';     
+     position: absolute;    
+     margin-left: -30px;
+     height: 16px;   
+     width: 16px;
+     border-radius: 50%;
+     color: #C4C4C4;
+     background-color: #C4C4C4;     
+}
+ 
+ .list>ul>li{
+     color: #172B4D;
+     padding-bottom: 40px;
+     display: block;
+     font-size: 18px;
+ }
+
+
+ a{
+    text-decoration: none;
+}
+.link{
+    margin-left: 32px;    
+    font-size: 18px;
+    font-weight: 500;
+    color: #172B4D;
+    line-height: 27px;        
+}
+
+.news_box{
+    width: 100%;
+    height: 300px;
+    background-color: #EEEEEE;
+}
+
+
+.left,
+.left1{
+    margin-left: 32px;
+}
+
+.row11{
+    display: flex;    
+    justify-content: center;
+    width: 80%;        
+    background-color: #C4C4C4;
+}
+
+.sub_text{
+    margin-left: 60px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.col12{
+    justify-content: flex-end;    
+}
+.input2{    
+    margin-top: 28px;
+    height: 40px;    
+    width: 60%;   
+    padding: 5px 20px;       
+    border: 0 solid #EBECF0;                       
+    background-color: #FFFFFF;
+}
+
+.sub_btn{        
+    margin-right: 10px;
+    height: 40px;    
+    padding: 10px;    
+    color: white;
+    font-size: 12px;
+    margin-top: 28px;        
+    border: none;
+    background-color: #757575;    
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #172B4D;
+}
+
+.contact{
+    font-size: 14px;
+    font-weight: 400;
+    color: #172B4D;
+}
+
+#arrow1{
+    display: none;
+}
+
+.list11{
+    display: none;
+    border-bottom: 2px solid black;
+}
+
+.copyright{
+    margin: 16px 0 17px 60px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#payment{
+    font-size: 45px;     
+    color: #757575;
+}

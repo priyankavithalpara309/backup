@@ -1,0 +1,603 @@
+@media only screen and (max-width: 1023px) {
+    .header{     
+        height: 52px;        
+        font-size: 16px;    
+        font-weight: 500;
+    }
+
+    #text1,#text2{
+        display: none;
+    }
+    #cart{
+        display: none;
+    }       
+    
+    .row{
+        background-color: #C4C4C4;
+        margin: 0;
+    }
+
+    .search{
+        margin-left: 24px;
+    }
+
+    .input{
+        width: 100%;    
+        background-color: #C4C4C4;
+        border: none;
+    }
+    .login{    
+        font-size: 16px;        
+        margin-left: 0;
+        margin-right: 24px;        
+    }
+    
+    .register{
+        font-size: 16px;        
+        margin-left: 0;
+        margin-right: 24px;
+    }
+
+    .nav_menu{
+        margin: 19px 24px;
+    }
+
+    .nav_menu .nav{
+        display: none;
+    }
+    
+    .nav_menu .icon_1{        
+        background-color: #EEEEEE;    
+        height: 40px;
+        width: 40px;        
+        border-radius: 50%;  
+        color: white;        
+        display: block;    
+    }
+
+    .nav_menu.responsive{
+        position: relative;
+    }
+
+    .nav_menu.responsive .icon_1{
+        position: absolute;
+        left: 0;
+        top: 0;       
+    }
+
+    .nav_menu.responsive .nav{        
+        display: block;          
+        width: 100%;                             
+        text-align: left;
+    }
+
+    .nav_menu.responsive .nav ul>li{
+        display: block;        
+    }
+    .cart1{
+        display: block;        
+        background-color: #EEEEEE;    
+        height: 40px;        
+        width: 40px;        
+        border-radius: 50%; 
+    }
+
+    .cart_text{
+        margin-top: 10px;        
+        margin-left: 2px;
+        font-size: 16px;
+        font-weight: 500;                 
+    }
+
+    .menu1{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .row1{
+        margin: 0 0 24px 0;        
+    }
+
+    .carousel_banner{        
+        height: 300px;        
+    }   
+    
+    .box{
+        width: 50%;        
+    }
+    
+    .row2{           
+        margin:24px;
+        flex-direction: column;
+    }
+
+    .col1{
+        width: 100%;
+        margin-bottom: 24px;        
+    }
+
+    .col2{
+        width: 100%;
+        margin: 0;        
+    }
+    
+    .box{    
+        height: 96px;
+        margin-right: 24px;
+        width: 100%        
+    }
+
+    .text1{
+        font-size: 16px;
+    }
+    
+    .text2{
+        font-size: 13px;        
+    }
+
+    .row3{
+        flex-wrap: wrap;
+        margin: 24px;        
+    }
+    .col_1{
+        display: flex;        
+        width: 48.5%;        
+    }
+    .col_2{             
+        width: 47%;
+        display: flex;                 
+        margin: 0 -5px 0 24px;
+    }
+
+    .col_3{
+        margin-top: 24px;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .banner3:first-child{
+        margin-right: 24px;
+    }
+
+    .f1{
+        margin: 80px 24px 24px 24px;
+    }
+
+    .title_text, 
+    .product_banner{
+        font-size: 24px;
+    }
+
+    .seeall{
+        display: block;
+    }
+
+    .row4, 
+    .row5,
+    .row6{
+        margin: 24px;
+    }
+
+    .promotion{     
+        height: 240px;        
+    } 
+    
+    .img_box{
+        height: 224px;
+    }
+    
+    .img1,
+    .img2,
+    .img3 {
+        margin-right: 24px;
+        width: 33.33%;
+    }
+
+    .img3{
+        margin-right: 0;
+    }
+
+    .img4,
+    .img5,
+    .img6{
+        display: none;
+    }   
+
+    .row6{
+        flex-wrap: wrap;
+    }
+
+    .col-6{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .image1,    
+    .image3{
+        margin-right: 24px;
+    }
+
+    .image2{
+        order: 3;        
+        margin-right: 0;
+    }
+
+    .why_us{
+        margin: 80px 0 24px 24px;
+    }
+
+    .col-6_1{
+        width: 292px;
+    }
+
+    .why_us_title{
+        font-size: 20px;
+    }
+
+    .list>ul>li{
+        font-size: 16px;
+    }
+    
+    .li::before {                     
+        height: 8px;   
+        width: 8px;
+    }
+    .row7{
+        margin: 24px 24px 80px 24px;
+        flex-wrap: wrap;
+    }
+
+    .col-3{
+        width: 100%;        
+    }
+    
+    .col{
+        margin-bottom: 40px;        
+    }
+    
+
+    .col-3:first-child{
+        margin-left: 0;
+    }
+
+    .news_box{
+        height: 224px;
+    }
+
+    .left{
+        margin-left: 0;
+    }
+
+    .left1{
+        margin-left: 24px;
+    }
+
+    .row11 {        
+        width: 100%;                        
+    }
+
+    .sub_text {     
+        margin-left: 24px;
+        font-size: 20px;                
+    }
+
+    
+    .input2{
+        margin: 24px 0 24px 24px;        
+    }
+
+    .sub_btn{
+        margin: 24px 24px 24px 0;        
+        font-size: 18px;
+    }
+
+    .f-row{
+        flex-wrap: wrap;
+    }
+    
+    .row_f2{
+        width: 100%;
+        order: 1;
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .row_f1
+    {
+        width: 50%;
+        order: 2;
+    }
+
+    .row_f3{
+        width: 50%;
+        order: 3;
+    }
+
+    .f-col1,
+    .f-col2,
+    .f-col3,
+    .f-col4,
+    .f-col5{        
+        width: 100%;
+        
+    }    
+   
+
+    .f-row{        
+        margin: 32px 24px 49px 24px;        
+    }  
+    
+    .f-col2,
+    .f-col3,
+    .f-col4{
+        margin: 0;
+
+    }
+
+    .f-copyright{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .copyright{
+        margin: 24px 0 40px 0;
+        font-size: 12px;
+    }
+
+    .icon2{
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    #payment{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 413px) {    
+    .header{     
+        height: 37px;        
+        font-size: 12px;    
+        font-weight: 500;
+    }
+
+    .search{
+        margin-left: 16px;
+    }
+
+    .login{    
+        font-size: 14px;                
+        margin-right: 32px;        
+    }
+    
+    .register{
+        font-size: 14px;                
+        margin-right: 16px;
+    } 
+    .cart_text{
+        font-size: 14px;
+        margin-left: 4px;
+    }   
+
+    .carousel_banner{    
+        height: 220px;     
+    }
+    
+    .banner{
+        font-size: 20px;        
+    }
+
+    .row1{
+        margin: 0 0 16px 0;        
+    }
+
+    .row2{           
+        margin:16px;        
+    }
+
+    .col1{        
+        margin-bottom: 16px;        
+    }
+    
+    .box{            
+        height: 158px;
+        margin-right: 16px;           
+        flex-direction: column;
+        padding: 4px;
+    }
+
+    .circle{
+        margin: 0px;
+    }
+
+    .row3{        
+        margin: 16px;        
+    }
+    .col_1{
+        display: flex;        
+        width: 100%;  
+        margin-bottom: 16px;      
+    }
+    
+    .banner1:first-child{
+        margin-bottom: 16px;
+    }
+    .col_2{             
+        width: 100%;
+        display: flex;                 
+        margin: 0 0 16px 0;
+    }
+
+    .col_3{        
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .banner3:first-child{
+        margin-bottom: 16px;
+    }
+
+    .f1{
+        margin: 64px 16px 0 16px;
+    }
+
+    .title_text, 
+    .product_banner{
+        font-size: 20px;
+    }
+
+    .seeall{
+        font-size: 16px;
+    }
+
+    .row4, 
+    .row5{
+        margin: 24px 16px;
+    }  
+
+    .img_box{
+        height: 164px;
+    }    
+
+    .img1,
+    .image1{
+        margin-right: 16px;
+        width: 50%;
+    }  
+
+    .img2,
+    .image3{
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .img3,
+    .image2{
+        display: none;
+    }
+
+    .img_box_text{
+        font-size: 16px;        
+    }
+    
+    .row6{
+        margin-left: 16px;
+        margin-right: 16px;
+    }   
+
+    .why_us{
+        margin: 64px 0 24px 16px;
+    }
+
+    .row7{
+        margin: 24px 16px 24px 16px;
+        flex-direction: column;
+    }
+
+    .col-6_1{
+        width: 100%;
+    }
+
+    .col-6_2{
+        margin-top: 24px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .why_us_title{
+        font-size: 20px;
+    }
+
+    .list>ul>li{
+        font-size: 16px;
+    }
+
+    .col{
+        margin-bottom: 24px;        
+    }
+
+    .news_box{
+        height: 164px;
+    }
+
+    .left1{
+        margin-left: 16px;
+    }
+
+    .row11{
+        flex-direction: column;
+    }
+
+    .col11,
+    .col12{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sub_text {     
+        margin-left: 0;        
+        font-size: 16px;                
+    }
+
+    .input2{
+        font-size: 14px;
+        margin: 16px 0 16px 16px;
+    }
+    .sub_btn{
+        font-size: 16px;
+        margin: 16px 16px 16px 0;
+    }
+       
+    .section1,
+    .section2,
+    .section3,
+    .section4{
+        display: none;        
+    }
+
+    .f-row{
+        margin: 0;
+        margin-bottom: 96px;
+    }
+
+    h3{
+        margin-left: 24px;
+        margin-right: 24px;
+        font-size: 18px;
+    }
+    .row_f1,
+    .row_f3{
+        width: 100%;
+    }
+
+    .row_f2{
+        flex-direction: column;
+    }
+
+    .f-col1,
+    .f-col2,
+    .f-col3{
+        border-bottom: 1px solid #CCCCCC;
+    }
+    .f-col5{
+        margin-top: 108px;
+    }
+
+    #arrow1{
+        display: inline-block;
+        float: right;
+    }    
+
+    .copyright{
+        margin-bottom: 24px;
+        font-size: 12px;
+    }
+
+    .icon2{
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    
+}

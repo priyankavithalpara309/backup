@@ -1,0 +1,44 @@
+body {        
+    font-family: Montserrat;
+    margin: 0; 
+    padding: 0;        
+}
+
+*{
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.col-md-4{
+    width: 33.33%;
+}
+.col-md-6{
+    width: 50%;    
+}
+
+.col-md-12{
+    width: 100%;    
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify_center
+{
+    justify-content: center;    
+}
+
+.justify_space_between
+{
+    justify-content: space-between;
+}

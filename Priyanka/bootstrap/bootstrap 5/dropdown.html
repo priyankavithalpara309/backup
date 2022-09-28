@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-4">    
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">link 1</a></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><a class="dropdown-item" href="#">link 3</a></li>
+            </ul>
+        </div><br><br>
+
+        <!--dropdown divider-->
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">                
+                <li><a class="dropdown-item" href="#">link 1</a></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><a class="dropdown-item" href="#">link 3</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Another Divider</a></li>
+            </ul>
+        </div><br>
+
+        <!--Dropdown Header-->
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown button</button>
+            <ul class="dropdown-menu">
+                <li><h5 class="dropdown-header">Product First</h5></li>
+                <li><a class="dropdown-item" href="#">item 1</a></li>
+                <li><a class="dropdown-item" href="#">item 2</a></li>
+                <li><a class="dropdown-item" href="#">item 3</a></li>
+                <li><h5 class="dropdown-header">Product Second</h5></li>
+                <li><a class="dropdown-item" href="#">item 4</a></li>
+                <li><a class="dropdown-item" href="#">item 5</a></li>
+                <li><a class="dropdown-item" href="#">item 6</a></li>
+            </ul>
+        </div><br><br>
+
+        <!--disable and Active items-->
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown button</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">normal</a></li>
+                <li><a class="dropdown-item active" href="#">active</a></li>
+                <li><a class="dropdown-item disabled" href="#">disabled</a></li>
+            </ul>
+        </div><br><br>
+
+        <!--dropdown position-->
+        <div class="dropdown dropstart text-end">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown button</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">link 1</a></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><a class="dropdown-item" href="#">link 3</a></li>
+            </ul>
+        </div>
+        <div class="dropdown dropend">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown button</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">link 1</a></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><a class="dropdown-item" href="#">link 3</a></li>
+            </ul>
+        </div><br><br>
+        <div class="dropdown dropdown-menu-end">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">wide Dropdown button to demonstrate this example</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">link 1</a></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><a class="dropdown-item" href="#">link 3</a></li>
+            </ul>
+        </div><br><br>
+
+        <!--dropup-->
+        <div class="dropdown dropup">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown button</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">link 1</a></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><a class="dropdown-item" href="#">link 3</a></li>
+            </ul>
+        </div><br><br>
+
+        <!--dropdown text-->
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown button</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">link 1</a></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><a class="dropdown-item" href="#">link 3</a></li>
+                <li><a class="dropdown-item-text" href="#">Text link</a></li>
+                <li><span class="dropdown-item-text">Just Text</span></li>
+            </ul>
+        </div><br><br>     
+        
+        <!--grouped buttons vertical with a dropdown-->
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tablet</a></li>
+                <li><a class="dropdown-item" href="#">Smartphone</a></li>
+              </ul>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

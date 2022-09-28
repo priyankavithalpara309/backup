@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="form-control" id="search1" placeholder="search">
+        <table class="table table-bordered m-3" id="myTable">
+            <thead>
+                <tr>
+                    <th>first name</th>
+                    <th>last name</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>meera</td>
+                    <td>shah</td>
+                    <td>meera@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>neha</td>
+                    <td>mendapara</td>
+                    <td>neha@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>riya</td>
+                    <td>mehata</td>
+                    <td>riya@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>kinary</td>
+                    <td>vyas</td>
+                    <td>kinary@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+<!--fliter in list-->
+    <div class="container mt-3">
+        <input class="form-control" type="text" id="search2" placeholder="search here....">
+        <ul class="list-group" id="list1">
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+        </ul>
+    </div>
+
+<!--Filter Anything-->
+    <div class="container mt-3">
+        <input class="form-control" type="text" id="search3" placeholder="search here....">
+        <div id="myDIV" class="mt-3">
+            <p>I am a paragraph.</p>
+            <div>I am a div element inside div.</div>
+            <button class="btn">I am a button</button>
+            <button class="btn btn-primary">Another button</button>
+            <p>Another paragraph.</p>
+          </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+          $("#search1").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+
+        $(document).ready(function(){
+            $("#search2").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#list1 li").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+        $(document).ready(function(){
+            $("#search3").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV *").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+        </script>
+</body>
+</html>

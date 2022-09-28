@@ -1,0 +1,105 @@
+                .container
+                {                    
+                    max-width: 1280px;
+                    width: 100%;
+                    margin: 0 auto;                    
+                }
+                body{
+                    font-family: roboto;               
+                    text-align: center; 
+                }
+
+                .header{                
+                    width:1280px;
+                    height: 748px;                 
+                    margin-top:20px;               
+                    background-color: #666666;
+                }
+                .section1{                                                     
+                    display: flex;
+                    width: 1280px;                                                      
+                    background-color: #FFFFFF; 
+                    font-size: 50px;
+                }                            
+                
+                .left{                  
+                    margin-top: 10px;       
+                    width: 730px;
+                    height: 1106px;           
+                    line-height: 1106px;                   
+                    background-color: #8ECDE8;
+                }                
+                .right1{                
+                    margin: 10px;                                             
+                    padding-left: 40px;
+                    padding-bottom: 3px;
+                    width: 510px;                       
+                    height: 358px;                                                           
+                    line-height: 351px;       
+                    background-color: #B0E47C;                
+                }   
+                .right2{                
+                    margin: 10px;                                             
+                    padding-left: 40px;
+                    padding-bottom: 3px;
+                    width: 510px;                       
+                    height: 358px;                                                           
+                    line-height: 351px;       
+                    background-color: #B0E47C;                
+                }   
+                .right3{                
+                    margin: 10px;                                             
+                    padding-left: 40px;
+                    padding-bottom: 3px;
+                    width: 510px;                       
+                    height: 358px;                                                           
+                    line-height: 351px;       
+                    background-color: #B0E47C;                
+                }   
+
+                .section2{                            
+                    height: 702px;                
+                    width: 1280px;  
+                    font-size: 50px;             
+                    line-height: 550px;       
+                    margin-top: 10px;                
+                    background-color: #E9D945;;
+                }                
+                .sub{
+                    display: flex;                    
+                }
+                .sec2_sub{
+                    background-color: #FFFFFF;
+                    width: 510px;                
+                    height: 510px;
+                    margin: 60px;
+                    padding: 40px;
+                }
+
+                .section3
+                {
+                    display: flex;                  
+                    width: 1280px;                                 
+                    font-size: 50px;                                             
+                    line-height: 290px;
+                }
+                .sec3_left{
+                    height: 324px;
+                    width: 620px;                         
+                    margin: 30px 10px 30px 0;
+                    background-color: #C4C4C4;                                
+                }
+                .sec3_right{
+                    margin: 30px 0 30px 30px;    
+                    height: 324px;
+                    width: 620px;                         
+                    background-color: #C4C4C4;                                
+                }
+
+                .footer{
+                    width: 1280px;
+                    height: 106px;
+                    background-color: #87EBB5;
+                }
+
+
