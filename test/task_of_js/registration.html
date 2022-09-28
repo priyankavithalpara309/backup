@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/common.css" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>     
+
+  <script src="js/validate.js"></script>
+  <style>
+      .a:focus{
+        background-color: green;
+        color: white;
+      }
+  </style>
+</head>    
+    <body>
+        <div class="container mt-5">
+            <form name="myForm" onsubmit="return validate();">
+            <div class="card">
+                <div class="card-header">
+                    <i class="far fa-user-circle" style="color: blue;"></i> My Account
+                </div>
+                <div class="card-body">
+                    <div class="row">                   
+                        <div class="col-md-2">
+                            <i class="fa fa-user user" style="font-size: 100px;"></i>
+                        </div>
+                        <div class="col-md-10">                            
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                    <label for="fnm" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="fnm" placeholder="Enter First Name">                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lnm">Last Name</label>
+                                    <input type="text" class="form-control" id="lnm" placeholder="Enter Last Name" name="lnm">                                    
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="address">Address</label>
+                                    <input type="text" class="form-control" id="address" placeholder="Enter address" name="address">                                    
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                    <label for="sel1">Select Country</label>
+                                    <select class="form-control" id="sel1" name="sellist1">                                  
+                                    <option>Austria</option>
+                                    <option>Belize</option>
+                                    <option>Canada</option>
+                                    <option>India</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" class="form-control" pattern="^\d{10}$" id="phone" placeholder="Enter phone" name="phone">                                    
+                                </div>
+                            </div>                      
+                            <label for="account_type">Account Type</label>        
+                            <div class="form-group row">                                
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-light a" style="width: 150px;"><span class="badget far fa-user-circle"></span> Male</button>
+                                    <button type="button" class="btn btn-light ml-5 a" style="width: 150px;"><span class="badget fas fa-briefcase"></span> Female</button>
+                                </div>                                
+                            </div>                              
+                        </div>
+                        </div>  
+                </div>                                 
+            </div>
+          <button  type="submit" class="btn btn-primary" style="float: right; margin-top: 20px;">Start test</button>
+        </form>
+        </div>
+    </body>
+</html>
