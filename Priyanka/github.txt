@@ -1,0 +1,37 @@
+github
+
+user name: priyankavithalpara309
+pass:pinku@309
+
+download github
+
+in cmd 
+
+git init
+
+create repository
+========================
+
+give name 
+
+copy link fo ex https://github.com/priyankavithalpara309/angular.git
+
+after put in cmd for clone
+
+--->git clone https://github.com/priyankavithalpara309/angular.git
+
+---> when clone done then go to path you folder alredy created 
+
+--->C:\Users\DELL>cd angular(your folder)
+
+C:\Users\DELL\angular>code .
+
+open visul studio
+
+
+first time add username and password
+
+put you file in created folder and in visul studio dive name and commit
+
+
+
