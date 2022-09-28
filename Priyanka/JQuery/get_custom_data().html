@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>get custom attribute</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    alert("Author : "+$("#home").data("author-name"));
+                    alert("date : "+$("#home").data("year"));
+                });
+            }); 
+        </script>        
+    </head>
+    <body>        
+        <p>click the button to see result:</p>
+        <div id="home" data-author-name="abc" data-year="2022">
+            Just an Example Content
+        </div><br/>
+        <button>Get custom attribute</button>
+    </body>
+</html>

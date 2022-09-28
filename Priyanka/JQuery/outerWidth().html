@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery outerwidth()</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("#get").click(function(){
+                    alert("Outer width is : "+$("div").outerWidth());
+                    //alert("Outer width is : "+$("div").outerWidth(true)); it include margin
+                });
+                $("#set").click(function(){
+                    $("div").outerWidth("300px");
+                });
+            });
+        </script>       
+        <style>
+            div{
+                margin: 10px;
+                padding: 12px;
+                border: 1px solid black;
+                background-color: azure;
+                width: 120px;
+                height: 140px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>click on button</p>
+        <div>Box</div>
+        <button id="get">get outerWidth</button>
+        <button id="set">set outerWidth</button>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery getJSON() method</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("#button").click(function(event){
+                    $.getJSON('simple.JSON',function(jd){
+                        $('#data').html('<p> Name : '+jd.name+'</p>');
+                        $('#data').append('<p> Age : '+jd.age+'</p>');
+                        $('#data').append('<p> Roll no. : '+jd.rollno+'</p>');
+                        $('#data').append('<p> Standard : '+jd.standard+'</p>');                        
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Click the following button to fetch the data.</p>
+        <div id="data" style="background-color: #eee;">
+            STAGE
+        </div>
+        <input type="button" id="button" value="click here">
+    </body>
+</html>

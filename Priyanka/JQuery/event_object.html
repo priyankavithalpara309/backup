@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>event object</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("div").click(function(eventObj){
+                    alert('Event type is : '+eventObj.type);
+                    alert('pageX : '+eventObj.pageX);
+                    alert('pageY : '+eventObj.pageY);
+                    alert('target : '+eventObj.target.innerHTML);
+                });
+
+                $(".first").hover(function(){
+                    $(".first").css("color","green");
+                });
+            });
+        </script>
+        <style>
+            div{margin: 10px;padding: 12px; border: 2px solid burlywood; width: 60px; cursor: pointer};
+        </style>
+    </head>
+    <body>
+        <p>Click any of squares to see the result:</p>
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+
+        <div class="first">hover me</div>
+    </body>
+</html>

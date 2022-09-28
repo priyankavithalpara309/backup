@@ -1,0 +1,46 @@
+@import '../../assets/scss/variable.scss';
+
+.detail_block{
+    padding: 140px 40px;
+}
+
+.d_date{
+    color: $gray;
+}
+
+.d_title,
+.d_para,
+.read_more{
+    color: $white;
+}
+
+.d_para,
+.read_more{
+    margin-top: 19px;
+}
+
+.read_more{
+    font-size: 13px;
+    line-height: 1.25em;    
+    font-weight: $f_700;
+}
+
+.read_more_arrow{
+    margin-left: 6px;
+}
+
+.detail1{
+    width: 30%;
+}
+
+.d_date:hover{
+    color: $lightGreen;
+}
+
+.read_more:hover .read_more_arrow{
+    transform: translateX(20%);    
+    transition: 0.2s ease-in;
+}
+
+@import '../../assets/scss/media.scss';
+

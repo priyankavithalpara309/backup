@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mouse enter and leave</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //mouseenter event
+                $("div").mouseenter(function(){
+                    $("div").css("background","pink");
+                });
+
+                //mouseleave event
+                $("div").mouseleave(function(){
+                    $("div").css("background","lightblue");
+                });
+            });
+        </script>
+        <style>
+            div{margin: 10px; padding: 15px; border: 2px solid black; width: 60px; height: 15px;cursor: pointer;}
+        </style>
+    </head>
+    <body>
+        <!--<div>this div block</div>-->
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+    </body>
+</html>

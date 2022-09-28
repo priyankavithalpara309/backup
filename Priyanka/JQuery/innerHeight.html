@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery innerHeight() method</title>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("#get").click(function(){
+                    alert("Box inner height is : "+$("div").innerHeight());
+                });
+                $("#set").click(function(){
+                    $("div").innerHeight("300px");
+                });
+            });
+        </script>
+        <style>
+            div{
+                margin: 10px;
+                padding: 12px;
+                height: 100px;
+                width: 100px;
+                background-color: darkgray;
+            }
+        </style>
+    </head>
+    <body>
+        <p>click on button</p>
+        <div>Box</div>
+        <button id="get">get innerheight</button>
+        <button id="set">set innerheight</button>
+    </body>
+</html>

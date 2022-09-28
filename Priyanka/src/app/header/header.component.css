@@ -1,0 +1,140 @@
+.header {
+  background-color: #000000;
+}
+
+.header_section {
+  position: relative;
+  padding: 20px 40px;
+}
+
+.logo a img {
+  height: 27px;
+}
+
+.menu {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+
+.active {
+  color: #aceb2f !important;
+}
+
+.menu_item {
+  color: #ffffff;
+  padding: 0 24px;
+}
+
+.menu_item:hover {
+  color: #aceb2f;
+}
+
+.top {
+  padding-top: 20px;
+}
+
+.menu ul li:hover .inner_menu {
+  display: block;
+}
+
+.inner_menu {
+  position: absolute;
+  display: none;
+  width: 230px;
+  top: 100%;
+  background-color: #151515;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 20px 0;
+  border: 1px #303030;
+  border-top: 2px solid #aceb2f;
+  border-radius: 3px;
+  z-index: 200;
+  box-sizing: border-box;
+}
+
+.inner_menu li {
+  padding: 6px 20px 6px 30px;
+}
+
+.inner_menu li a {
+  color: #888;
+}
+
+.bullet, .bullet1 {
+  display: none;
+  content: "";
+  position: relative;
+  background-color: #aceb2f;
+  width: 6px;
+  height: 6px;
+  margin-top: 3px;
+  vertical-align: middle;
+  border-radius: 50%;
+  opacity: 1;
+  margin-right: 5px;
+}
+
+.bullet1 {
+  display: inline-block;
+}
+
+.inner_item {
+  color: #ffffff !important;
+}
+
+.inner_menu > li > a:hover .bullet {
+  display: inline-block;
+}
+
+#first:hover {
+  margin-left: 5px;
+}
+
+/* 1600 view*/
+/* 1440 view*/
+/* 1366 view*/
+/* 1280 view*/
+@media only screen and (max-width: 1365px) {
+  .adv_data {
+    width: 25%;
+  }
+}
+/* iPad 1024 (Landscape) view*/
+@media only screen and (max-width: 1199px) {
+  .menu ul li a {
+    padding: 0 15px;
+  }
+}
+/* iPad 768 (portrait) view*/
+@media only screen and (max-width: 1023px) {
+  .wrapper_top {
+    display: none;
+  }
+  .team_data,
+.adv_data {
+    width: 33.3%;
+    padding: 20px 20px;
+  }
+}
+/* iPad 768 (portrait) view*/
+/*/ iPhone-6 plus 736 (Landscape) view /*/
+@media only screen and (max-width: 767px) {
+  .team_data,
+.adv_data {
+    width: 50%;
+  }
+}
+/*/ iPhone-6 667 (Landscape) view /*/
+/*/ iPhone-5 568 (Landscape) view /*/
+@media only screen and (max-width: 666px) {
+  .team_data,
+.adv_data {
+    width: 100%;
+  }
+}
+/*/ iPhone-4 480 (Landscape) view /*/
+/*/ iPhone-6 plus 414 (portrait) view /*/
+/*/ iPhone-6 375 (portrait) view /*/
+/*/ iPhone-4 320 (portrait) view /*//*# sourceMappingURL=header.component.css.map */

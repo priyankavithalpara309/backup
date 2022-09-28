@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>addClass method</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $(".hello").addClass("big");
+                    $(".goodbye").addClass("small");
+                });
+            });
+        </script>
+        <style>
+            .big{
+                font-size: 20px;
+                font-weight: bold;
+                color: burlywood;
+            }
+            .small{
+                font-size: 10px;
+                font-weight: normal;
+                color: darkcyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>jQuery addClass() method</h2>
+            <p class="hello">Hello</p>
+            <p class="goodbye">Goodbye</p>
+            <button>click me</button>
+        </div>
+    </body>
+</html>

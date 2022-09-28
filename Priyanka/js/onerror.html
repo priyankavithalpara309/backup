@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script type="text/javascript" lang="javascript">
+            window.onerror=function(){
+                alert("An error occurred...");
+            }
+
+            window.onerror=function(msg, url, line){
+                alert("Message : "+msg);
+                alert("URL : "+url);
+                alert("Line Number : "+line);
+            }
+
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" value="click me" onclick="myfunc();"/><br/>
+            <input type="button" value="click here" onclick="myfunc1();"/>
+
+            <!--error occurr when any problem to load image-->
+            <img src="flower.jpg" onerror="alert('error occurred loading image')"/>
+        </form>
+    </body>
+</html>

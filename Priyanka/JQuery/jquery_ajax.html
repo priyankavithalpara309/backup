@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery ajax</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>       
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("#driver").click(function(event){
+                    //$("#stage").load('result.html');
+                    //$("#stage").load('result.html #p1');//you can pass selector to show particular data
+
+                    $("#stage").load('result.html',function(responseTxt, statusTxt, xhr){
+                        if(statusTxt == "success")
+                            alert("External content loaded successfully!");
+                        if(statusTxt == "error")
+                            alert("Error: "+xhr.statusTxt+": "+xhr.statusTxt);
+                    });                    
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="stage" style="background-color: lightblue;">
+            STAGE
+        </div>
+        <input type="button" id="driver" value="Load Data">
+    </body>
+</html>

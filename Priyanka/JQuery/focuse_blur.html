@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>focus and blur</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("input").focus(function(){
+                    $("input").css("background","lightblue");
+                });
+                $("input").blur(function(){
+                    $("input").css("background","pink");
+                });             
+                $("input").select(function(){
+                    alert("select text");
+                }); 
+            });
+        </script>        
+    </head>
+    <body>        
+        <form>
+            <input type="text">            
+        </form>
+    </body>
+</html>

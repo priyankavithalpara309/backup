@@ -1,0 +1,82 @@
+@import "../../assets/scss/variable.scss";
+
+.main_section{
+    background-color: $background;    
+    
+}
+
+.setting{
+    border: none;
+    right: 0;
+    top: 30%;
+    position: fixed;      
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #000;
+    background-color: #aceb2f;    
+    z-index: 1000;
+    border-radius: 5px;
+    transition: transform .7s ease-in-out;    
+    cursor: pointer;
+}
+
+
+.btn_red{    
+    border: none;
+    right: 0;
+    top: 45%;
+    position: fixed;      
+    width: 40px;
+    height: 40px;    
+    background-color: $white;    
+    z-index: 1000;    
+    transition: transform .7s ease-in-out;    
+    cursor: pointer;
+}
+
+.btn_red img{
+    width:100%;
+    margin-top: 6px;
+}
+
+.btn_cart{
+    top: 53%;
+    color: #ee2852;
+}
+
+.btn_up{    
+    display: none;
+    border: none;
+    color: $white;
+    background-color: $lightGreen;
+    bottom: 3%;
+    right: 2%; 
+    position: fixed;      
+    width: 40px;
+    z-index: 1000;    
+    height: 40px;     
+    cursor: pointer;    
+}
+
+#up{
+    display: none;
+}
+
+.btn_up:hover #up,
+.btn_up:hover{
+    display: block;    
+    background-color: #000;
+}
+
+.btn_up:hover .fa-angle-up{
+    display: none;
+}
+
+.setting:hover .fa-gear{
+    transform: rotate(90deg);
+    transition: all .5s ease;
+  }
+
+  
+@import "../../assets/scss/media.scss";

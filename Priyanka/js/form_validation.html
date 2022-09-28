@@ -1,0 +1,66 @@
+<!--Basic Form Validation-->
+<html>    
+    <head>
+        <script type="text/javascript" lang="javascript">
+            function validate(){
+                if(document.myform.nm.value=="")
+                {
+                    alert("please enter name...");
+                    document.myform.nm.focus();
+                    return false;
+                }
+                if(document.myform.email.value=="")
+                {
+                    alert("please enter emailid...");
+                    document.myform.email.focus();
+                    return false;
+                }
+                if(document.myform.zipcode.value==""||isNaN(document.myform.zipcode.value)||document.myform.zipcode.value.length!=5){
+                    alert("Please provide a Zip in the format");
+                    document.myform.zipcode.focus();
+                    return false;
+                }
+                if(document.myform.city.value==-1)
+                {
+                    alert("Please select your city");
+                    document.myform.city.focus();
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform" onsubmit="return validate()">
+            <table>
+                <tr>
+                    <td align="right">Name:</td>
+                    <td><input type="text" name="nm"></td>
+                </tr>
+                <tr>
+                    <td align="right">Email:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td align="right">Zip Code:</td>
+                    <td><input type="text" name="zipcode"></td>
+                </tr>
+                <tr>
+                    <td align="right">City:</td>
+                    <td>
+                        <select name="city">
+                            <option value="-1" selected>[choose your city]</option>
+                            <option value="1">Rajkot</option>
+                            <option value="2">Surat</option>
+                            <option value="3">pune</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="submit"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

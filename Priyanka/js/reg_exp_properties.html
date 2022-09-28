@@ -1,0 +1,82 @@
+
+<hmtl>
+    <body>
+        <script type="text/javascript">
+
+        //global        
+        var re = new RegExp("string");
+
+        if(re.global)
+        {
+            document.write("Global Property is set");
+        }
+        else{
+            document.write("Global Property is not set");
+        }
+
+        re=new RegExp("string","g");
+        if(re.global)
+        {
+            document.write("<br/>Global Property is set");
+        }
+        else{
+            document.write("<br/>Global Property is not set");
+        }
+
+
+        //ignoreCase
+        var re=new RegExp("string");
+
+        if(re.ignoreCase)
+        {
+            document.write("<br/>ignoreCase is set");
+        }
+        else{
+            document.write("<br/>ignoreCase is not set");
+        }
+
+        re=new RegExp("string","i");
+        if(re.ignoreCase){
+            document.write("<br/>ignorecase is set");
+        }
+        else{
+            document.write("<br/>ignoreCase is not set");
+        }
+
+        //lastIndex
+        var str="Javascript is an interesting scripting language";
+        var re=new RegExp("script","g");
+
+        re.test(str);
+        document.write("<br/>Current index : "+re.lastIndex);
+
+        re.test(str);
+        document.write("<br/>Current index : "+re.lastIndex);
+
+        //multiline
+        var re = new RegExp("string");
+
+        if(re.multiline){
+            document.write("<br/>multiline property is set");
+        }
+        else{
+            document.write("<br/>multiline property is not set");
+        }
+
+        re=new RegExp("string","m");
+        if(re.multiline){
+            document.write("<br/>multiline property is set");
+        }
+        else{
+            document.write("<br/>multiline property is not set");
+        }
+
+        //source
+        var str="Javascript is an interesting scripting language";
+        var re=new RegExp("script","g");
+
+        re.test(str);
+        document.write("<br/>Regular Expression is : "+re.source);
+        </script>
+    </body>
+</hmtl>

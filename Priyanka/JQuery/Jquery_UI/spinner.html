@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>spinner</title>
+        <link rel = "stylesheet" 
+         href = "//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>     
+        <script type="text/javascript" lang="javascript">        
+            $(function(){
+                var spinner=$("#spinner").spinner();
+                $("#disable").click(function(){
+                    if(spinner.spinner("option","disabled")){
+                        spinner.spinner("enable");
+                    }
+                    else{
+                        spinner.spinner("disable");
+                    }
+                });
+                $("#destroy").click(function(){
+                    if(spinner.spinner("instance")){
+                        spinner.spinner("destroy");
+                    }
+                    else{
+                        spinner.spinner();
+                    }
+                });
+
+                $( "#getvalue" ).click(function(){
+                    alert( spinner.spinner( "value" ) );
+                });
+				
+                $( "#setvalue" ).click(function() {
+                    spinner.spinner( "value", 5 );
+                });
+ 
+                $( "button" ).button();
+            });
+        </script>                
+    </head>
+    <body>
+       <input id="spinner" name="value">
+    </body>
+</html>

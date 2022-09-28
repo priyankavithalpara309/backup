@@ -1,0 +1,47 @@
+@import '../../assets/scss/variable.scss';
+
+.token_block{
+    padding: 130px 40px;
+}
+
+// .token_title{
+//     color: $white;
+// }
+
+.token_video{
+    width: 48%;    
+}
+
+.token_video img{
+    width: 100%;
+    position: relative;
+}
+
+.token_data{
+    width: 48%;    
+}
+
+.token_para{
+    margin-top: 11px;
+}
+
+.token_para2{
+    color: $gray;
+    margin-top: 28px
+}
+
+.store-img{
+    margin-top: 42px;
+}
+
+.google-play{
+    margin-right: 40px;
+}
+
+.store-img a:hover{
+    transform: translateY(-10%);    
+    transition: 0.2s ease-in;
+}
+
+
+@import '../../assets/scss/media.scss';

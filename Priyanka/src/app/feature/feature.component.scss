@@ -1,0 +1,65 @@
+@import '../../assets/scss/variable.scss';
+
+.feature_block {
+    padding: 30px 40px;
+    color: $white;
+}
+
+// .fea_title{
+//     color: $white;
+// }
+
+.features {
+    margin-top: 85px;
+}
+
+.left_fea {
+    width: 33.3%;
+}
+
+.right_fea {
+    width: 33.3%;
+}
+
+.mobile {
+    padding: 0 50px;
+    width: 33.3%;
+}
+
+.left_img {
+    margin-bottom: 22px;
+}
+
+.fea_para {
+    margin: 10px 0;
+}
+
+.left_fea {
+    animation: 3s ease-in-out slideleft;
+}
+
+.right_fea {
+    animation: 3s ease-in-out slideright;
+}
+
+@keyframes slideleft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideright {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@import '../../assets/scss/media.scss';

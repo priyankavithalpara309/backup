@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function data_frm(){
+                var email=document.form1.email.value;
+                a1=email.indexOf("@");
+                a2=email.lastIndexOf(".");
+
+                if(a1 < 1 || (a2 - a1 < 2)){
+                   //if(a1<1 || a2<a1+2 || a2+2>=email.length){
+                    alert("Please Enter Correct emailid");
+                    document.form1.email.focus();
+                    return false;
+                }
+                return (true);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="form1" onsubmit="return data_frm()">            
+            <table>
+                <tr>
+                    <td align="right">Email:</td>
+                    <td><input type="text" name="email"></td>                    
+                </tr>                
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="login"></td>
+                </tr>           
+        </form>
+    </body>
+</html>

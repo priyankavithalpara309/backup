@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>show method</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">        
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("div").hide(1000);
+                });
+                $("#show").click(function(){
+                    $("div").show(2000);
+                });
+            });
+        </script>
+        <style>
+            div{
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid white;
+                width: 200px;
+                height: 200px;
+                background-color: bisque;
+            }
+            button{
+                margin: 10px;
+            }
+        </style>
+    </head>    
+    <body>
+        <div>box</div>
+        <button id="hide">hide</button>
+        <button id="show">show</button>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    margin: 0 auto;    
+    font-family: Montserrat;            
+}
+.container {        
+    max-width: 1920px;
+    width: 100%;    
+    margin: 0 auto; 
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;    
+    align-items: center;    
+    margin-right: 60px;
+    margin-top: 61px;    
+}

@@ -1,0 +1,160 @@
+header,
+nav,
+main,
+footer{
+    margin: 0 auto;
+    width: 100%;         
+}
+
+header{
+    background-color: #002646;
+}
+
+nav{
+    background-color: #FFFFFF;
+}
+
+.header_container,
+.nav_container{
+    max-width: 1440px;    
+    margin: 0 auto;    
+    width: 100%;         
+}
+
+.header1{
+    width: 40%;
+    padding: 12px 0;
+}
+.header2{
+    width: 20%;
+    padding: 12px 0;
+}
+.header3{
+    width: 40%;
+    padding: 12px 0;
+    text-align: right;
+}
+
+.header1>ul>li>a,
+.header3>ul>li>a{
+    color: #FFFFFF;
+}
+
+.help{
+    padding-left: 50px;
+    padding-right: 26px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;    
+}
+
+.phone{
+    padding-right: 28px;        
+}
+
+.phone,
+.chat{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+}
+
+.img_align{
+    vertical-align: middle;
+}
+
+.p_white{
+    color: #FFFFFF;
+}
+
+.pipe{
+    color: #FFFFFF;
+    padding: 0 5px 0 5px;
+}
+
+.register{
+    padding-right: 50px;
+}
+
+.search_section,
+.menu_section{
+    width: 100%;
+}
+
+.logo{
+    padding: 17px 56px 18px 50px;
+}
+
+.search_box {    
+    background-color: #E6E9EF;    
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    margin: 19px 24px 21px 0;
+    width: 56%;
+    flex: 10%;
+}
+
+.search {
+    width: 80%;    
+    border: none;
+    padding: 16px 0 16px 22px;
+    background-color: #E6E9EF;    
+    font-size: 15px;    
+    font-weight: 400;    
+    outline: none;   
+}
+
+.search_icon{    
+    font-size: 15px;            
+    text-align: center;        
+    cursor: pointer;
+    padding: 16px 20px 16px 0;    
+}
+
+.cart{
+    margin: 19px 50px 21px 0;
+}
+
+.btn_p{
+    padding: 13px 29px;
+}
+
+.cart_box{    
+    margin-left: 24px;        
+    padding: 6px 16px 11px 21px;
+    background-color: #FFFFFF;;
+    border: 1px solid #002646;
+    transition: all 0.2s linear;        
+    border-radius: 4px;      
+    text-align: center;
+}
+
+.quote_img{
+    padding-right: 11px;
+}
+
+.menu_section{
+    border-top:1px solid #E6E9EF;
+    border-bottom:1px solid #E6E9EF;
+}
+
+.main-nav{
+    display:flex;     
+    position: relative;     
+}
+
+.main-nav > li{
+    flex: 10%;
+    display: inline-block;    
+    border-left: 1px solid #E6E9EF;
+}
+
+.main-nav > li:first-child{
+    border-left: none;
+}
+
+
+
+
+  

@@ -1,0 +1,102 @@
+@import '../../assets/scss/variable.scss';
+
+.footer{
+    background-color: $footer-bg-color;
+}
+
+.footer_block{
+    padding: 110px 40px;    
+}
+
+.f-col-1{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-logo img{
+    height: 27px;
+}
+
+.footer-logo,
+.f-para{
+    margin-bottom: 45px;
+}
+
+.f-para,.f-para1{
+    color: $gray;
+}
+
+.f-social-icon{
+    margin-bottom: 45px;
+}
+
+.f-social-icon .fa-brands{
+    color: $gray;
+    margin-right: 15px;
+}
+
+.f-social-icon .fa-brands:hover{
+    color: $lightGreen;
+}
+
+.f-col-1 h5{
+    margin-bottom: 10px;
+}
+
+.footer-menu li{  
+    font-size: 14px;  
+    padding: 6px 0; 
+}
+
+.footer-menu li a{
+    color: $gray;
+}
+
+.footer-menu li a:hover{
+    color: $lightGreen;
+}
+
+.input_sec{
+    position: relative;
+}
+
+.e-mail{
+    position: relative;
+    width: 100%;
+    background-color: #171819;
+    border: 1px solid #333435;
+    color: #e7e7e7;    
+    padding: 17px 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.submit{
+    color: $white;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+
+.submit:hover{
+    transform: translateX(20%);    
+    transition: 0.2s ease-in;
+}
+
+.footer_block2{
+    padding: 10px 40px;    
+}
+
+.footer_block2 div{
+    border-top: 1px solid $gray;
+    padding: 15px 0;
+}
+
+.copyright{
+    color: $gray;
+}
+
+.copyright a{
+    color: $lightGreen;
+}
+@import '../../assets/scss/media.scss';

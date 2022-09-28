@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>toggle method</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">        
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("div").toggle(1000);
+                });
+            });
+        </script>
+        <style>
+            div{
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid black;
+                height: 100px;                
+                width: 100px;
+                background-color: beige;                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">box</div>
+        <button>Toggle me</button>
+    </body>
+</html>

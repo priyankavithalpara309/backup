@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript" lang="javascript">
+            function mydata(nm,age){
+                /*alert("name is : "+ name +" age is : "+age);*/
+                var name = nm;
+                var age = age;
+                document.write(name + "<br>");
+                document.write(age);
+                
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="Enter your name" id="nm"><br><br><br>
+            <input type="number" placeholder="Enter Your Age" id="age"><br><br><br>
+            <input type="submit" onclick="mydata(document.getElementById('nm').value,document.getElementById('age').value)">
+            <!-- <button type="submit" onclick="mydata('abc',21)">submit</button> -->
+        </form>
+    </body>
+</html>

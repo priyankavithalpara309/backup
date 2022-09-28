@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script>           
+            function password1()
+            {
+                var pass1=document.form2.pass1.value;
+                var pass2=document.form2.pass2.value;
+                if(pass1==pass2)
+                {
+                    return true;
+                }
+                else{
+                    alert("Password must be same...");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body style="margin: 50px;">
+        <!-- <form name="form1" onsubmit="return validatefrm()">            
+            <table>
+                <tr>
+                    <td align="right">Name:</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td align="right">Password:</td>
+                    <td><input type="password" name="pass"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="login"></td>
+                </tr>           
+        </form><br><br><br>
+         -->
+        <form name="form2" onsubmit="return password1()">                       
+            <table>                
+                <tr>
+                    <td align="right">Password:</td>
+                    <td><input type="password" name="pass1"></td>
+                </tr>
+                <tr>
+                    <td align="right">Re-enter Password:</td>
+                    <td><input type="password" name="pass2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="comform"></td>
+                </tr>           
+        </form>
+    </body>
+</html>

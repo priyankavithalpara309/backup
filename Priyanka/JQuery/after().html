@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM after method</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">
+            
+            /*$(document).ready(function(){
+                $("button").click(function(){
+                    $(".inner").after("<p>abc</p>"); 
+                });                
+            });*/
+
+            // The after() and insertAfter() methods perform the same task. The major difference is in the syntax-specifically, in the placement of the content and target.
+
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("<p>xyz</p>").insertAfter(".inner");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>jQuery after() method</h2>
+            <div class="inner">Hello</div>
+            <div class="inner">Goodbye</div>
+        </div><br>
+        <button>Add text</button>
+    </body>
+</html>

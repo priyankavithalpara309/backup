@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>button</title>
+        <link rel = "stylesheet" 
+         href = "//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>     
+        <script type="text/javascript" lang="javascript">        
+            $(function(){
+                $("input[type=submit],a,button")
+                .button()
+                .click(function(event){
+                    event.preventDefault();
+                });
+            });
+        </script>        
+    </head>
+    <body>
+       <button>button</button>
+       <input type="submit" value="submit button"/>
+       <a href="#">anchor button</a>
+    </body>
+</html>

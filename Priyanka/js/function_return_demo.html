@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script type="text/javascript" lang="javascript">
+            function first(){
+                var sum = f1 + f2;
+                return(sum);
+            }
+            function second(f1,f2){
+                var nm = first();
+                alert(nm);
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="Enter your first value" id="f1"><br><br><br>
+            <input type="text" placeholder="Enter Your second value" id="f2"><br><br><br>
+            <input type="submit" onclick="second(document.getElementById('f1').value,document.getElementById('f2').value)">
+        </form>
+    </body>
+</html>

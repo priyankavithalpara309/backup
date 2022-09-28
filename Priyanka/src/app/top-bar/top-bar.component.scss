@@ -1,0 +1,69 @@
+@import "../../assets/scss/variable.scss";
+
+// .wrapper_top {    
+// }
+
+.scroll {
+    // position: relative;
+    // width: 100%;                
+    color: $top_bar-color;
+    background-color: $black;
+    font-size: 13px;
+    font-weight: $f_500;
+    overflow: hidden;
+    z-index: 1;
+    // margin: 0;
+    // padding: 0;    
+}
+
+.m-scroll:hover{
+    animation-play-state: paused;
+}
+
+.m-scroll{        
+    white-space: nowrap;
+    animation: scrollText 15s infinite linear;        
+    padding: 14px 0;    
+}
+
+@keyframes scrollText {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-62%);
+    }
+}
+
+.price_data{
+    padding: 0 25px;
+}
+
+.coine_img{
+    margin-right: 9px;
+}
+
+.coine_img img{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.coine_name{
+    margin-right: 12px;
+}
+
+.coine_rate{
+    margin-right: 9px;
+}
+
+.down_red{
+    color: $red;    
+}
+
+.rate_change{
+    font-weight: $f_600;
+    color: $white;
+}
+
+@import '../../assets/scss/media.scss';

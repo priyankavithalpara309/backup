@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>autocomplete</title>
+        <link rel = "stylesheet" 
+         href = "//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>     
+        <script type="text/javascript" lang="javascript">        
+            $(function(){
+                var availableTags=[
+                "ActionScript",
+               "AppleScript",
+               "Asp",
+               "BASIC",
+               "C",
+               "C++",
+               "Clojure",
+               "COBOL",
+               "ColdFusion",
+               "Erlang",
+               "Fortran",
+               "Groovy",
+               "Haskell",
+               "Java",
+               "JavaScript",
+               "Lisp",
+               "Perl",
+               "PHP",
+               "Python",
+               "Ruby",
+               "Scala",
+               "Scheme"
+                ];           
+
+            $("input").autocomplete({
+                source:availableTags
+            });
+        });
+        </script>        
+    </head>
+    <body>
+       <div class="ui-widget">
+            <input type="text" id="input"/>
+       </div>
+    </body>
+</html>

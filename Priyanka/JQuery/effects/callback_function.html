@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>callback function</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">        
+            $(document).ready(function(){
+                $("div").click(function(){
+                    $(this).hide(1000,function(){//callback function
+                        alert("I am hidding");
+                    });
+                });
+            });
+        </script>        
+    </head>
+    <body>       
+       <div>Hide me</div>
+       <div>Hide me</div>
+       <div>Hide me</div>       
+    </body>
+</html>

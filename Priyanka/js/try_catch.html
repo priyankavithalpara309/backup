@@ -1,0 +1,22 @@
+
+<hmtl>
+    <body>
+        <script type="text/javascript">
+            function myfunction(){
+                var a = 100;
+                try{
+                    alert("Value of variable is : "+a);
+                }
+                catch(ex){
+                    alert("Error : "+ex.description)
+                }
+                finally{
+                    alert("this block is always executed");
+                }
+            }
+        </script>
+        <form>
+            <input type="button" value="Click here" onclick="myfunction();">
+        </form>
+    </body>
+</hmtl>

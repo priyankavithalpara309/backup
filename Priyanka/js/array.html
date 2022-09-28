@@ -1,0 +1,32 @@
+<html>    
+    <body>
+        <script type="text/javascript">
+            var fruits=["apple","mango","orange"];
+            for(i=0;i<fruits.length;i++){
+                document.write(fruits[i]+"<br/>");
+            }
+            document.write("<br/>");
+
+            //array with new keyword
+            var emp=new Array();
+            emp[0]="abc";
+            emp[1]="xyz";
+            emp[2]="pqr";
+
+            for(i=0;i<emp.length;i++)
+            {
+                document.write(emp[i]+"<br/>");
+            }
+            document.write("<br/>");
+
+            //array with constructor 
+            var city=new Array("rajkot","surat","pune");
+            for(i=0;i<city.length;i++)
+            {
+                document.write(city[i]+"<br/>");
+            }
+
+            document.write("Array length : "+city.length);
+        </script>
+    </body>
+</html>

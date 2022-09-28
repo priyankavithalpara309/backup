@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>val method example</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>               
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    alert("Name is : "+$("#name").val());
+                });
+                $("#b2").click(function(){
+                    alert("Class is : "+$("#class").val());
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="name" value="abc"/><br/>
+        <input type="text" id="class" value="12th"/><br/>
+
+        <button id="b1">get name</button>
+        <button id="b2">get class</button>
+    </body>
+</html>

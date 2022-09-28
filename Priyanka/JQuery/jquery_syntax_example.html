@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery syntax</title>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>       
+    <script>
+        $(document).ready(function(){
+            $("p").hide();
+            $("div").css("color","blue");
+            $(".pink").css("color","pink");
+            $("#test1").css("font-size","30px");
+            $("button").css("color","red");
+        });
+
+        /*
+            $(document).ready(function(){
+                jQuery("p").hide();
+            });
+        */
+    </script>
+    </head>
+    <body>
+        <h1>jQuery basic syntax</h1>
+        <p>this is p tag</p>
+        <p>this is another p tag</p>
+        <span>this is span tag</span>
+        <div>this is div tag</div>
+        <div class="pink">this is second div</div>
+        <div id="test1">selector using id</div>
+        <button>click</button>
+    </body>
+</html>

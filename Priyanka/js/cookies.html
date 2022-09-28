@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script type="text/javascript" lang="javascript">
+            function cookies(){
+                if(document.myform.nm.value=="")
+                {
+                    alert("enter some data...");
+                    return;
+                }
+                cookies_value=escape(document.myform.nm.value)+";";
+                document.cookie="name="+cookies_value;
+                document.write("cookies name :" + cookies_value);
+            }
+
+        </script>
+    </head>
+    <body>
+        <form name="myform">
+            <input type="text" name="nm">
+            <input type="button" value="set cookies" onclick="cookies();">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>get standard attribute</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    alert("href : "+$("#home").attr("href"));
+                    alert("title : "+$("#home").attr("title"));
+                });
+            });
+        </script>        
+    </head>
+    <body>        
+        <p>click the button to see the result</p>
+        <p><a href="index.html" id="home" title="this is home pg" >home</a></p>
+        <button>get attribute</button>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+@import '../../assets/scss/variable.scss';
+
+.our_team{
+    padding: 149px 40px 50px;
+}
+
+// .team_title{
+//     color: $white;
+// }
+
+.team_data_block {
+    padding: 50px 0;
+    width: 100%;
+}
+
+.team_data{
+    width: 25%;
+    padding: 40px 40px;
+}
+
+.t_name{
+    margin-top: 18px;
+    color: $white;
+}
+
+.t_name:hover{
+    color: $lightGreen;
+}
+
+.t_position{
+    color: $lightGreen;
+}
+
+.team_data div img{
+    width: 100%;
+}
+
+.team_para{
+    margin: 33px 0;
+    color: $white;
+}
+@import '../../assets/scss/media.scss';

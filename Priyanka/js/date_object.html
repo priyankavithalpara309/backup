@@ -1,0 +1,181 @@
+<html>    
+    <body>
+        <script type="text/javascript">
+            //Date()
+            var dt = Date();
+            document.write("Date and time : "+ dt);
+
+            //getDate()
+            var d1= new Date();
+            document.write("<br/>getDate : " + d1.getDate());
+
+            //getDay()
+            var d1=new Date();
+            document.write("<br/>getDay : " + d1.getDay());
+
+            //getFullYear()
+            document.write("<br/>getFullYear : "+ d1.getFullYear());
+
+            //getHours()
+            document.write("<br/>getHours : "+ d1.getHours());
+
+            //getMilliseconds()
+            document.write("<br/>getMilliseconds : "+ d1.getMilliseconds());
+
+            //getMinutes()
+            document.write("<br/>getMinutes : "+ d1.getMinutes());
+
+            //getMonth()
+            document.write("<br/>getMonth : "+ d1.getMonth());
+
+            //getSecond()
+            document.write("<br/>getSecond : "+ d1.getSeconds());
+
+            //getTime()
+            document.write("<br/>getTime : "+d1.getTime());
+
+            //getTimezoneOffSet()
+            document.write("<br/>getTimezoneOffSet : "+d1.getTimezoneOffset());
+
+            //getUTCDate()
+            document.write("<br/>getUTCDate : "+d1.getUTCDate());
+
+            //getUTCDay()
+            document.write("<br/>getUTCDay : "+d1.getUTCDay());
+
+            //getUTCFullYear()
+            document.write("<br/>getUTCFullYear : "+ d1.getUTCFullYear());
+
+            //getUTCHours()            
+            document.write("<br/>getUTCHours : "+ d1.getUTCHours());
+
+            //getUTCMilliseconds()
+            document.write("<br/>getUTCMilliseconds : "+ d1.getUTCMilliseconds());
+
+            //getUTCMinutes()
+            document.write("<br/>getUTCMinutes : "+ d1.getUTCMinutes());
+
+            //getUTCMonth()
+            document.write("<br/>getUTCMonth : "+ d1.getUTCMonth());
+
+            //getUTCSecond()
+            document.write("<br/>getUTCSecond : "+ d1.getUTCSeconds());
+
+            //getYear()
+            document.write("<br/>getYear : "+ d1.getYear());
+
+            //setDate()
+            var d2 = new Date("<br/>Aug 28, 2008 23:30:00");
+            d2.setDate(25);
+            document.write("<br/>"+d2);
+
+            //setFullYear()
+            d2.setFullYear(2000);
+            document.write("<br/>"+d2);
+
+            //setHours()
+            d2.setHours(2);
+            document.write("<br/>"+d2);
+
+            //setMillisecond()
+            d2.setMilliseconds(3012);
+            document.write("<br/>"+d2);
+
+            //setMinutes()
+            d2.setMinutes(10);
+            document.write("<br/>"+d2);
+
+            //setMonth()
+            d2.setMonth(4);
+            document.write("<br/>"+d2);
+
+            //setSeconds()
+            d2.setSeconds(11);
+            document.write("<br/>"+d2);
+
+            //setTime()
+            d2.setTime(5000000);
+            document.write("<br/>"+d2);
+
+            //setUTCDate()
+            d2.setUTCDate(20);
+            document.write("<br/>"+d2);
+
+            //setUTCFullYear()
+            d2.setUTCFullYear(2006);
+            document.write("<br/>"+d2);
+
+            //setUTCHours()
+            d2.setUTCHours(6);
+            document.write("<br/>"+d2);
+
+            //setUTCMilliseconds()
+            d2.setUTCMilliseconds(3120);
+            document.write("<br/>"+d2);
+
+            //setUTCMinutes()
+            d2.setUTCMinutes(66);
+            document.write("<br/>"+d2);
+
+            //setUTCMonth()
+            d2.setUTCMonth(2);
+            document.write("<br/>"+d2);
+
+            //setUTCSeconds()
+            d2.setUTCSeconds(66);
+            document.write("<br/>"+d2);
+
+            //setYear()
+            d2.setYear(2020);
+            document.write("<br/>"+d2);
+
+            //toDateString()
+            var d2 = new Date(1993, 6, 12, 19, 39, 7);
+            document.write("<br/>"+d2.toDateString());
+
+            //toGMTString()
+            document.write("<br/>"+d2.toGMTString());
+
+            //toLocaleDateString()
+            document.write("<br/>"+d2.toLocaleDateString());
+
+            //toLocalFormat() does'n compatible           
+           // document.write("<br/>"+d2.toLocaleFormat("%A, %B %e, %Y"));
+
+            //toLocalString()
+            var d2 = new Date(1993, 6, 12, 19, 39, 7);
+            document.write("<br/>"+d2.toLocaleString());
+
+            //toLocalTimeString()
+            document.write("<br/>"+d2.toLocaleTimeString());
+
+            //toSource()
+            //document.write("<br/>"+d2.toSource());
+
+            //toString()
+            var d3 = new Date(1993, 6, 12, 14, 39, 7);
+            document.write("<br/>"+d3.toString());
+
+            //toTimeString()
+            document.write("<br/>"+d3.toTimeString());
+
+            //toUTCString()
+            document.write("<br/>"+d3.toUTCString());
+
+            //valueOF()
+            document.write("<br/>"+d3.valueOf());
+
+
+            /* Date Static Methods*/
+
+            //Date.parse()
+            var d1=new Date.parse("Aug 28, 2008 23:30:00");
+            document.write("<br/> date Parse"+d1);
+
+            //Date.UTC
+            var d1=new Date.UTC(2008,9,6);
+            document.write("<br/> date UTC : "+d1);
+        </script>
+    </body>
+</html>
+    

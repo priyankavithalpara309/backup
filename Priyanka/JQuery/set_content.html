@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>set content</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>               
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("#text").click(function(){
+                    $("p").text("this is set <b>content</b>...");
+                });
+                $("#html").click(function(){
+                    $("p").html("this is set <b>content</b>...");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Click on any of the two buttons to see the result</p>
+        <button id="text">set name</button>
+        <button id="html">set class</button>
+    </body>
+</html>

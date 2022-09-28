@@ -1,0 +1,42 @@
+@import '../../assets/scss/variable.scss';
+
+.partners_block{
+    background: url(../../assets/images/logo_bg.jpg);
+    // background-position: 50% -110px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.partners{
+    padding: 60px 40px;
+}
+
+// .title{
+//     color: $white;
+// }
+
+.logos{
+    padding: 20px 20px;
+
+}
+
+.logo-img{
+    position: relative;
+}
+
+.logos a:hover .h-logo-img{
+    display: inline-block;
+}
+
+.h-logo-img{
+    display: none;
+    position: absolute;    
+}
+
+.logos a{
+    width: 25%;    
+}
+
+@import '../../assets/scss/media.scss';

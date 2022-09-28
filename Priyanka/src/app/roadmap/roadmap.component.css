@@ -1,0 +1,162 @@
+.roadmap_section {
+  padding: 102px 30px;
+  position: relative;
+}
+
+.roadmap_title h3 {
+  color: #ffffff;
+}
+
+.chart_block {
+  padding: 108px 0;
+  width: 100%;
+}
+
+/****/
+#box1 {
+  background: url("../../assets/images/h1-img-4.png");
+}
+
+#box2 {
+  background: url("../../assets/images/h1-img-5.png");
+}
+
+#box3 {
+  background: url("../../assets/images/h1-img-6.png");
+}
+
+#box4 {
+  background: url("../../assets/images/h1-img-2.png");
+}
+
+#box5 {
+  background: url("../../assets/images/h1-img-3.png");
+}
+
+.chart_box {
+  width: 20%;
+  color: #ffffff;
+  padding: 25px 35px 27px;
+  transition: transform 0.25s ease-in-out 0.4s, opacity 0.25s ease-in-out 0.4s;
+  opacity: 1;
+  transform: translateY(0px);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.v_line {
+  background-color: #505050;
+  width: 3px;
+  height: 70px;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.v_data {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.circle {
+  position: absolute;
+  z-index: 100;
+  margin-top: 72px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #888;
+  box-shadow: inset 0 0 0 6px #aceb2f;
+}
+
+#circle1 {
+  left: 9.9%;
+}
+
+#circle2 {
+  left: 30.5%;
+}
+
+#circle4 {
+  right: 30.8%;
+}
+
+#circle5 {
+  right: 10%;
+}
+
+.h_line {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  border: 2px solid #aceb2f;
+}
+
+.chart_h_line {
+  position: relative;
+}
+
+.chart_h_line .fa-angle-left,
+.chart_h_line .fa-angle-right {
+  position: absolute;
+  color: #aceb2f;
+  font-size: 30px;
+  top: -12px;
+}
+
+.chart_h_line .fa-angle-right {
+  right: 0;
+}
+
+.chart_title {
+  padding-bottom: 14px;
+}
+
+/* 1600 view*/
+/* 1440 view*/
+/* 1366 view*/
+/* 1280 view*/
+@media only screen and (max-width: 1365px) {
+  .adv_data {
+    width: 25%;
+  }
+}
+/* iPad 1024 (Landscape) view*/
+@media only screen and (max-width: 1199px) {
+  .menu ul li a {
+    padding: 0 15px;
+  }
+}
+/* iPad 768 (portrait) view*/
+@media only screen and (max-width: 1023px) {
+  .wrapper_top {
+    display: none;
+  }
+  .team_data,
+.adv_data {
+    width: 33.3%;
+    padding: 20px 20px;
+  }
+}
+/* iPad 768 (portrait) view*/
+/*/ iPhone-6 plus 736 (Landscape) view /*/
+@media only screen and (max-width: 767px) {
+  .team_data,
+.adv_data {
+    width: 50%;
+  }
+}
+/*/ iPhone-6 667 (Landscape) view /*/
+/*/ iPhone-5 568 (Landscape) view /*/
+@media only screen and (max-width: 666px) {
+  .team_data,
+.adv_data {
+    width: 100%;
+  }
+}
+/*/ iPhone-4 480 (Landscape) view /*/
+/*/ iPhone-6 plus 414 (portrait) view /*/
+/*/ iPhone-6 375 (portrait) view /*/
+/*/ iPhone-4 320 (portrait) view /*//*# sourceMappingURL=roadmap.component.css.map */

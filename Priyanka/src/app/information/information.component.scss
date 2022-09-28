@@ -1,0 +1,48 @@
+@import "../../assets/scss/variable.scss";
+
+.info_section{
+    padding: 66px 40px;    
+}
+
+.info_title{
+    color: $white;
+    margin-top: 14px;
+}
+
+.info_data{
+    color: $gray;  
+    margin-top: 19px;  
+}
+
+.first_data,
+.second_data,
+.third_data{
+    width: 25%;
+}
+
+.first_data{
+    transform: translateY(0px);
+    // opacity: 1;
+    animation: 2s ease-out slideup;    
+    // transition: transform 0.5s cubic-bezier(0.18, 0.89, 0.32, 1) 0.2s, opacity 0.3s ease 0.2s;
+}
+
+.second_data{
+    animation: 3s ease-out slideup;
+}
+
+.third_data{
+    animation: 4s ease-out slideup;
+}
+
+
+@keyframes slideup {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+@import "../../assets/scss/media.scss";

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dialog</title>
+        <link rel = "stylesheet" 
+         href = "//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>     
+        <script type="text/javascript" lang="javascript">        
+            $(function(){
+              $("#menu").menu();
+            });
+        </script>        
+        <style>
+            .ui-menu{width: 150px};
+        </style>
+    </head>
+    <body>
+       <ul id="menu">
+        <li class = "ui-state-disabled">Team</li>
+        <li>Gopal K verma</li>
+        <li>Omer</li>
+        <li>Khaleel</li>           
+        <li>Prasanth           
+           <ul>
+              <li class = "ui-state-disabled">Krishna</li>
+              <li>Raju</li>
+              <li>Sairamkrishna </li>
+           </ul>               
+        </li>           
+        <li>Vineeth</li>
+       </ul>     
+    </body>
+</html>

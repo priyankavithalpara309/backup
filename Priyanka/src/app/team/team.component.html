@@ -1,0 +1,171 @@
+<div class="container">
+    <div class="our_team">
+        <div class="text-center">
+            <h2 class="white_color">Our Team</h2>
+            <span class="line"></span>
+        </div>
+        <div class="team_data_block">
+            <div class="d-flex">
+                <div class="team_data d-flex f-col" *ngFor="let team1 of team1">
+                    <div class="d-flex f-col align-items-center">
+                        <div class="t_img">
+                            <img src="../../assets/images/{{team1.team_img1}}">
+                            <div class="social_media">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                            </div>
+                        </div>                        
+                        <a href="#" class="text-center">
+                            <h5 class="t_name">{{team1.t_name1}}</h5>
+                            <h6 class="t_position">{{team1.t_position1}}</h6>
+                        </a>
+                    </div>
+                    <div class="team_para text-center">
+                        <p>{{team1.t_para1}}</p>
+                    </div>
+                </div>
+                <!-- <div class="team_data d-flex f-col">
+                    <div class="d-flex f-col align-items-center">
+                        <a href="#" class="t_img">
+                            <img src="../../assets/images/team-img-2.png">
+                        </a>
+                        <div class="social_media">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-skype"></i></a>
+                        </div>
+                        <a href="#" class="text-center">
+                            <h5 class="t_name">Paul Ward</h5>
+                            <h6 class="t_position">Chief Operational Officer</h6>
+                        </a>
+                    </div>
+                    <div class="team_para text-center">
+                        <p>Aliquam lorem ante, dapibus in, vive quis, feugiat a, tellus. Phase llus viver nulla ut metus
+                            varius</p>
+                    </div>
+                </div>
+                <div class="team_data d-flex f-col">
+                    <div class="d-flex f-col align-items-center">
+                        <a href="#" class="t_img">
+                            <img src="../../assets/images/team-img-3.png">
+                        </a>
+                        <div class="social_media">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-skype"></i></a>
+                        </div>
+                        <a href="#" class="text-center">
+                            <h5 class="t_name">Walter Perry</h5>
+                            <h6 class="t_position">Lead Software Developer</h6>
+                        </a>
+                    </div>
+                    <div class="team_para text-center">
+                        <p>Aliquam lorem ante, dapibus in, vive quis, feugiat a, tellus. Phase llus viver nulla ut metus
+                            varius</p>
+                    </div>
+                </div>
+                <div class="team_data d-flex f-col">
+                    <div class="d-flex f-col align-items-center">
+                        <a href="#" class="t_img">
+                            <img src="../../assets/images/team-img-4.png">
+                        </a>
+                        <div class="social_media">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-skype"></i></a>
+                        </div>
+                        <a href="#" class="text-center">
+                            <h5 class="t_name">Gregory Silva</h5>
+                            <h6 class="t_position">Software Architect</h6>
+                        </a>
+                    </div>
+                    <div class="team_para text-center">
+                        <p>Aliquam lorem ante, dapibus in, vive quis, feugiat a, tellus. Phase llus viver nulla ut metus
+                            varius</p>
+                    </div>
+                </div>
+                <div class="team_data d-flex f-col">
+                    <div class="d-flex f-col align-items-center">
+                        <a href="#" class="t_img">
+                            <img src="../../assets/images/team-img-5.png">
+                        </a>
+                        <div class="social_media">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-skype"></i></a>
+                        </div>
+                        <a href="#" class="text-center">
+                            <h5 class="t_name">Patrick Richardson</h5>
+                            <h6 class="t_position">Chief Operational Officer</h6>
+                        </a>
+                    </div>
+                    <div class="team_para text-center">
+                        <p>Aliquam lorem ante, dapibus in, vive quis, feugiat a, tellus. Phase llus viver nulla ut metus
+                            varius</p>
+                    </div>
+                </div>
+                <div class="team_data d-flex f-col">
+                    <div class="d-flex f-col align-items-center">
+                        <a href="#" class="t_img">
+                            <img src="../../assets/images/team-img-6.png">
+                        </a>
+                        <div class="social_media">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-skype"></i></a>
+                        </div>
+                        <a href="#" class="text-center">
+                            <h5 class="t_name">Jeffrey Payne</h5>
+                            <h6 class="t_position">Founder & CEO</h6>
+                        </a>
+                    </div>
+                    <div class="team_para text-center">
+                        <p>Aliquam lorem ante, dapibus in, vive quis, feugiat a, tellus. Phase llus viver nulla ut metus
+                            varius</p>
+                    </div>
+                </div>
+                <div class="team_data d-flex f-col">
+                    <div class="d-flex f-col align-items-center">
+                        <a href="#" class="t_img">
+                            <img src="../../assets/images/team-img-7.png">
+                        </a>
+                        <div class="social_media">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-skype"></i></a>
+                        </div>
+                        <a href="#" class="text-center">
+                            <h5 class="t_name">Jean Parker</h5>
+                            <h6 class="t_position">Software Architect</h6>
+                        </a>
+                    </div>
+                    <div class="team_para text-center">
+                        <p>Aliquam lorem ante, dapibus in, vive quis, feugiat a, tellus. Phase llus viver nulla ut metus
+                            varius</p>
+                    </div>
+                </div>
+                <div class="team_data d-flex f-col">
+                    <div class="d-flex f-col align-items-center">
+                        <a href="#" class="t_img">
+                            <img src="../../assets/images/team-img-8.png">
+                        </a>
+                        <div class="social_media">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-skype"></i></a>
+                        </div>
+                        <a href="#" class="text-center">
+                            <h5 class="t_name">Samantha Andrews</h5>
+                            <h6 class="t_position">Lead Software Developer</h6>
+                        </a>
+                    </div>
+                    <div class="team_para text-center">
+                        <p>Aliquam lorem ante, dapibus in, vive quis, feugiat a, tellus. Phase llus viver nulla ut metus
+                            varius</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>

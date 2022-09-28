@@ -1,0 +1,250 @@
+
+/* 1600 view*/
+@media only screen and (max-width:1919px){
+
+}
+
+/* 1440 view*/
+@media only screen and (max-width:1599px){
+    
+}
+
+/* 1366 view*/
+@media only screen and (max-width:1439px){
+
+}
+
+/* iPad 1024 (Landscape) view*/
+@media only screen and (max-width:1199px) {
+
+    .logo{
+        margin-right: 50px;
+    }
+    
+    .slider{
+        width: 45%;
+        margin: 15px 20px 0 39px;
+    }
+
+    .search_icon{
+        padding: 15px 10px 15px 10px;
+    }
+    .cover{
+        width: 90%;
+    }
+    .child{
+        flex-wrap: nowrap;
+    }
+    .search{
+        padding-right: 0;        
+        flex-wrap: nowrap;
+        width: 300px;
+    }
+    .filtres{
+        margin: 30px 10px 30px 5px;
+    }
+}
+
+@media only screen and (max-width:1084px) {
+    .search{     
+        width: 220px;
+    }
+    .cover{
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+/* iPad 768 (portrait) view*/
+@media only screen and (max-width: 1023px) {
+
+    .rcorners{
+        display: none;
+    }
+
+    .footer_section{
+        flex-wrap: nowrap;
+    }
+
+    .bottom1{
+        margin: 0 55px 0 35px;
+    }
+    .bottom2,
+    .insta{
+        margin-right: 20px;
+    }    
+} 
+
+/*/ iPhone-6 plus 736 (Landscape) view /*/
+@media only screen and (max-width: 767px) {
+    .header,
+    .slider,
+    .ml-40{
+        margin-left: 20px;
+    }
+    
+    .search{     
+        width: 180px;
+    }
+
+    .bottom2 > ul > li,
+    .bottom3 > ul > li{
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+/*/ iPhone-6 667 (Landscape) view /*/
+@media only screen and (max-width: 666px) {
+    .search{     
+        width: 220px;
+    }
+}
+
+
+/*/ iPhone-4 480 (Landscape) view /*/
+@media only screen and (max-width: 567px) {
+        .bottom1{
+            margin: 0 15px 0 10px;
+        }
+        .insta,
+        .bottom2{
+            margin-right: 10px;
+        }        
+}
+
+
+/*/ iPhone-6 plus 414 (portrait) view /*/
+@media only screen and (max-width: 479px) {
+    .bottom1{
+        display: none;
+    }
+}
+
+
+/*iPhone 8-21*/
+@media only screen and (max-width: 375px) {
+    .header {        
+        justify-content: space-between;        
+    }
+    .logo{
+        margin: 15px;
+    }
+    .user,
+    .menu_section,
+    .slider_menu{        
+        display: block;
+    }
+
+    .slider_menu{
+        margin-left: 12px;
+    }
+
+    .main_section{
+        padding-bottom: 53px;
+    }
+
+    .previous1,
+    .next1{
+        font-size: 12px;
+        padding: 9px 11px;
+    }
+
+    .rcorners,
+    .connecter,
+    .pipe,
+    .search_box,
+    .filtres_text,
+    .slider,
+    .menu_item1,
+    .bottom1,
+    #card_section1,
+    #card_section2{
+        display: none;
+    }
+
+    
+    .cart_icon{
+        margin-left: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .delivery_icon1{
+        padding-left: 10.9px;        
+    }    
+
+    .header_text{
+        text-align: left;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .span{
+        height: 73px;
+        border-left: 1px solid rgba(15, 81, 118, 0.1);        
+    }
+    .search{   
+    width: 100%;     
+    padding-right: 5px;    
+    padding-left: 5px;
+    border-radius: 50px;
+    margin:0;            
+    }
+
+    .filtres{
+        margin: 0 20px 0 10px;        
+    }
+
+    .filtres_img{
+        padding: 15px;       
+
+    }    
+
+    .ml-40{
+        margin-left: 15px;
+    }
+
+    .card{
+        max-width: 345px;        
+    }    
+
+    .delivery_icon{
+        padding-left: 15px;
+    }
+
+    .footer_section{
+        padding-top: 40px;
+        padding-bottom: 60.16px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bottom2,
+    .bottom3{
+        text-align: center;
+        margin: 0;
+    }
+    .bottom2{
+        margin-bottom: 25px;
+    }
+
+    .bottom4{
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .fb{
+        margin-left: 20.71;
+    }
+    .insta{
+        margin: 0;
+    }
+    .copyright_text{
+        font-size: 12px;
+        line-height: 14.4px;
+    }
+}

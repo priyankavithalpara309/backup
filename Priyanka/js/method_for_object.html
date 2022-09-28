@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript" lang="javascript">
+
+            function emp(id,name,salary){
+                this.id=id;
+                this.name=name;
+                this.salary=salary;
+
+                this.changeSalary=changeSalary;// Assign that method as property.
+
+                // Define a function which will work as a method
+                function changeSalary(salary1){
+                    this.salary=salary1;
+                }
+            }            
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+           e=new emp(1,"xyz",30000);
+           document.write(e.id+" "+e.name+" "+e.salary);
+           e.changeSalary(45000);
+            document.write("<br/>"+e.id+" "+e.name+" "+e.salary);
+        </script>
+    </body>
+</html>

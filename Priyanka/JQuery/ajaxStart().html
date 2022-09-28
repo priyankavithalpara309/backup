@@ -1,0 +1,43 @@
+<!--The ajaxStart( callback ) method attaches a function to be executed whenever an AJAX request begins and there is none already active. This is an Ajax Event.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery ajax start</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>       
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                //Global variable
+                var count = 0;
+                $("#driver").click(function(event){
+                    $('#stage1').load('result.html');
+                });
+
+                //Gets called when request starts
+
+                $(document).ajaxStart(function(){
+                    count++;
+                    $("#stage2").html("<h1>Starts, Count :"+count+"</h1>");
+                });
+
+                //Gets called when request complete
+                $(document).ajaxComplete(function(event,request,set){
+                    count++;
+                    $("#stage3").html("<h1>Completes, Count :"+count+"</h1>");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="stage1" style="background-color: lightblue;">
+            STAGE -1
+        </div>
+        <div id="stage2" style="background-color: lightblue;">
+            STAGE -2
+        </div>
+        <div id="stage3" style="background-color: lightblue;">
+            STAGE -3
+        </div>
+
+        <input type="button" id="driver" value="Load Data">
+    </body>
+</html>

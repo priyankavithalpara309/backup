@@ -1,0 +1,28 @@
+<!--The ajaxComplete( callback ) method attaches a function to be executed whenever an AJAX request completes. This is an Ajax Event.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery ajax complete</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>       
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("#driver").click(function(event){
+                    $("#stage1").load('result.html');
+                });
+                $(document).ajaxComplete(function(event, request, settings){
+                    $("#stage2").html("<h1>Request Complete.</h1>");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="stage1" style="background-color: lightblue;">
+            STAGE -1
+        </div>
+        <div id="stage2" style="background-color: lightblue;">
+            STAGE -2
+        </div>
+
+        <input type="button" id="driver" value="Load Data">
+    </body>
+</html>

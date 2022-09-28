@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>utilities</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+            //    var p = $.trim(" lots of extra    space   ");
+              //  document.write(p);               
+              
+            });
+
+            function echo(){
+                $(document).ready(function(){
+                    $("li").each(function(){
+                        alert($(this).text())
+                    });
+                });
+            }           
+
+        </script>
+    </head>
+    <body>     
+        <!--echo-->
+        <ul>
+            <li> First element </li>
+            <li> Second element </li>
+            <li> Third element </li>
+            <li> Fourth element </li>
+        </ul>
+        <button onclick="echo()">click me</button>
+       
+        <!--data-->
+        <div>
+            The values stored were <span></span>
+               and <span></span>
+         </div>    
+         <script>
+            var div = $( "div" )[ 0 ];               
+            jQuery.data( div, "test", {
+               first: 25,
+               last: "tutorials"
+            });               
+            $( "span:first" ).text( jQuery.data( div, "test" ).first );
+            $( "span:last" ).text( jQuery.data( div, "test" ).last );
+         </script>
+
+         <label><input name="android" type="checkbox">Android</label>
+         <label><input name="IOS" type="checkbox">IOS</label>
+
+         <script>
+             jQuery.fn.extend({
+                check: function() {
+                    return this.each(function() {
+                        this.checked = true;
+                    });
+                },
+                uncheck: function() {
+                    return this.each(function() {
+                        this.checked = false;
+                     });
+                }
+             });
+             $("input[type = 'checkbox']").check();
+         </script>
+        
+    </body>
+</html>

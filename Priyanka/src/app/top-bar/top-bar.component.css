@@ -1,0 +1,115 @@
+.scroll {
+  position: relative;
+  width: 100%;
+  color: #c1c1c1;
+  background-color: #000000;
+  font-size: 13px;
+  font-weight: 500;
+  overflow: hidden;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.m-scroll {
+  margin: 0;
+  white-space: nowrap;
+  -webkit-animation: scrollText 15s infinite linear;
+          animation: scrollText 15s infinite linear;
+  padding: 14px 0;
+}
+
+@-webkit-keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-62%);
+  }
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-62%);
+  }
+}
+.price_data {
+  padding: 0 25px;
+}
+
+.coine_img {
+  padding-right: 9px;
+}
+
+.coine_img img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.coine_name {
+  padding-right: 12px;
+}
+
+.coine_rate {
+  padding-right: 9px;
+}
+
+.down_red {
+  color: #cf2e2e;
+}
+
+.rate_change {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* 1600 view*/
+/* 1440 view*/
+/* 1366 view*/
+/* 1280 view*/
+@media only screen and (max-width: 1365px) {
+  .adv_data {
+    width: 25%;
+  }
+}
+/* iPad 1024 (Landscape) view*/
+@media only screen and (max-width: 1199px) {
+  .menu ul li a {
+    padding: 0 15px;
+  }
+}
+/* iPad 768 (portrait) view*/
+@media only screen and (max-width: 1023px) {
+  .wrapper_top {
+    display: none;
+  }
+  .team_data,
+.adv_data {
+    width: 33.3%;
+    padding: 20px 20px;
+  }
+}
+/* iPad 768 (portrait) view*/
+/*/ iPhone-6 plus 736 (Landscape) view /*/
+@media only screen and (max-width: 767px) {
+  .team_data,
+.adv_data {
+    width: 50%;
+  }
+}
+/*/ iPhone-6 667 (Landscape) view /*/
+/*/ iPhone-5 568 (Landscape) view /*/
+@media only screen and (max-width: 666px) {
+  .team_data,
+.adv_data {
+    width: 100%;
+  }
+}
+/*/ iPhone-4 480 (Landscape) view /*/
+/*/ iPhone-6 plus 414 (portrait) view /*/
+/*/ iPhone-6 375 (portrait) view /*/
+/*/ iPhone-4 320 (portrait) view /*//*# sourceMappingURL=top-bar.component.css.map */

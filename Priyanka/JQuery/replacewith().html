@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>replaceWith method example</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>               
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    $("p").replaceWith("<p>This is new heading</p>");
+                });
+                $("#b2").click(function(){
+                    $("p").replaceWith("<h1>This is new Paragraph</h1>");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>click below button to replace me</p>
+        <button id="b1">Replace Paragraph</button>
+        <button id="b2">Replace heading</button>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<html>    
+    <body>
+        <script type="text/javascript">
+           function book(title, publisher, price){
+                this.title=title;
+                this.publisher=publisher;
+                this.price=price;
+           }
+           var myBook = new book("abc","xyz",200);
+           document.write(myBook.toSource());
+        </script>
+    </body>
+</html>

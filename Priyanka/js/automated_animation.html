@@ -1,0 +1,33 @@
+<!--manual animation-->
+<html>
+    <head>
+        <script>           
+            var imgObj = null;
+            var animate;
+
+            function init(){
+                imgObj=document.getElementById('img1');
+                imgObj.style.position='relative';
+                imgObj.style.left='0px';
+            }
+
+            function moveRight(){
+                imgObj.style.left=parseInt(img1.style.left)+10+'px';
+                animate=setTimeout(moveRight,20);
+            }
+            function stop(){
+                clearTimeout(animate);
+                imgObj.style.left='0px';
+            }
+            window.onload=init;
+        </script>
+    </head>
+    <body>
+        <form>
+            <img id="img1" src="img/cinqueterre.jpg" width="100px" height="100px">
+            <p>Click the button below to handle animation</p>
+            <input type = "button" value = "start" onclick = "moveRight();" />
+            <input type = "button" value = "stop" onclick = "stop();" />
+        </form>
+    </body>
+</html>

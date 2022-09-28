@@ -1,0 +1,83 @@
+.partners_block {
+  background: url(../../assets/images/logo_bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.partners {
+  padding: 60px 40px;
+}
+
+.title {
+  color: #ffffff;
+}
+
+.logos {
+  padding: 20px 20px;
+}
+
+.logo-img {
+  position: relative;
+}
+
+.logo-img:hover .h-logo-img {
+  display: inline-block;
+}
+
+.h-logo-img {
+  display: none;
+  position: absolute;
+}
+
+.logos a {
+  width: 25%;
+}
+
+/* 1600 view*/
+/* 1440 view*/
+/* 1366 view*/
+/* 1280 view*/
+@media only screen and (max-width: 1365px) {
+  .adv_data {
+    width: 25%;
+  }
+}
+/* iPad 1024 (Landscape) view*/
+@media only screen and (max-width: 1199px) {
+  .menu ul li a {
+    padding: 0 15px;
+  }
+}
+/* iPad 768 (portrait) view*/
+@media only screen and (max-width: 1023px) {
+  .wrapper_top {
+    display: none;
+  }
+  .team_data,
+.adv_data {
+    width: 33.3%;
+    padding: 20px 20px;
+  }
+}
+/* iPad 768 (portrait) view*/
+/*/ iPhone-6 plus 736 (Landscape) view /*/
+@media only screen and (max-width: 767px) {
+  .team_data,
+.adv_data {
+    width: 50%;
+  }
+}
+/*/ iPhone-6 667 (Landscape) view /*/
+/*/ iPhone-5 568 (Landscape) view /*/
+@media only screen and (max-width: 666px) {
+  .team_data,
+.adv_data {
+    width: 100%;
+  }
+}
+/*/ iPhone-4 480 (Landscape) view /*/
+/*/ iPhone-6 plus 414 (portrait) view /*/
+/*/ iPhone-6 375 (portrait) view /*/
+/*/ iPhone-4 320 (portrait) view /*//*# sourceMappingURL=strategic-partners.component.css.map */

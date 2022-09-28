@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>selectable</title>
+        <link rel = "stylesheet" 
+        href = "//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type = "text/javascript" 
+        src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+     </script>      
+        <script type="text/javascript" lang="javascript">        
+            $(function(){
+                $("#selectable").selectable();
+            });            
+        </script>
+        <style>
+            #feedback{font-size: 1.4em;}
+            #selectable .ui-selecting{
+                background: thistle;
+            }
+            #selectable .ui-selected{
+                background: cornsilk;
+                color: black;
+            }
+
+            #selectable{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 60%;
+            }
+            #selectable li{
+                margin: 3px;
+                height: 18px;
+            }
+
+        </style>
+    </head>
+    <body>
+       <ol id="selectable">
+            <li class="ui-widget-content">Item 1</li>
+            <li class="ui-widget-content">Item 2</li>
+            <li class="ui-widget-content">Item 3</li>
+            <li class="ui-widget-content">Item 4</li>
+            <li class="ui-widget-content">Item 5</li>
+            <li class="ui-widget-content">Item 6</li>
+            <li class="ui-widget-content">Item 7</li>
+       </ol>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>  
+        <script type="text/javascript" lang="javascript">
+            function focusevent(){
+                document.getElementById("txt1").style.backgroundColor="pink";
+            }
+            function keydown(){
+                document.getElementById("txt2").style.backgroundColor="green";
+            }
+            function keyup(){
+                document.getElementById("txt2").style.backgroundColor="lightblue";
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="txt1" onfocus="focusevent()">
+        <input type="text" id="txt2" onkeydown="keydown()" onkeyup="keyup()">
+
+    </body>
+</html>

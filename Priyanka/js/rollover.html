@@ -1,0 +1,19 @@
+<!--manual animation-->
+<html>
+    <head>
+        <script type="text/javascript">           
+            if(document.images){
+                var image1=new Image();
+                image1.src="img/image1.gif";
+                var image2=new Image();
+                image2.src="img/image2.gif";
+            }
+        </script>
+    </head>
+    <body>
+        <p>Move your mouse over the image to see the result</p>        
+        <a href="#" onMouseOver="document.img1.src=image2.src;" onMouseOut="document.img1.src=image1.src;">
+            <img name="img1" src="img/image1.gif">
+        </a>
+    </body>
+</html>

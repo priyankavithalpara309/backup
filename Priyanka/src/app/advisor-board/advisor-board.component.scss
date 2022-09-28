@@ -1,0 +1,38 @@
+@import '../../assets/scss/variable.scss';
+
+.advisors_block{
+    padding: 0 40px;
+}
+
+// .adv_title{
+//     color: $white;
+// }
+
+.advisors{
+    padding: 40px 0;
+}
+
+.adv_data{
+    width: 20%;
+    padding: 40px 40px;
+}
+
+.adv_data div img{
+    width: 100%;
+}
+
+.adv_name{
+    margin-top: 18px;
+    // color: $white;
+}
+
+.adv_position{
+    color: $lightGreen;
+}
+
+.adv_name:hover{
+    color: $lightGreen;
+}
+
+
+@import '../../assets/scss/media.scss';

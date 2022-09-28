@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script>
+            function imgvalid(){
+                var nm=document.form1.name.value;
+                var pass=document.form1.pass.value;
+                var status=false;
+
+                if(nm.length<1)
+                {
+                    document.getElementById("nm1").innerHTML=" <img src='uncheck.jpg'/> Please enter name";
+                    status=false;
+                }
+                else{
+                    document.getElementById("nm1").innerHTML=" <img src='check.jpg'/>";
+                    status=true;
+                }
+
+                if(pass.length<6)
+                {
+                    document.getElementById("pass1").innerHTML=" <img src='uncheck.jpg'/> Password must be at least 6 char long";
+                    status=false;
+                }
+                else{
+                    document.getElementById("pass1").innerHTML=" <img src='check.jpg'/>";
+                    status=true;
+                }
+                return status;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="form1" onsubmit="return imgvalid()">            
+            <table>
+                <tr>
+                    <td align="right">Name:</td>
+                    <td><input type="text" name="name"><span id="nm1"></span></td>                    
+                </tr>
+                <tr>
+                    <td align="right">Password:</td>
+                    <td><input type="password" name="pass"><span id="pass1"></span></td>                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="login"></td>
+                </tr>           
+        </form>
+    </body>
+</html>

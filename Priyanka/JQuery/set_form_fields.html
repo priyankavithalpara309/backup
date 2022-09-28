@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>set form fields method example</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>               
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    $("#name").val("abc");                   
+                });
+                $("#b2").click(function(){
+                    $("#class").val("12th");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Name : <input type="text" id="name" value=""/></p><br/>
+        <p>class : <input type="text" id="class" value=""/></p><br/>
+        <button id="b1">set name</button>
+        <button id="b2">set class</button>
+    </body>
+</html>

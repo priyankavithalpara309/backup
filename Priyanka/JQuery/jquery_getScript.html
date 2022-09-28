@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Example with getJavaScript</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("#driver").click(function(event){
+                    $.getScript('result.js',function(jd){
+                        //call custom function defined in script
+                        checkJs();
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="stage" style="background-color: #eee;">            
+            STAGE
+        </div>
+        <input type="button" id="driver" value="Click here">
+    </body>
+</html>

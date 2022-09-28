@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function book(title,author){
+                this.title=title;
+                this.author=author;
+            }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+           var myBook=new book("abc","xyz");
+           book.prototype.price=null;
+           myBook.price=100;
+
+           document.write("Book title : "+myBook.title+"<br>");
+           document.write("Book author : "+myBook.author+"<br>");
+           document.write("Book price : "+myBook.price);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>animation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">        
+            $(document).ready(function(){
+                $("#right").click(function(){
+                    $("div").animate({left:'250px'},1000);
+                });
+                $("#left").click(function(){
+                    $("div").animate({left:'0'});
+                });
+            });
+        </script>
+        <style>
+            #box1{
+                position: relative;
+                margin: 10px;
+                padding: 10px;
+                width: 200px;
+                height: 200px;
+                background-color: lightblue;
+            }
+
+            #right,
+            #left{
+                margin: 10px;
+                padding: 5px;
+                border: 1px solid black;
+                height: 40px;
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="box1">Box</div>
+       <button id="right" style="background-color: brown;">move right</button>
+       <button id="left" style="background-color: darkslateblue;">move left</button>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!--The ajaxSend( callback ) method attaches a function to be executed whenever an AJAX request is sent. This is an Ajax Event.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery ajax send</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>       
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                //Global Variable
+                var count=0;
+                $("#driver").click(function(event){
+                    $('#stage0').load('result.html');
+                });
+
+                //Gets called when request starts
+                $(document).ajaxStart(function(){
+                    count++;
+                    $("#stage1").html("<h1>Start count :"+count +"</h1>");
+                });
+
+                //Gets called when request send
+                $(document).ajaxSend(function(evt,req,set){
+                    count++;
+                    $("#stage2").html("<h1>sends, count :"+count+"</h1>");
+                    $("#stage2").append("<h1>URL :"+set.url+"</h1>");
+                });
+
+                //Gets called when request complete
+                $(document).ajaxComplete(function(event,request,settings){
+                    count++;
+                    $("#stage3").html("<h1>Completes count :"+count+"</h1>");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="stage0" style="background-color: lightblue;">
+            STAGE -0
+        </div>
+        <div id="stage1" style="background-color: lightblue;">
+            STAGE -1
+        </div>
+        <div id="stage2" style="background-color: lightblue;">
+            STAGE -2
+        </div>
+        <div id="stage3" style="background-color: lightblue;">
+            STAGE -3
+        </div>
+        <input type="button" id="driver" value="Load Data">
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery height() method</title>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function(){
+                $("#get").click(function(){
+                    alert("box height is : "+$("div").height());
+                });
+                $("#set").click(function(){
+                    $("div").height("300px");
+                });
+            });
+        </script>
+        <style>
+            div{
+                margin: 10px;
+                height: 140px;
+                width: 120px;
+                padding: 10px;                
+            }
+        </style>
+    </head>
+    <body>
+        <p>click on button</p>
+        <div style="background-color: darkgrey;">Box</div>
+        <button id="get">get height</button>
+        <button id="set">set height</button>
+    </body>
+</html>

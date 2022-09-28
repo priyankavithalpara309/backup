@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mouse dbl</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("div").dblclick(function(){
+                    $("div").css("color","blue");
+                });
+            });
+        </script>
+        <style>
+            div{margin: 10px; padding: 15px; border: 2px solid black; width: 60px; height: 15px;cursor: pointer;}
+        </style>
+    </head>
+    <body>
+        <!--<div>this div block</div>-->
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+    </body>
+</html>

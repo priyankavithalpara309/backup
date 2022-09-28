@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Image map</title>
+        <script type="text/javascript">
+            function imgmap(name){
+                document.myform.stage.value=name
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform">
+            <input type="text" name="stage" size="20">
+        </form>
+        <img src="img/map.gif" alt="image map" border="0" usemap="#mymap">
+        <map name="mymap">
+            <area shape="poly" 
+            coords="74,0,113,29,98,72,52,72,38,27" href="/perl/index.htm" alt="perl Tutorial" target="_self" onmouseover="imgmap('perl')"
+            onmouseout="imgmap('')"/>
+
+            <area shape="rect"
+            coords="22,83,126,125" href="/html/index.htm" alt="html Tutorial" target="_self" onmouseover="imgmap('html')" onmouseout="imgmap('')"/>
+
+            <area shape="circle"
+            coords="73,168,32" href="/php/index.htm" alt="php Tutorial" target="_self" onmouseover="imgmap('php')" onmouseout="imgmap('')"/>
+        </map>
+    </body>
+</html>

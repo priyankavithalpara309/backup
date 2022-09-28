@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript" lang="javascript">
+            function calc()
+            {
+                var a=100, b=0;
+                try{
+                    if(b==0)
+                    {
+                        throw("divided by zero...");
+                    }
+                    else{
+                        var c=a/b;
+                    }
+                }
+                catch(e){
+                    alert("Error:"+e);
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" value="click me" onclick="calc();"/>
+        </form>
+    </body>
+</html>

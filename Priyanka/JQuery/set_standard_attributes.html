@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>set standard attribute</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#home").attr("title","new title");
+                    alert("change title:"+$("#home").attr("title"));
+                });
+            }); 
+        </script>        
+    </head>
+    <body>        
+        <p>click the button to see result:</p>
+        <a href="index.html" title="this is title" id="home">home</a><br/>
+        <button>set standard attribute</button>
+    </body>
+</html>

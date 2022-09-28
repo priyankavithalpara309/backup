@@ -1,0 +1,120 @@
+<div class="container">
+    <div>
+        <h1 class="text-info text-center">USER</h1>
+    </div>
+    <form #form="ngForm" (ngSubmit)="submit(form)">
+        <div class="row d-flex align-items-center justify-center">
+            <div class="col-md-1 d-flex justify-flexend py-2" id="btnimg">
+                <button type="button" class="custom-file-upload py-3 bg-light border border-light rounded-circle text-center form-control" (click)="fileInput.click()">
+                    <!-- <span>{{ImageName}} </span> -->
+                    <span class="text-info">Upload photo</span>
+                    <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;" />
+                </button>
+            </div>
+            <div class="col-md-2 py-2">
+                <input type="text" [(ngModel)]="username" name="username" #usernm="ngModel" pattern="^[a-zA-Z]+$" placeholder="Enter name" class="form-control border border-info" required>
+                <div *ngIf="usernm.touched">
+                    <span *ngIf="usernm.errors" class="text-danger">
+                        Invalid Name!!!
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-2 py-2">
+                <input type="email" [(ngModel)]="emailid" name="emailid" #email_id="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter email ID" class="form-control border border-info" required>
+                <div *ngIf="email_id.touched">
+                    <span *ngIf="email_id.errors" class="text-danger">
+                        Invalid Email ID!!!
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-2 py-2">
+                <select class="form-control border border-info" (change)="Changed($event)">
+                    <option>Country</option>
+                    <option value="_id" *ngFor="let country of dropdownCountry" [value]="country._id">{{country.CounteryName}}</option>
+                    <!-- <option value="_id" *ngFor="let country of dropdownCountry" [ngValue]="country.CounteryName">{{country.CounteryName}}</option> -->
+                </select>
+            </div>
+            <div class="col-md-3 py-2">
+                <input type="text" [(ngModel)]="phone" name="phone" #phone1="ngModel" pattern="^((\\+91-?)|0)?[0-9]{10}$" placeholder="Enter phone number" class="form-control border border-info" required>
+                <div *ngIf="phone1.touched">
+                    <span *ngIf="phone1.errors" class="text-danger">
+                        Invalid Phone Number!!!
+                    </span>
+                </div>
+            </div>
+            <div class="col-1 py-2 block_plus">
+                <button type="submit" [disabled]="!form.valid" class="btn btn-info text-white rounded-circle text-center addbtn" (click)="adduser()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center justify-center">
+            <div class="col-md-7 py-2">
+                <input type="text" placeholder="Search via email, name or phone number" class="form-control border border-info" name="searchedKeyword" [(ngModel)]="searchedKeyword">
+            </div>
+            <div class="col-md-4 py-2">
+                <button class="btn btn-info text-white btn_search">Search</button>
+            </div>
+        </div>
+    </form>
+    <div class="row py-2">
+        <div class="col-md-12">
+            <table class="table table-hover table-bordered table-striped">
+                <thead class="bg-info text-white">
+                    <tr class="th">
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Country</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of user_data | filter:searchedKeyword">
+                        <td>{{user._id}}</td>
+                        <td>{{user.UserName}}</td>
+                        <!-- <td>{{user.Email}}</td> -->
+                        <td><img [src]="user.image"></td>
+                        <td>{{user.countryId.CounteryName}}</td>
+                        <td>{{user.PhoneNumber}}</td>
+                        <div class="dropdown">
+                            <button class="btn btn-info text-white">Actions</button>
+                            <div class="dropdown-content">
+                                <a data-toggle="modal" data-target="#modalEdit" (click)="edituserdata(user)">Edit</a>
+                                <div class="modal" id="modalEdit" tabindex="-1" role="dialog" [ngStyle]="{'display':edituser}">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Edit User Data</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <button type="button" class="custom-file-upload py-3 bg-light border border-light rounded-circle text-center form-control" (click)="fileInput.click()">
+                                                        <!-- <span>{{ImageName}} </span> -->
+                                                        <span class="text-info">Upload photo</span>
+                                                        <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;" />
+                                                    </button>
+                                                    <input type="text" class="form-control border border-info my-2" required [(ngModel)]="e_name" name="e_name">
+                                                    <input type="text" [(ngModel)]="e_emailid" name="e_emailid" class="form-control border border-info my-2" required>
+                                                    <select class="form-control my-2 border border-info" (change)="Changed($event)">
+                                                        <option>Country</option>
+                                                        <option value="_id" *ngFor="let country of dropdownCountry" [value]="country._id"> {{country.CounteryName}}</option>
+                                                    </select>
+                                                    <input type="text" [(ngModel)]="e_phone" name="e_phone" class="form-control my-2 border border-info" required>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-success" (click)="edit()">Edit</button>
+                                                <button type="button" class="btn btn-danger" (click)="close()">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a (click)="removedata(user)">Remove</a>
+                                <a href="#">Add Card</a>
+                            </div>
+                        </div>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

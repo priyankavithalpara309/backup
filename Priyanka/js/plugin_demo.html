@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>using Plug-Ins</title>
+    </head>
+    <body>
+        <script lang="javascript" type="text/javascript">
+           var debugging = true;
+            var whichImage = "widget";
+
+            if( debugging )
+            alert( "Calls swapImage() with argument: " + whichImage );
+            var swapStatus = swapImage( whichImage );
+
+            if( debugging )
+            alert( "Exits swapImage() with swapStatus=" + swapStatus );
+        </script>        
+    </body>
+</html>

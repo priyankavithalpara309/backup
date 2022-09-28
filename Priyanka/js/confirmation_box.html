@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript" lang="javascript">
+            function confirm_box(){
+                var conf = confirm("do you want to continue??");
+                if(conf==true){
+                    document.write("User want to continue...");
+                    return true;
+                }
+                else{
+                    document.write("User does'n continue...");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <from>
+            <input type="button" value="click me" onclick="confirm_box()">
+        </from>
+    </body>
+</html>

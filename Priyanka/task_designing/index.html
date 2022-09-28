@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOP DELIVERY</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;406;500;600;612;700&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css" >
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body style="overflow: visible;">
+        <header>        
+            <!--Header Section-->
+            <div class="header_sec">
+                <div class="header">                
+                        <img class="logo" src="images/logo1.svg">
+                        <div class="rcorners d-flex">                    
+                            <img class="delivery_icon" src="images/ic_baseline-delivery-dining.png">                    
+                            <a href="#" class="header_text">En livraison</a>
+                            <span class="pipe"></span>
+                            <img class="delivery_icon" src="images/Vector.png">                    
+                            <a href="#" class="header_text">Dès que possible</a>
+                            <span class="pipe"></span>
+                            <img class="delivery_icon" src="images/location.svg">                    
+                            <a href="#" class="header_text">32 Boulevard de Water...</a>
+                        </div>                
+                        <div class="cart_icon">
+                            <img src="images/Ellipse 93.svg">                    
+                            <img class="user" src="images/user.svg">
+                            <div class="connecter d-flex">
+                                <p class="connecter_text">Se connecter</p>
+                                <img class="connecter_icon" src="images/connecter.svg">                                                                
+                            </div>
+                        </div>                                
+                </div>    
+            </div>
+        </header>
+        <div class="menu_section">
+            <div class="d-flex">
+                <ul>
+                    <li><img class="delivery_icon1" src="images/ic_baseline-delivery-dining.png">
+                        <a href="#" class="header_text">Livraison</a></li>
+                    <li><img class="delivery_icon" src="images/Vector.png">
+                        <a href="#" class="header_text">Dès que possible</a></li>
+                    <li><img class="delivery_icon" src="images/location.svg">
+                        <a href="#" class="header_text">32 Boulevard de Waterl...</a></li>
+                </ul><span class="span"></span>                                
+                <div class="modifier">
+                    <img src="images/fluent_edit-settings-24-filled.svg">
+                    <a href="#" class="header_text">Modifier</a>
+                </div>
+            </div>
+        </div>
+        
+            <!--navbar-->
+        <nav>        
+            <div class="menu">   
+                
+                <div class="slider_menu">         
+                    <button class="menu_item d-flex">
+                        <img src="images/Restaurants.png">
+                        <a href="#" class="child_text">Restaurants &nbsp;<i class="fa fa-chevron-down" id="arrow"></i></a>                          
+                    </button>                
+                    <div class="menu_open">                    
+                        <ul>
+                            <li class="menu_item1">                            
+                                <div class="d-flex">
+                                    <img src="images/Santé.png">
+                                    <a href="#" class="child_text">Santé</a>
+                                </div>
+                            </li>
+                            <li class="menu_item1"> 
+                                <div class="d-flex">
+                                    <img src="images/Fleuristes.png">
+                                    <a href="#" class="child_text">Fleuristes</a>
+                                </div>
+                            </li>
+                            <li class="menu_item1">  
+                                <div class="d-flex">
+                                    <img src="images/Epicerie_fine.png">
+                                    <a href="#" class="child_text">Epicerie fine</a>
+                                </div>
+                            </li>                        
+                        </ul> 
+                    </div>                                  
+                </div>
+                    <div class="slider">                    
+                        <button class="previous" onclick="scrolll()"><i class="fa fa-arrow-left"></i></button>
+                        <div class="cover">                   
+                            <div class="scroll-images">
+                                <div class="child d-flex">
+                                    <img class="child-img" src="images/image2.png" alt="image2">
+                                    <a href="#" class="child_text">Fleuristes</a>
+                                </div> 
+                                <div class="child d-flex">
+                                    <img class="child-img" src="images/image1.png" alt="image1">
+                                    <a href="#" class="child_text">Santé</a>
+                                </div>
+                                <div class="child d-flex">
+                                    <img class="child-img" src="images/image2.png" alt="image2">
+                                    <a href="#" class="child_text">Fleuristes</a>
+                                </div>
+                                <div class="child d-flex">
+                                    <img class="child-img" src="images/image2.png" alt="image2">
+                                    <a href="#" class="child_text">Fleuristes</a>
+                                </div>
+                                <div class="child d-flex">
+                                    <img class="child-img" src="images/image2.png" alt="image2">
+                                    <a href="#" class="child_text">Fleuristes</a>
+                                </div>                           
+                                                        
+                            </div>                   
+                        </div>
+                        <button class="next" onclick="scrollr()"><i class="fa fa-arrow-right"></i></button>
+                    </div> 
+
+                    <div class="search_section">
+                        <div class="search d-flex">
+                            <i class="fa fa-search search_icon"></i> 
+                            <span class="pipe"></span>
+                            <input type="text" class="search_box" placeholder="Rechercher..."/>
+                        </div>
+                        <div class="filtres d-flex">
+                            <a href="#" class="filtres_text">Filtres</a>
+                            <img class="filtres_img" src="images/filtres.png">
+                        </div>
+                </div>            
+            
+        </div>
+        </nav>
+            <!--body section-->
+        <main>
+            <div class="main_section">   
+                <div class="card_section ml-40">
+                <div class="card">
+                    <div class="card_img">
+                        <img class="img" src="images/Le_Tse_Fung.png" alt="Le Tse Fung">                        
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">Le Tse Fung</a>
+                        <p class="card_text2">Gastronomique - Asiatique</p>                        
+                    </div>
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>                    
+                </div>    
+                <div class="card">
+                    <div class="card_img dis-flex">
+                        <img class="img img1" src="images/Planet_of_the_Grapes.png" alt="Planet of the Grapes">
+                        <img class="add_img" src="images/img_icon.svg">
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">Planet of the Grapes</a>
+                        <p class="card_text2">Gastronomique - Asiatique</p>                        
+                    </div>
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>
+                </div>                               
+                <div class="card">
+                    <div class="card_img">
+                        <img class="img" src="images/Sling_Delight.png" alt="Sling Delight">
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">Sling Delight</a>
+                        <p class="card_text2">Gastronomique - Asiatique</p>                                            
+                    </div>                    
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="card">
+                    <div class="card_img">
+                        <img class="img" src="images/Urbane_Food.png" alt="Urbane Food">
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">Urbane Food</a>
+                        <p class="card_text2">Gastronomique - Asiatique</p>                                            
+                    </div>                    
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="profit"><p class="card_text"><img src="images/star.svg"> Profitez de promotions chez ces commerces :</p></div>
+
+            <div class="slider1">                
+                <div><button class="previous1" onclick="scrollleft()"><i class="fa fa-chevron-left"></i></button></div>
+                <div class="cover1">             
+                    <div class="scroll-images1">
+                        <div class="child1">
+                            <div class="card_img dis-flex">
+                                <img class="img_scroll" src="images/Vintage_Kitchen.png" alt="Sling Delight 5"> 
+                                <p class="text_block"><img src="images/star.svg"> 1 acheté = 1 gratuit</p>                               
+                            </div>
+                            <div class="card_body">
+                                <a href="#" class="card_text">Sling Delight</a>
+                                <p class="card_text2">Gastronomique - Asiatique</p>                                            
+                            </div>                            
+                            <div class="card_footer">
+                                <div class="card_bottom">
+                                    <img src="images/cooking_pot_fill.svg">
+                                    <span class="card_bottom_text">35-45 min</span>
+                                </div>
+                                <div class="card_bottom ml">
+                                    <img src="images/ri_pin-distance-fill.svg">
+                                    <span class="card_bottom_text">2.8km</span>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="child1">
+                            <div class="card_img dis-flex">
+                                <img src="images/Sling_Delight1.png" alt="Sling Delight1">
+                                <p class="text_block"><img src="images/star.svg"> 1 acheté = 1 gratuit</p>                               
+                            </div>
+                            <div class="card_body">
+                                <a href="#" class="card_text">Sling Delight</a>
+                                <p class="card_text2">Gastronomique - Asiatique</p>                                            
+                            </div>                            
+                            <div class="card_footer">
+                                <div class="card_bottom">
+                                    <img src="images/cooking_pot_fill.svg">
+                                    <span class="card_bottom_text">35-45 min</span>
+                                </div>
+                                <div class="card_bottom ml">
+                                    <img src="images/ri_pin-distance-fill.svg">
+                                    <span class="card_bottom_text">2.8km</span>
+                                </div>
+                            </div>
+                         </div>                        
+                         <div class="child1">
+                            <div class="card_img dis-flex">
+                                <img src="images/Sling Delight2.png" alt="Sling Delight2">
+                                <p class="text_block"><img src="images/star.svg"> Frais de livraison offerts</p>                               
+                            </div>
+                            <div class="card_body">
+                                <a href="#" class="card_text">Sling Delight</a>
+                                <p class="card_text2">Gastronomique - Asiatique</p>                                            
+                            </div>                            
+                            <div class="card_footer">
+                                <div class="card_bottom">
+                                    <img src="images/cooking_pot_fill.svg">
+                                    <span class="card_bottom_text">35-45 min</span>
+                                </div>
+                                <div class="card_bottom ml">
+                                    <img src="images/ri_pin-distance-fill.svg">
+                                    <span class="card_bottom_text">2.8km</span>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="child1">
+                            <div class="card_img dis-flex">
+                                <img src="images/Sling Delight3.png" alt="Sling Delight3">
+                                <p class="text_block"><img src="images/star.svg"> -30% à l’achat de min. CHF 90</p>                               
+                            </div>
+                            <div class="card_body">
+                                <a href="#" class="card_text">Sling Delight</a>
+                                <p class="card_text2">Gastronomique - Asiatique</p>                                            
+                            </div>                            
+                            <div class="card_footer">
+                                <div class="card_bottom">
+                                    <img src="images/cooking_pot_fill.svg">
+                                    <span class="card_bottom_text">35-45 min</span>
+                                </div>
+                                <div class="card_bottom ml">
+                                    <img src="images/ri_pin-distance-fill.svg">
+                                    <span class="card_bottom_text">2.8km</span>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="child1">
+                            <div class="card_img dis-flex">
+                                <img src="images/4th_Street_Dining_Hall.png" alt="4th_Street_Dining_Hall">
+                                <p class="text_block"><img src="images/star.svg"> Profitez d’offres spéciales</p>                               
+                            </div>
+                            <div class="card_body">
+                                <a href="#" class="card_text">Sling Delight</a>
+                                <p class="card_text2">Gastronomique - Asiatique</p>                                            
+                            </div>                            
+                            <div class="card_footer">
+                                <div class="card_bottom">
+                                    <img src="images/cooking_pot_fill.svg">
+                                    <span class="card_bottom_text">35-45 min</span>
+                                </div>
+                                <div class="card_bottom ml">
+                                    <img src="images/ri_pin-distance-fill.svg">
+                                    <span class="card_bottom_text">2.8km</span>
+                                </div>
+                            </div>
+                         </div>                    
+                    </div> 
+                </div>                     
+                <div><button class="next1" onclick="scrollright()"><i class="fa fa-chevron-right"></i></button></div>                                                                
+            </div>  
+
+            <div class="card_section ml-40" id="card_section1">
+                <div class="card">
+                    <div class="card_img">
+                        <img class="img" src="images/Foody_Dots.png" alt="Foody Dots">
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">Foody Dots</a>                    
+                        <p class="card_text2">Gastronomique - Asiatique</p>
+                    </div>                    
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img class="img" src="images/Zoës_Kitchen.png" alt="Zoës Kitchen">
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">Zoës Kitchen</a>
+                        <p class="card_text2">Gastronomique - Asiatique</p>                        
+                    </div>                    
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>
+                </div>    
+                
+                <div class="card">
+                    <div class="card_img">
+                        <img class="img" src="images/Crazy_Grill.png" alt="Crazy Grill">
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">Crazy Grill</a>
+                        <p class="card_text2">Gastronomique - Asiatique</p>                        
+                    </div>                             
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="card">
+                    <div class="card_img">
+                        <img class="img" src="images/Double_Dell_Restaurant.png" alt="Double Dell Restaurant">
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">Double Dell Restaurant</a>
+                        <p class="card_text2">Gastronomique - Asiatique</p>                        
+                    </div>                                    
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="card_section ml-40" id="card_section2">
+                <div class="card">
+                    <div class="card_img">
+                        <img class="img" src="images/Indian_tulip.png" alt="Indian tulip">
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">Indian tulip</a>                    
+                        <p class="card_text2">Gastronomique - Asiatique</p>
+                    </div>                    
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>
+                </div>    
+                <div class="card">
+                    <div class="card_img">
+                        <img class="img" src="images/Vintage_Kitchen.png" alt="Vintage Kitchen">
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">Vintage Kitchen</a>
+                        <p class="card_text2">Gastronomique - Asiatique</p>
+                    </div>                                  
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>
+                </div>                               
+                <div class="card">
+                    <div class="card_img">
+                        <img class="img" src="images/4th_Street_Dining_Hall.png" alt="4th Street Dining Hall">
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">4th Street Dining Hall</a>
+                        <p class="card_text2">Gastronomique - Asiatique</p>
+                    </div>                 
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="card">
+                    <div class="card_img">
+                        <img class="img img1" src="images/Peking_Inn.png" alt="Peking Inn">
+                        <img class="add_img" src="images/img_icon.svg">
+                    </div>
+                    <div class="card_body">
+                        <a href="#" class="card_text">Peking Inn</a>
+                        <p class="card_text2">Gastronomique - Asiatique</p>
+                    </div>                                 
+                    <div class="card_footer">
+                        <div class="card_bottom">
+                            <img src="images/cooking_pot_fill.svg">
+                            <span class="card_bottom_text">35-45 min</span>
+                        </div>
+                        <div class="card_bottom ml">
+                            <img src="images/ri_pin-distance-fill.svg">
+                            <span class="card_bottom_text">2.8km</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            </div> 
+        </main>
+
+            <!--Footer Section-->
+        <footer>
+            <section class="footer1">
+                <div class="footer_section">                                    
+                        <div class="bottom1">
+                            <img src="images/footer_img.svg">                        
+                        </div>
+                        <div class="bottom2">
+                            <ul>
+                                <li>Commander</li>
+                                <li>Devenir Partenaire</li>
+                                <li>Devenir Hopper</li>
+                            </ul>
+                        </div>
+                        <div class="bottom3">
+                            <ul>
+                                <li>Aide</li>
+                                <li>Let’s Hop Together</li>
+                                <li>Conditions générales d’utilisation</li>
+                            </ul>
+                    </div>
+                    <div class="bottom4">   
+                        <img class="fb" src="images/fb.svg">         
+                        <img class="insta" src="images/insta.svg">                    
+                    </div>
+                </div> 
+            </section>
+            <section class="footer2">
+                <div class="footer">
+                    <p class="copyright_text">COPYRIGHT © 2022 POWERED BY HOP DELIVERY</p>
+                </div>                  
+            </section>
+        </footer>
+    </body>
+    <script>
+        function scrolll(){
+            var left=document.querySelector(".scroll-images");
+            left.scrollBy(-150,0);
+        }
+        function scrollr(){
+            var right=document.querySelector(".scroll-images");
+            right.scrollBy(150,0);
+        }
+        function scrollleft(){
+            var left=document.querySelector(".scroll-images1");
+            left.scrollBy(-180,0);
+        }
+        function scrollright(){
+            var right=document.querySelector(".scroll-images1");
+            right.scrollBy(180,0);
+        }
+        
+        $(document).ready(function(){            
+                $("#arrow").click(function(){                    
+                    $(".menu_item1").toggle();                    
+                    var arrow=document.getElementsByClassName("fa-chevron-down")[0];
+                    if(arrow){
+                    arrow.className = arrow.className.replace("fa-chevron-down", "fa-chevron-up");
+                    }
+                    else{
+                    arrow=document.getElementsByClassName("fa-chevron-up")[0];
+                    arrow.className = arrow.className.replace("fa-chevron-up", "fa-chevron-down");
+                    }
+                });                         
+            });
+    </script>
+</html>

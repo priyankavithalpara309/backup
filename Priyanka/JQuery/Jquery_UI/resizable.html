@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>resizable</title>
+        <link 
+         href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" 
+         rel = "stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>       
+        <script type="text/javascript" lang="javascript">        
+            $(function(){
+                $("#resize").resizable({
+                    autoHide:true,
+                    create:function(event,ui){
+                        $("#first").text("Created...");                        
+                    },
+                    resize:function(event,ui){
+                        $("#cal").text("top : "+ui.position.top +"left : "+ui.position.left + "width : "+ui.size.width + "height : "+ui.size.height);                        
+                    }
+                });
+            });            
+        </script>
+        <style>
+            .ui-widget-header{
+                background-color: cornflowerblue;
+                border: 1px solid black;
+                color: burlywood;
+                font-weight: bold;
+            } 
+            .ui-widget-content{
+                background-color: lightskyblue;
+                border: 1px solid black;
+                color: black;
+            }
+
+            #resize{
+                width: 150px;
+                height: 150px;
+                text-align: center;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="resize" class="ui-widget-content">
+            <h3 class="ui-widget-header">Resize!!</h3>
+        </div><br>
+        <span id="first"></span><br>
+        <span id="cal"></span>
+    </body>
+</html>

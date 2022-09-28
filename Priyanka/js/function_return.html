@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type="text/javascript" lang="javascript">
+            function first(surname, name){
+                var name = surname + name;
+                return(name);
+            }
+            function second(){
+                var nm = first('abc','xyz');
+                alert(nm);
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" onclick="second()" value="click me">
+        </form>
+    </body>
+</html>

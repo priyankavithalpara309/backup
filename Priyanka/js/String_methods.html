@@ -1,0 +1,103 @@
+<html>    
+    <body>
+        <script type="text/javascript">
+            var str=new String("This String");
+
+            //charAt()
+            document.write("str.charAt() : "+str.charAt());
+            document.write("<br/>str.charAt(3) : "+str.charAt(3));
+            document.write("<br/>str.charAt(5) : "+str.charAt(5));
+            document.write("<br/>str.charAt(str.length-1) : "+str.charAt(str.length-1));
+
+
+            //charCodeAt()
+            document.write("<br/><br/><br/>str.charCodeAt : "+str.charCodeAt(7));
+            document.write("<br/><br/><br/>str.charCodeAt(str.length-1) : "+str.charCodeAt(str.length-1));
+
+            //concat()
+            var str1=new String("Hello");
+            var str2=new String(" abc");            
+            document.write("<br/><br/><br/>Concatenated String : "+str1.concat(str2)+"<br/><br/>");
+
+            //indexOf()
+            var str3="Learn JavaScript";  
+            document.write(str3.indexOf('a')+"<br/>");  
+            document.write(str3.indexOf('a',3)+"<br/>");  
+            document.write(str3.indexOf("Java")+"<br/>");  
+            document.write(str3.indexOf("java")+"<br/><br/>");  //case-sensitive
+
+            //lastIndexOf()
+            document.write(str3.lastIndexOf('a')+"<br/>");
+            document.write(str3.lastIndexOf("Java")+"<br/>");
+
+            //localeCompare()
+            var s1="This is string";
+            var index=s1.localeCompare("This is string");
+            document.write(index+"<br/>");
+
+            var index=s1.localeCompare("string");
+            document.write(index+"<br/>");
+
+            var index=s1.localeCompare("xyz");
+            document.write(index+"<br/>");
+
+
+            //match()
+            var s2="Javascript";
+            document.write(s2.match("Java")+"<br/>");
+            document.write(s2.match(/java/g)+"<br/>");//regular expression using global flag
+            document.write(s2.match(/java/gi)+"<br/>");//match() method by using ignore flag.
+            document.write(s2.match(/[a-p]/g)+"<br/>");//print the array of matched elements
+            document.write(s2.match(/[a-p]/)+"<br/>");//return the first match  
+
+            //replace()
+            var s3="Apples are round, and apples are juicy.";
+            document.write(s3.replace(/apples/gi,"oranges")+"<br/>");//change string
+
+            var s4="abc xyz";
+            document.write(s4.replace(/(\w+)\s(\w+)/,"$2,$1"+"<br/>"));
+
+            //search()
+            if(s3.search(/apples/gi)==-1){
+                document.write("Dose not contain Apples");
+            }
+            else{
+                document.write("contain Apples");
+            }
+
+            //slice()
+            var sliced=s3.slice(3,-2);
+            document.write("<br/>"+sliced);
+
+            //split()
+            var split1=s3.split(" ",3);
+            document.write("<br/>"+split1);
+
+            //substr()
+            document.write("<br/>"+s3.substr(1,2));
+            document.write("<br/>"+s3.substr(-2,2));
+            document.write("<br/>"+s3.substr(1));
+
+            //substring()
+            document.write("<br/>"+s3.substring(1,2));
+            document.write("<br/>"+s3.substring(0,10));
+
+            //toLocaleLowerCase()
+            var str4="Apples Are Round";
+            document.write("<br/>"+str4.toLocaleLowerCase());
+
+            //toLocaleUpperCase()
+            document.write("<br/>"+str4.toLocaleUpperCase());
+
+            //toLowerCase()
+            document.write("<br/>"+str4.toLowerCase());
+
+            //toUpperCase()
+            document.write("<br/>"+str4.toUpperCase());
+
+            //valueOf()
+            var a = new String("Hello world");
+            document.write("<br/>"+a.valueOf());
+        </script>
+    </body>
+</html>
