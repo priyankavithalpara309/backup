@@ -1,0 +1,210 @@
+/* 1600 view*/
+/* 1440 view*/
+/* 1366 view*/
+/* 1280 view*/
+/* iPad 1024 (Landscape) view*/
+@media only screen and (max-width: 1199px) {
+  .cover {
+    padding-left: 0;
+  }
+  .list_section {
+    padding: 20px;
+  }
+  .menu_section {
+    padding: 10px;
+  }
+}
+/* iPad 768 (portrait) view*/
+@media only screen and (max-width: 1023px) {
+  .add {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  .card_section {
+    width: 75%;
+  }
+  .menu_section {
+    width: 25%;
+  }
+  .item_detail {
+    margin: 0 15px;
+  }
+}
+/* iPad 768 (portrait) view*/
+@media only screen and (max-width: 991px) {
+  .item {
+    width: 100%;
+  }
+  .list_section {
+    flex-direction: column;
+  }
+  .card_section {
+    width: 100%;
+  }
+  .menu_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu_section .btn_third,
+.para2 {
+    width: 200px;
+  }
+}
+/*/ iPhone-6 plus 736 (Landscape) view /*/
+@media only screen and (max-width: 767px) {
+  .slider {
+    width: 76%;
+  }
+  .exporter,
+.importer,
+.panel,
+.changer1 {
+    display: none;
+  }
+  .panel1 {
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 20px;
+  }
+  .panel1 i {
+    padding-right: 0;
+  }
+  .exp_imp .btn_secondary {
+    border-radius: 50%;
+    padding: 12px 10px;
+  }
+  .changer {
+    border-radius: 50%;
+    padding: 12px 10px;
+    width: 36px;
+  }
+  .exp_imp .btn_secondary i,
+.changer i {
+    padding: 0;
+  }
+  .previous,
+.next, .add {
+    padding: 12px 10px;
+  }
+}
+/*/ iPhone-6 667 (Landscape) view /*/
+/*/ iPhone-5 568 (Landscape) view /*/
+@media only screen and (max-width: 666px) {
+  .menu_slider {
+    flex-direction: column;
+  }
+  .slider {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .scroll-text {
+    width: 100%;
+  }
+  .messege {
+    width: 60px;
+    height: 55px;
+  }
+}
+/*/ iPhone-4 480 (Landscape) view /*/
+@media only screen and (max-width: 567px) {
+  .card {
+    padding: 20px;
+  }
+  .setting_sec {
+    padding: 0 20px 0 0;
+  }
+  .detail_sec {
+    padding: 20px;
+  }
+  .pr-20 {
+    padding-right: 10px;
+  }
+  .list_item h2 {
+    padding-left: 10px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .setting_menu {
+    right: 58px;
+  }
+  .list_item {
+    flex: 10%;
+  }
+}
+/*/ iPhone-6 plus 414 (portrait) view /*/
+@media only screen and (max-width: 479px) {
+  .round_rectengle {
+    display: none;
+  }
+  .header_section {
+    padding: 10px 20px;
+  }
+  .img {
+    width: 80px;
+    height: 90px;
+  }
+  .item {
+    padding: 10px;
+  }
+}
+/*/ iPhone-6 375 (portrait) view /*/
+@media only screen and (max-width: 413px) {
+  .h4_title {
+    -webkit-line-clamp: 1;
+  }
+  .setting_menu {
+    padding: 6px;
+  }
+  .setting_menu ul li {
+    padding: 2px;
+  }
+  .messege {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*/ iPhone-4 320 (portrait) view /*/
+@media only screen and (max-width: 375px) {
+  .setting, .previous, .next, .add {
+    padding: 10px 9px;
+    font-size: 18px;
+  }
+  .header_section {
+    padding: 10px;
+  }
+  .image_section {
+    padding: 40px 10px 20px 10px;
+  }
+  .menu_slider {
+    padding: 20px 10px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .item_detail {
+    margin: 0 8px;
+  }
+  .item {
+    flex-direction: column;
+  }
+  .item i {
+    display: none;
+  }
+  .img {
+    margin-top: 15px;
+    width: 100%;
+    height: 100px;
+  }
+}/*# sourceMappingURL=media.css.map */
