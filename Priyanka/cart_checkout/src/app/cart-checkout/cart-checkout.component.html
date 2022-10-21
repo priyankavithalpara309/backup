@@ -1,0 +1,289 @@
+<div class="container pt-5">
+    <p class="text">All items are exclusive of all taxes</p>
+    <h5>Home cleanning</h5>
+    <div class="row">
+        <div class="col-md-12 d-flex justify-spacebetween align-items-center mt-1 px-3">
+            <h5>{{products.name}}</h5>
+            <button class="btn btn-outline-info btn-custom" (click)="openPopup()" [ngStyle]="{'display':displaycusom_btn}">customize</button>
+            <div class="flex align-items-center prod_qty" [ngStyle]="{'display':displayqty_box}">
+                <a href="javascript:void(0)" class="qty-btn qty-dec" (click)="dec_qty()">-</a>
+                <input type="text" readonly class="form-control" [value]="no">
+                <a href="javascript:void(0)" class="qty-btn qty-inc" (click)="inc_qty()">+</a>
+            </div>
+        </div>
+    </div>
+    <div class="row px-3">
+        <div class="d-flex justify-spacebetween align-items-center mt-1 border-bottom pb-3">
+            <h5>₹ {{addcard*no}}.00</h5>
+            <img class="image_item" src="../../assets/image/img.jpg" (click)="edit_card()">
+        </div>
+    </div>
+
+    <!-- Add package -->
+    <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content animate-bottom">
+                <div class="modal-header modal-header--sticky">
+                    <a href="javascript:void(0)" (click)="ClosePopup()"><i class="fa-solid fa-chevron-left"></i></a>
+                    <h5 class="modal-title text-center w-100">{{products.name}}</h5>
+                    <!-- <button type="button" class="btn-close" aria-label="Close" (click)="ClosePopup()"></button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="pb-2">
+                        <div>
+                            <h4>Apartment Size <span class="text-danger"> * </span></h4>
+                            <p class="choose pt-1">Choose 1</p>
+                        </div>
+                        <div class="d-flex justify-spacebetween pt-4" *ngFor="let q of list_radio">
+                            <div>
+                                <input type="radio" name={{q.specification_group_id}} [checked]="q.is_default_selected" (click)="changedata(q)"> <label class="mx-2">{{q.name}}</label>
+                            </div>
+                            <div>
+                                <p>₹ {{q.price}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <div *ngFor="let i of products.specifications">
+                            <div *ngIf="modid==i.modifierId">
+                                <div>
+                                    <h4>{{i.name}}</h4>
+                                    <p class="choose pt-1">Choose up to 1</p>
+                                </div>
+                                <div class="d-flex justify-spacebetween pt-4" *ngFor="let q1 of i.list; let a1=index">
+                                    <div>
+                                        <input type="checkbox" name={{q1.specification_group_id}}
+                                            (change)="chkbox(i,q1)" [checked]="q1.is_default_selected" id={{q1._id}}
+                                            [disabled]="!q1.is_default_selected && i.max_range==2">
+                                        <label class="mx-2">{{q1.name}}</label>
+                                    </div>
+                                    <div *ngIf="show && q1.is_default_selected==true && q1.price" id={{q1._id}}>
+                                        <div class="flex align-items-center prod_qty">
+                                            <a href="javascript:void(0)" class="qty-btn qty-dec" (click)="dec_qty1(q1.price,q1)">-</a>
+                                            <input type="text" readonly class="form-control" [value]="q1.qty">
+                                            <a href="javascript:void(0)" class="qty-btn qty-inc" (click)="inc_qty1(q1.price,q1)">+</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>₹ {{q1.price}}</p>
+                                    </div>
+                                </div>
+                                <hr class="hr">
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="choose">Note</h4>
+                            <input type="text" placeholder="Note For Item" class="form-control mt-3 input">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer modal-footer--sticky">
+                    <div class="d-flex justify-spacebetween" style="width: 100%;">
+                        <div class="flex align-items-center prod_qty">
+                            <a href="javascript:void(0)" class="qty-btn qty-dec" (click)="dec_qty()">-</a>
+                            <input type="text" readonly class="form-control" [value]="no">
+                            <a href="javascript:void(0)" class="qty-btn qty-inc" (click)="inc_qty()">+</a>
+                        </div>
+                        <div class="addcard_sec">
+                            <button class="btn btn-info btn_card" (click)="addtocard(addcard*no)">Add To Card - ₹ {{addcard*no}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center pt-2" [ngStyle]="{'display':viewcard}">
+        <button class="d-flex btn btn-info btn_viewcard pr-2 align-items-center" (click)="viewcard_data()">
+            <div class="flex"><i class="fa-solid fa-bag-shopping"></i><span class="qty_no">1</span></div>
+            <div class="px-3">View Card</div>
+        </button>
+    </div>
+
+    <!--show massage-->
+
+    <div class="modal hide" tabindex="-1" role="dialog" [ngStyle]="{'display':displaymsg}">
+        <div class="modal-dialog modal-dialog1" aria-hidden="true">
+            <div class="modal-content animate-bottom model_content1">
+                <div class="modal-header">
+                    <a href="javascript:void(0)" (click)="ClosePopup()"><i class="fa-solid fa-chevron-left"></i></a>
+                    <h5 class="modal-title">Would You Like To Repeat Last Customisation?</h5>
+                    <!-- <button type="button" class="btn-close" aria-label="Close" (click)="ClosePopup()"></button> -->
+                </div>
+                <div class="modal-body">
+                    {{name}}
+                    <span *ngFor="let q of products.specifications">
+                        <span *ngIf="q.max_range==2">
+                            <span *ngFor="let q1 of q.list">
+                                <span *ngIf="q1.is_default_selected==true">
+                                    , {{q1.name}} <span *ngIf="q1.price!==0">{{"("+q1.qty+")"}} </span>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <div class="flex" style="width: 100%;">
+                        <button class="btn btn-info btn_card mx-2" (click)="customize_package()">Customize</button>
+                        <button class="btn btn-info btn_card mx-2" (click)="repeat()">Repeat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--show card data-->
+
+    <div class="modal hide" tabindex="-1" role="dialog" [ngStyle]="{'display':displaycard}">
+        <div class="modal-dialog modal-dialog2" role="document">
+            <div class="modal-content animate-bottom">
+                <div class="modal-header modal-header--sticky">
+                    <a href="javascript:void(0)" (click)="ClosePopup()"><i class="fa-solid fa-chevron-left"></i></a>
+                    <h5 class="modal-title text-center w-100">Card</h5>
+                    <!-- <button type="button" class="btn-close" aria-label="Close" (click)="ClosePopup()"></button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="border-bottom pb-2">
+                        <div class="flex justify-spacebetween align-items-center pb-2">
+                            <h6>{{products.name}}</h6>
+                            <button type="button" class="btn-close" aria-label="Close" style="font-size: 10px;" (click)="deleteorder()"></button>
+                        </div>
+                        <div class="bill_details py-3">
+                            {{name}}
+                            <span *ngFor="let q of products.specifications">
+                                <span *ngIf="q.max_range==2">
+                                    <span *ngFor="let q1 of q.list">
+                                        <span *ngIf="q1.is_default_selected==true">
+                                            , {{q1.name}} <span *ngIf="q1.price!==0">{{"("+q1.qty+")"}} </span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-spacebetween align-items-center" style="width: 100%;">
+                            <div class="flex align-items-center prod_qty text-info">
+                                <a href="javascript:void(0)" class="qty-btn qty-dec">-</a>
+                                <input type="text" readonly class="form-control text-info" [value]="no">
+                                <a href="javascript:void(0)" class="qty-btn qty-inc">+</a>
+                            </div>
+                            <div>
+                                <h6>₹ {{addcard*no}}.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer modal-footer--sticky">
+                    <div class="flex" style="width: 100%;">
+                        <button class="btn btn-info btn_card mx-2" (click)="checkout()">Checkout - ₹ {{addcard*no}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--checkout data-->
+
+    <div class="modal hide" tabindex="-1" role="dialog" [ngStyle]="{'display':displaycheckout}">
+        <div class="modal-dialog modal-dialog2" role="document">
+            <div class="modal-content animate-bottom">
+                <div class="modal-header modal-header--sticky border-bottom">                    
+                    <a href="javascript:void(0)" (click)="ClosePopup()"><i class="fa-solid fa-chevron-left"></i></a>
+                    <h5 class="modal-title text-center w-100">Checkout</h5>
+                    <!-- <button type="button" class="btn-close" aria-label="Close" (click)="ClosePopup()"></button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="pb-3">
+                        <h5>When</h5>
+                        <div class="pt-3">
+                            <a href="javascript:void(0)" class="text-info d-flex align-items-center">
+                                <div class="col-1"><i class="fa fa-rocket pr-2" aria-hidden="true"></i></div>
+                                <div class="col-11">As Soon As Possible</div>
+                            </a>
+                        </div>
+                        <div class="pt-3 d-flex align-items-center">
+                            <div class="col-1"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></div>
+                            <div class="col-7">Contact less delivery (only for card payment)</div>
+                            <div class="col-4"><input type="checkbox"  style="float: right;"></div>
+                        </div>
+                    </div>
+                    <hr class="border-bottom1">
+                    <div class="py-3">
+                        <div class="d-flex align-items-center justify-spacebetween">
+                            <h5>Delivery Details</h5>
+                            <button class="btn btn-info btn_edit">Edit</button>
+                        </div>
+                        <form>
+                            <input type="text" placeholder="Name" class="form-control mt-3 input">
+                            <div class="d-flex align-items-end">
+                                <div class="col-1" style="margin-right: 10px;">
+                                    <span class="info_data">code</span>
+                                    <input type="text" placeholder="+91" class="form-control input">
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" placeholder="Mobile No." class="form-control mt-3 input">
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <span class="info_data">Delivery Address</span>
+                                <input type="text" placeholder="Address" class="form-control input">
+                            </div>
+                            <input type="text" placeholder="Add Delivery Note" class="form-control input  mt-3">
+                        </form>
+                    </div>
+                    <hr class="border-bottom1">
+                    <div class="py-3">
+                        <div class="d-flex align-items-center justify-spacebetween">
+                            <h5>Offers</h5>
+                            <a href="javascript:void(0)">View Offer</a>
+                        </div>
+                        <div class="d-flex align-items-center justify-spacebetween mt-3">
+                            <div class="col-8"><input type="text" placeholder="Promo Code" class="form-control input mr-1"></div>
+                            <div class="col-3"><button class="btn btn-info btn_card" disabled="true">Apply</button></div>
+                        </div>
+                    </div>
+                    <hr class="border-bottom1">
+                    <div class="py-3">
+                        <h5>Tip</h5>
+                        <p class=" mt-3">Would you like to offer a TIP?</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="col-9">
+                                <button class="btn btn-info btn_viewcard">No Tip</button>
+                                <button class="btn btn-light btn_tip">5₹</button>
+                                <button class="btn btn-light btn_tip">10₹</button>
+                                <button class="btn btn-light btn_tip">15₹</button>
+                            </div>
+                            <div class="col-3">
+                                <input type="text" placeholder="₹" class="form-control input ml-1">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-bottom1">
+                    <div class="py-3">
+                        <h5>Invoice</h5>
+                        <div class="d-flex justify-spacebetween mt-3">
+                            <p>Service Price</p> <span>₹ 195.40</span>
+                        </div>
+                        <div class="d-flex justify-spacebetween">
+                            <h6>TOTAL SERVICE PRICE</h6>
+                            <h6>₹ 195.40</h6>
+                        </div>
+                        <div class="d-flex justify-spacebetween">
+                            <p>Item Price <span class="info_data" style="font-size: 8px;">{{no}} Item</span></p> <span>₹ {{final_amt}}.00</span>
+                        </div>
+                        <div class="d-flex justify-spacebetween">
+                            <h6>TOTAL ITEM PRICE</h6>
+                            <h6>₹ {{final_amt}}.00</h6>
+                        </div>
+                        <div class="mt-3">
+                            <p class="info_data">Total</p>
+                            <h3>₹ {{final_amt + 195.40}}</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer modal-footer--sticky">
+                    <button class="btn btn-info btn_card">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
