@@ -213,48 +213,48 @@ export class CartCheckoutComponent implements OnInit {
     this.displayStyle = "none";
     this.viewcard="flex";
     console.log(total_amount);    
-    console.log( this.name);
+    // console.log( this.name);
 
-    for(let i of this.products.specifications){      
-      // console.log(i);      
-      if(i.max_range==2)
-      {
-        // console.log( this.name);
-        this.aptnm=i.modifierName;
-        console.log(i);                
-        i.list.forEach((x: { price: any; _id: any; is_default_selected: boolean; qty:number; name:any}) => {
-          if(x.is_default_selected==true){
-            console.log(i.name, x.price , x.qty, x.name);            
-            x.qty=x.qty;
-            this.chk_name=x.name;
-            this.chk_qty=x.qty;
-          }
-        })
-        // console.log(i.list);
-      }
-    }
-    console.log(this.aptnm);        
+    // for(let i of this.products.specifications){      
+    //   // console.log(i);      
+    //   if(i.max_range==2)
+    //   {
+    //     // console.log( this.name);
+    //     this.aptnm=i.modifierName;
+    //     console.log(i);                
+    //     i.list.forEach((x: { price: any; _id: any; is_default_selected: boolean; qty:number; name:any}) => {
+    //       if(x.is_default_selected==true){
+    //         console.log(i.name, x.price , x.qty, x.name);            
+    //         x.qty=x.qty;
+    //         this.chk_name=x.name;
+    //         this.chk_qty=x.qty;
+    //       }
+    //     })
+    //     // console.log(i.list);
+    //   }
+    // }
+    // console.log(this.aptnm);        
   }
   edit_card(){
     if(this.displayqty_box=="flex"){
       this.displaymsg="block";       
     }    
-    for(let i of this.products.specifications){
-      // console.log(i);
-      if(i.max_range==2)
-      {
-        this.aptnm=i.modifierName;
-        console.log(i);                
-        i.list.forEach((x: { price: any; _id: any; is_default_selected: boolean; qty:number; name:any}) => {
-          if(x.is_default_selected==true){
-            console.log(i.name, x.price , x.qty, x.name);
-            x.qty=x.qty;
-          }
-        })
-        // console.log(i.list);
-      }
-    }
-    console.log(this.aptnm);   
+    // for(let i of this.products.specifications){
+    //   // console.log(i);
+    //   if(i.max_range==2)
+    //   {
+    //     this.aptnm=i.modifierName;
+    //     console.log(i);                
+    //     i.list.forEach((x: { price: any; _id: any; is_default_selected: boolean; qty:number; name:any}) => {
+    //       if(x.is_default_selected==true){
+    //         console.log(i.name, x.price , x.qty, x.name);
+    //         x.qty=x.qty;
+    //       }
+    //     })
+    //     // console.log(i.list);
+    //   }
+    // }
+    // console.log(this.aptnm);   
   }
   repeat(){    
     // this.ngOnInit()    
