@@ -1,0 +1,1020 @@
+<!-- Main banner start -->
+
+<div class="main-banner">
+    <div class="container">
+        <div class="b-wrp">
+            <div class="banner-img">
+                <div class="desktop-banner-img">
+                    <img src="../../../assets/images/store-banner.jpg" alt="">
+                </div>
+                <div class="mob-banner-img">
+                    <img src="../../../assets/images/store-banner.jpg" alt="">
+                </div>
+            </div>
+            <div class="banner-content d-flex align-item-center">
+                <div class="store-logo-img" style="border: none;">
+                    <img (error)="$event.target.src = DEFAULT_USER_PROFILE" [src]="IMAGE_URL + store_detail.image_url"
+                        alt="">
+                </div>
+                <!-- <div class="content-details truncate"> -->
+                <div class="content-details">
+                    <h1 class="truncate mh-45">{{ store_detail.name | langpipe }}</h1>
+                    <div class="common-content-list-wrp">
+                        <div class="common-content-list review-star">
+                            <div class="details-block">
+                                <h4 (click)="openReviewModal()">{{store_detail.user_rate}} <img src="../../../assets/images/star-black.svg" style="margin-bottom: 2px;" alt=""> </h4>
+                                <span (click)="openReviewModal()">{{store_detail.user_rate_count}} {{'label-title.reviews' | translate}}</span>
+                            </div>
+                        </div>
+                        <div class="common-content-list open-now">
+                            <div class="details-block">
+                                <h4>{{'label-title.open-status' | translate}}</h4>
+                                <span>{{_helper.open_at}}</span>
+                                <!-- <span *ngIf="is_store_open">{{'label-title.open' | translate}}</span>
+                                <span *ngIf="!is_store_open">{{'label-title.close-at-tomorrow' | translate}}</span> -->
+                            </div>
+                        </div>
+                        <!-- <div *ngIf="store_detail.min_order_price>0" class="common-content-list">
+                            <div class="details-block">
+                                <h4>{{'label-title.min-order-price' | translate}}</h4>
+                                <span>{{store_detail.min_order_price}}</span>
+                            </div>
+                        </div> -->
+                        <div class="clear">
+                            <div class="common-content-list delivery" *ngIf="store_detail.is_store_pay_delivery_fees">
+                                <div class="details-block">
+                                    <h4 class="price-color">
+                                        {{store_detail.country_details.currency_sign}}{{store_detail.free_delivery_for_above_order_price}}*
+                                    </h4>
+                                    <span>{{'label-title.delivery-free' | translate}}</span>
+
+                                    <!-- delivery-fee dropdown start  -->
+                                    <div class="delivery-fee common-dropdown small-dropdown">
+                                        <div class="dropdown-wrp">
+                                            <div class="dropdown-title without-subtitle">
+                                                <h2>{{'label-title.delivery-free' | translate}}</h2>
+                                            </div>
+                                            <div class="dropdown-content">
+                                                <p *ngIf="store_detail.is_store_pay_delivery_fees">
+                                                    {{'label-title.user-get-free-delivery-if-order-price-more-than' |
+                                                    translate}}
+                                                    {{store_detail.country_details.currency_sign}}{{store_detail.free_delivery_for_above_order_price}}
+                                                </p>
+                                                <p *ngIf="store_detail.is_store_pay_delivery_fees">
+                                                    {{'label-title.free-delivery-available-radius' | translate}}
+                                                    {{store_detail.free_delivery_within_radius}}
+                                                    {{store_detail.country_details.is_distance_unit_mile ? 'Mile' :
+                                                    'Km'}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- delivery-fee dropdown start  -->
+
+                                </div>
+                            </div>
+                            <div class="common-content-list cancellation"
+                                *ngIf="store_detail.is_order_cancellation_charge_apply">
+                                <div class="details-block">
+                                    <h4 class="price-color" *ngIf="store_detail.order_cancellation_charge_type === 1">
+                                        {{store_detail.order_cancellation_charge_value}}%</h4>
+                                    <h4 class="price-color" *ngIf="store_detail.order_cancellation_charge_type === 2">
+                                        {{store_detail.country_details.currency_sign}}{{store_detail.order_cancellation_charge_value}}*
+                                    </h4>
+                                    <span>{{'label-title.cancellation' | translate}}</span>
+
+                                    <!-- cancellation-fee dropdown start  -->
+                                    <div class="cancellation-fee common-dropdown small-dropdown">
+                                        <div class="dropdown-wrp">
+                                            <div class="dropdown-title without-subtitle">
+                                                <h2>{{'label-title.cancellation-fees' | translate}}</h2>
+                                            </div>
+                                            <div class="dropdown-content">
+                                                <p
+                                                    *ngIf="store_detail.is_order_cancellation_charge_apply && store_detail.order_cancellation_charge_type == 1">
+                                                    {{store_detail.order_cancellation_charge_value}}%
+                                                    {{'label-title.cancellation-charge-above' | translate}}
+                                                    {{store_detail.country_details.currency_sign}}{{store_detail.order_cancellation_charge_for_above_order_price}}
+                                                </p>
+                                                <p
+                                                    *ngIf="store_detail.is_order_cancellation_charge_apply && store_detail.order_cancellation_charge_type == 2">
+                                                    {{store_detail.country_details.currency_sign}}{{store_detail.order_cancellation_charge_value}}
+                                                    {{'label-title.cancellation-charge-above' | translate}}
+                                                    {{store_detail.country_details.currency_sign}}{{store_detail.order_cancellation_charge_for_above_order_price}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- cancellation-fee dropdown start  -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+
+
+</div>
+
+<div class="menu-sections mb-100">
+    <div class="container">
+
+        <div class="menu-title-wrp d-flex mb-30 flex-wrap">
+            <div class="section-title mr-auto">
+                <h2 class="mb-0">{{'heading-title.menu' | translate}}</h2>
+                <!-- <span id="menuTitle"></span> -->
+            </div>
+            <div class="menu-right d-flex flex-column flex-md-row align-items-start align-items-sm-center flex-sm-row align-item-center">
+              <!-- header-right-block toggle-btn  -->
+                <div class="book-table-btn toggle-btn delivery" *ngIf="!_helper.is_qr_code_scanned && (table_booking.is_table_reservation || table_booking.is_table_reservation_with_order) && store_detail.delivery_details.is_provide_table_booking">
+                    <form class="form mr-2 mb-2 mb-md-0">
+                      <div class="switch-field">
+                            <div class="h-takeway">
+                                <input [(ngModel)]="tableService.is_table_booked" (click)="openTableBookModel()" type="checkbox" id="bookatable" class="no-border" name="switch-one" value="bookatable" />
+                                <label for="bookatable" class="font-weight-normal primary-btn secondary-btn">{{'label-title.book-a-table' | translate}}</label>
+                            </div>
+                      </div>
+                  </form>
+                </div>
+
+                <div class="d-flex flex-row-reverse w-100 align-items-center">
+                  <div class="product-search d-flex align-items-center">
+                      <input type="text" [(ngModel)]="search_text"
+                          placeholder="{{'heading-title.placeholder-search' | translate}}" class="form-control">
+                      <img src="../../../assets/images/search-icon.svg" alt="">
+                  </div>
+
+                  <div class="d-inline d-sm-none">
+                    <div class="menu-filter ">
+                      <!-- <a  href="javascript:void(0)" class="filter-btn" (click)="onFilterModelOpen()"> -->
+                      <a  href="javascript:void(0)" class="filter-btn">
+                        <img height="14px" width="14px" src="../../../assets/images/filter.svg" alt="" class="mr-2">{{'label-title.filters' | translate}}</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-list mt-3">
+                  <div class="content">
+                    <div class="acc d-flex flex-wrap">
+                      <div class="acc__card" *ngFor="let product_group of product_groups; let product_group_index = index">
+                        <div class="acc__title" (click)="product_item_detail(product_group)">{{product_group.name}}</div>
+                        <div class="acc__panel px-3">
+                          <form>
+                            <label class="d-flex align-item-center" [ngClass]="tag._id._id === selected_product_id ? 'activelink text-theme' : 'text-black-50'" *ngFor="let tag of filtered_product_item_list;let product_index=index">
+                              <input name="{{product_group.name}}" id="{{tag._id.name}}" type="checkbox" (change)="product_detail(tag._id._id,$event)" class="option-input checkbox" data-tag="tab{{product_index}}"/>
+                              {{tag._id.name}}
+                            </label>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="acc__card">
+                        <div class="acc__title">{{'label-title.price' | translate}}</div>
+                        <div class="acc__panel px-3">
+                          <form>
+                            <div class="d-flex align-item-center" *ngFor="let price of filtered_product_item_list">
+                              <input type="checkbox" (change)="product_detail(price._id._id,$event)" class="option-input checkbox" />
+                              {{price._id.name}}
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <p *ngIf="!store_detail.is_tax_included" class="mb-2 text-green text-left small">{{'label-title.all-item-are-exclusive' | translate}}</p>
+        <div class="container" *ngIf="theme_number==THEME_NO.THEME_TWO">
+            <div class="row">
+                <!-- product title section  -->
+                <div class="col-lg-3 col-md-3 col-sm-4 col-12 mb-3 h-100 pl-sm-0 px-0 pr-sm-3 d-none d-sm-block">
+                    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" [closeOthers]="true" (panelChange)="panelChange($event)">
+                        <ngb-panel *ngFor="let product_group of product_groups; let product_group_index = index" id="{{product_group_index}}">
+                            <ng-template ngbPanelTitle>
+                                <!-- <div class="pl-3 py-3"> -->
+                                <div class="">
+                                    <h4 class="mb-0 w-100 d-flex justify-content-between">{{ product_group.name }}
+                                        <svg class="collapse-icon mr-2" viewBox="0 0 32 32">
+                                            <path
+                                                d="M0 9.6c0-0.205 0.078-0.409 0.234-0.566 0.312-0.312 0.819-0.312 1.131 0l13.834 13.834 13.834-13.834c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-14.4 14.4c-0.312 0.312-0.819 0.312-1.131 0l-14.4-14.4c-0.156-0.156-0.234-0.361-0.234-0.566z">
+                                            </path>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </ng-template>
+                            <ng-template ngbPanelContent>
+                                <ul class="pl-lg-5 pl-md-4 pl-sm-3 pt-0 mb-0">
+                                    <span
+                                        *ngIf="filtered_product_item_list.length == 0 ">{{'validation-title.subcategory_not_found'
+                                        |
+                                        translate}}</span>
+                                    <li *ngIf="filtered_product_item_list.length > 1 " class="tab-li"
+                                        (click)="product_detail('',$event)">
+                                        <a href="javascript:void();"
+                                            [ngClass]="selected_product_id !== '' ? 'activelink text-dark' : ''">
+                                            {{'heading-title.all' | translate}}
+                                        </a>
+                                    </li>
+
+                                    <li class="tab-li"
+                                        *ngFor="let product of filtered_product_item_list;let product_index=index"
+                                        (click)="product_detail(product._id._id,$event)">
+                                        <a href="javascript:void();" *ngIf="product.items.length != 0 && (product.items | searchpipe:search_text:['name']).length > 0" data-tag="tab1" class=""
+                                            [ngClass]="product._id._id === selected_product_id ? 'activelink text-theme' : 'text-black-50'"
+                                            data-tag="tab{{product_index}}">{{product._id.name}}</a>
+                                    </li>
+                                </ul>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+                <div class='product-content-wrp mt-0 col-lg-9 col-md-9 col-sm-8 col-12 pr-sm-0'
+                    *ngFor="let product_group of product_groups; let product_group_index = index" style="display:block"
+                    [hidden]="selected_product_group_id != product_group._id">
+                    <!-- product tab section  -->
+                    <div id="container-wrp">
+                        <div class="list" id="tab1">
+                            <div class="row">
+                                <ng-container *ngFor="let product of filtered_product_item_list;let product_index=index">
+                                    <!-- <div class="row" [hidden]="selected_product_id != product._id._id"> -->
+                                    <ng-container *ngIf="selected_product_id == product._id._id || selected_product_id == ''">
+                                      <div class="col-12 text-center" *ngIf="(product.items | searchpipe:search_text:['name']).length === 0">{{'label-title.no-item-found' | translate}}</div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex px-1 px-sm-3"
+                                            *ngFor="let item of product.items | searchpipe:search_text:['name'];let item_index=index">
+                                            <div class="product-block product-tab">
+                                                <div class="product-list align-item-center d-flex flex-column">
+                                                    <div class="product-img" (click)="onModelOpen(item)">
+                                                        <img class="d-block mx-auto my-4"
+                                                            (error)="$event.target.src = ITEM_DEFAULT_IMAGE"
+                                                            [src]="IMAGE_URL + item.image" alt="">
+                                                    </div>
+                                                    <div class="product-details ml-0 px-4 pb-3 d-flex flex-column flex-grow-1" style="width:100%">
+                                                        <a href="javascript:void(0)" (click)="onModelOpen(item)"
+                                                            class="d-block">{{item.name}}</a>
+                                                        <div class="mb-2 mt-1 flex-grow-1 d-flex flex-column justify-content-between">
+                                                            <div class="product-price mr-auto mb-3">
+                                                                {{store_detail.country_details ?
+                                                                store_detail.country_details.currency_sign : ''}}
+                                                                {{item.temp_price | roundpipe:2}}
+                                                            </div>
+                                                            <ng-container *ngIf="item.specifications.length == 0">
+                                                                <div class="add-to-cart-bttn mr-0" *ngIf="item.qty == 0">
+                                                                    <button type="button" class="primary-btn secondary-btn"
+                                                                        (click)="onItemAddButtonClick(item);">{{'button-title.add'
+                                                                        | translate}}</button>
+                                                                </div>
+                                                                <div class="product-qty d-flex align-item-center"
+                                                                    *ngIf="item.qty != 0">
+                                                                    <a href="javascript:void(0)" class="qty-btn qty-dec"
+                                                                        (click)="onItemDecreaseQty(item)">-</a>
+                                                                    <input type="text" class="form-control" value="{{item.qty}}"
+                                                                        readonly>
+                                                                    <a href="javascript:void(0)" class="qty-btn qty-inc"
+                                                                        (click)="onItemIncreaseQty(item)">+</a>
+                                                                </div>
+                                                            </ng-container>
+                                                            <ng-container *ngIf="item.specifications.length != 0">
+                                                                <div class="add-to-cart-bttn" *ngIf="item.qty == 0">
+                                                                    <button type="button" class="primary-btn secondary-btn"
+                                                                        (click)="onModelOpen(item)">{{'button-title.customize' |
+                                                                        translate}}</button>
+                                                                </div>
+                                                                <div class="product-qty d-flex align-item-center"
+                                                                    *ngIf="item.qty != 0">
+                                                                    <a href="javascript:void(0)" class="qty-btn qty-dec"
+                                                                        (click)="onRepeatLastItemDecreaseQty(item)">-</a>
+                                                                    <input type="text" class="form-control" value="{{item.qty}}"
+                                                                        readonly>
+                                                                    <a href="javascript:void(0)" class="qty-btn qty-inc"
+                                                                        (click)="onModelOpen(item)">+</a>
+                                                                </div>
+                                                            </ng-container>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-container>
+                                </ng-container>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-type" *ngIf="theme_number==THEME_NO.THEME_ONE">
+            <div id='product-type-wrp' *ngFor="let product_group of product_groups; let product_group_index = index"
+                data-tag="tab{{i}}">
+
+                <!-- product title section  -->
+                <div class="product-block-title" (click)="product_item_detail(product_group, THEME_NO.THEME_ONE)">
+                    <div class="title-block">
+                        <div class="title-block-wrp d-flex align-item-center">
+                            <div class="title-block-img">
+                                <img (error)="$event.target.src = ITEM_DEFAULT_IMAGE"
+                                    [src]="IMAGE_URL + product_group.image_url" alt="">
+                            </div>
+                            <div class="title-block-details">
+                                <h3>{{ product_group.name }}</h3>
+                                <!-- <p>A classic delight with 100% Real mozzarella cheese</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product content section  -->
+                <div class='product-content-wrp' style="display:block"
+                    [hidden]="selected_product_group_id != product_group._id">
+                    <ul class="tab d-flex">
+                        <span *ngIf="filtered_product_item_list.length == 0 ">{{'validation-title.subcategory_not_found' |
+                            translate}}</span>
+                        <li class="tab-li" *ngFor="let product of filtered_product_item_list;let product_index=index"
+                            (click)="product_detail(product._id._id,$event)">
+                            <a href="javascript:void();" *ngIf="product.items.length != 0 && (product.items | searchpipe:search_text:['name']).length > 0" data-tag="tab1"
+                                [ngClass]="product._id._id === selected_product_id ? 'activelink' : ''"
+                                data-tag="tab{{product_index}}">{{product._id.name}}</a>
+                            </li>
+                    </ul>
+
+                    <!-- product tab section  -->
+                    <div id="container-wrp">
+                        <div class="list" id="tab1">
+                            <ng-container *ngFor="let product of filtered_product_item_list;let product_index=index">
+                                <div class="row" [hidden]="selected_product_id != product._id._id">
+                                    <ng-container *ngIf="selected_product_id == product._id._id">
+                                        <div class="col-lg-4 col-sm-6 d-flex"
+                                            *ngFor="let item of product.items | searchpipe:search_text:['name'];let item_index=index">
+                                            <div class="product-block product-tab">
+                                                <div class="product-list d-flex align-item-center">
+                                                    <div class="product-img" (click)="onModelOpen(item)">
+                                                        <img (error)="$event.target.src = ITEM_DEFAULT_IMAGE" [src]="IMAGE_URL + item.image" alt="">
+                                                    </div>
+                                                    <div class="product-details" style="width:100%">
+                                                        <a href="javascript:void(0)" (click)="onModelOpen(item)">{{item.name}}</a>
+                                                        <p (click)="onModelOpen(item)">{{item.details}}</p>
+                                                        <div class="product-bottom d-flex align-item-center">
+                                                            <div class="product-price mr-auto">
+                                                                {{store_detail.country_details ? store_detail.country_details.currency_sign : ''}} {{item.temp_price | roundpipe:2}}
+                                                            </div>
+                                                            <ng-container *ngIf="item.specifications.length == 0">
+                                                              <div class="add-to-cart-bttn" *ngIf="item.qty == 0">
+                                                                  <button type="button" class="primary-btn secondary-btn" (click)="onItemAddButtonClick(item);">{{'button-title.add' | translate}}</button>
+                                                              </div>
+                                                              <div class="product-qty d-flex align-item-center" *ngIf="item.qty != 0">
+                                                                <a href="javascript:void(0)" class="qty-btn qty-dec"
+                                                                  (click)="onItemDecreaseQty(item)">-</a>
+                                                                <input type="text" class="form-control" value="{{item.qty}}" readonly>
+                                                                <a href="javascript:void(0)" class="qty-btn qty-inc"
+                                                                  (click)="onItemIncreaseQty(item)">+</a>
+                                                              </div>
+                                                            </ng-container>
+                                                            <ng-container *ngIf="item.specifications.length != 0">
+                                                              <div class="add-to-cart-bttn" *ngIf="item.qty == 0">
+                                                                  <button type="button" class="primary-btn secondary-btn" (click)="onModelOpen(item)">{{'button-title.customize' | translate}}</button>
+                                                              </div>
+                                                              <div class="product-qty d-flex align-item-center" *ngIf="item.qty != 0">
+                                                                <a href="javascript:void(0)" class="qty-btn qty-dec"
+                                                                  (click)="onRepeatLastItemDecreaseQty(item)">-</a>
+                                                                <input type="text" class="form-control" value="{{item.qty}}" readonly>
+                                                                <a href="javascript:void(0)" class="qty-btn qty-inc"
+                                                                  (click)="onModelOpen(item)">+</a>
+                                                              </div>
+                                                            </ng-container>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-container>
+                                </div>
+                            </ng-container>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Menu section end -->
+
+<!-- About section start  -->
+
+<div class="about-section mb-4">
+    <div class="container">
+        <div class="address-section">
+            <div class="row">
+                <div class="col-sm-6 time-list">
+                    <div class="section-title section-title-with-text mb-10">
+                        <!-- <h3 class="mb-0">{{'heading-title.address' | translate}}</h3> -->
+                        <span id="addressTitle"></span>
+                    </div>
+                    <address>{{store_detail.address}} <br>{{store_detail.country_phone_code}} {{store_detail.phone}}
+                    </address>
+                    <a href="javascript:void(0)" (click)="gotoDirection()">{{'button-title.get-directions' |
+                        translate}}</a>
+                    <div class="store-hours">
+                        <div class="section-title section-title-with-text mb-10">
+                            <!-- <h3 class="mb-0">{{'label-title.hours' | translate}}</h3> -->
+                            <span id="hourTitle"></span>
+                            <p class="mb-0">{{'label-title.all-times-are-in' | translate}} {{_helper.timezone}}</p>
+                        </div>
+                        <div class="time-list-block-wrp">
+                            <div class="row time-list-block" *ngFor="let time of store_detail.store_time">
+                                <div class="col-md-4 col-4 order2">
+                                    <span>{{'days.'+time.day | translate}}</span>
+                                </div>
+                                <div class="col-md-8 col-8 order1" *ngIf="!time.is_store_open_full_time">
+                                    <div class="time" *ngFor="let time of time.day_time"><span>{{time.store_open_time}}
+                                            - {{time.store_close_time}}</span></div>
+                                </div>
+                                <div class="col-md-8 col-8 order1" *ngIf="time.is_store_open_full_time">
+                                    <div class="time"><span>{{'label-title.open' | translate}} </span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="store-map">
+                        <div id="map" style="width: 100%; min-height: 400px;margin-top:20px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About section end  -->
+
+<!-- product card popup start  -->
+
+<div class="custom-model-main product-popup my-scroll-area fix" id="product-popup">
+    <div class="custom-model-inner">
+        <div class="close-btn" id="close_item_model">×</div>
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+                <div class="dropdown-title">
+                    <h2>{{ selected_item.name }}</h2>
+                </div>
+                <div class="dropdown-content" style="padding-top: 100px;">
+                    <div class="pro-dec">
+                        <p>{{ selected_item.details }}</p>
+                    </div>
+                    <div class="product-img text-center mb-30" *ngIf="imagesUrl.length !== 0">
+                        <img *ngIf="imagesUrl.length === 0" (error)="$event.target.src = ITEM_DEFAULT_IMAGE"
+                            [src]="ITEM_DEFAULT_IMAGE" alt="">
+                        <carousel *ngIf="imagesUrl.length !== 0" [cellsToShow]="1" [images]="imagesUrl"></carousel>
+                    </div>
+
+                    <div *ngFor="let specification of selected_item.specifications; let i = index">
+                        <ng-container *ngIf="!specification.isAssociated">
+                            <hr>
+                            <div class="product-options-block" *ngIf="specification.type === 1">
+                                <div class="subtitle-wrp d-flex align-item-top">
+                                    <div class="choose-item-wrp d-flex flex-wrap">
+                                        <h4>{{specification.name | langpipe}}</h4>
+                                        <div class="choose">{{'label-title.choose1' | translate}}</div>
+                                    </div>
+                                    <div class="required-star" *ngIf="specification.is_required">
+                                        {{'label-title.required' |
+                                        translate}}</div>
+                                </div>
+                                <div class="options-list-block">
+                                    <form action="">
+                                        <div class="options-list-wrp d-flex align-item-center"
+                                            *ngFor="let spec of specification.list; let spec_index = index">
+                                            <label for="opt{{spec_index}}{{i}}" class="radio">
+                                                <input type="radio" [checked]="spec.is_default_selected"
+                                                    id="opt{{spec_index}}{{i}}"
+                                                    (change)="changeradio($event, i, spec_index)" name="opt{{i}}"
+                                                    class="hidden" />
+                                                <span class="label"></span>{{spec.name | langpipe}}
+                                            </label>
+                                            <div class="options-price">
+                                                <span *ngIf="spec.price > 0">{{store_detail.country_details ?
+                                                    store_detail.country_details.currency_sign : ''}} {{spec.price |
+                                                    roundpipe:2}}</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="product-options-block" *ngIf="specification.type === 2">
+                                <div class="subtitle-wrp d-flex align-item-top">
+                                    <div class="choose-item-wrp d-flex flex-wrap">
+                                        <h4>{{specification.name | langpipe}}</h4>
+                                        <div class="choose">
+                                            <span
+                                                *ngIf="specification.range !== 0 || specification.max_range !== 0">{{'label-title.choose'
+                                                | translate}} {{specification.range}}</span>
+                                            <span *ngIf="specification.max_range !== 0">&nbsp;{{'label-title.to' |
+                                                translate}}&nbsp;{{specification.max_range}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="required-star" *ngIf="specification.is_required">
+                                        {{'label-title.required' |
+                                        translate}}</div>
+                                </div>
+                                <div class="options-list-block">
+                                    <form action="">
+                                        <div class="options-list-wrp d-flex align-item-center"
+                                            *ngFor="let spec of specification.list; let spec_index = index">
+                                            <label class="d-flex checkbox align-item-center flex-grow-1">
+                                                <input type="checkbox" [checked]="spec.is_default_selected"
+                                                    *ngIf="specification.type==2 && (specification.max_range == 0 || specification.max_range == null)"
+                                                    [disabled]="specification.default_selected_count == specification.range && specification.range !== 0 && !spec.is_default_selected"
+                                                    (change)="changecheckbox($event, i, spec_index)"
+                                                    class="option-input checkbox mr-0">
+                                                <input type="checkbox" [checked]="spec.is_default_selected"
+                                                    *ngIf="specification.type==2 && specification.max_range != 0 && specification.max_range != null"
+                                                    [disabled]="specification.default_selected_count == specification.max_range && !spec.is_default_selected"
+                                                    (change)="changecheckbox($event, i, spec_index)"
+                                                    class="option-input checkbox mr-0">
+                                                <span class="label"></span>{{spec.name | langpipe}}
+                                            </label>
+                                            <div class="product-qty d-flex align-item-center mb-1 flex-shrink-0"
+                                                style="font-size: 70%;"
+                                                *ngIf="spec.is_default_selected && specification.user_can_add_specification_quantity">
+                                                <a href="javascript:void(0)" class="qty-btn qty-dec"
+                                                    (click)="onDecreaseQty( i, spec_index)">-</a>
+                                                <input type="text" class="form-control" style="font-size: 88%;"
+                                                    [value]="selected_item.specifications[i].list[spec_index].quantity"
+                                                    readonly>
+                                                <a href="javascript:void(0)" class="qty-btn qty-inc"
+                                                    (click)="onIncreaseQty( i, spec_index)">+</a>
+                                            </div>
+                                            <div class="options-price flex-shrink-0">
+                                                <span *ngIf="spec.price > 0">{{store_detail.country_details ?
+                                                    store_detail.country_details.currency_sign : ''}} {{spec.price |
+                                                    roundpipe:2}}</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </ng-container>
+                    </div>
+                    <div class="product-options-block">
+                        <h4>{{'heading-title.preferences' | translate}}</h4>
+                        <div class="options-list-block">
+                            <h5 class="small-title">{{'label-title.any-special-instructions' | translate}}</h5>
+                            <textarea class="form-control" [(ngModel)]="note_for_item" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="popup-footer">
+                        <div class="popup-footer-wrp d-flex align-item-center">
+                            <div class="product-qty d-flex align-item-center">
+                                <a href="javascript:void(0)" class="qty-btn qty-dec" (click)="decrease_qty()">-</a>
+                                <input type="text" class="form-control" value="{{qty}}" readonly>
+                                <a href="javascript:void(0)" class="qty-btn qty-inc" (click)="incerase_qty()">+</a>
+                            </div>
+                            <div class="add-to-cart-btn">
+                                <button class="primary-btn" (click)="handleClickOnAddToCart()"
+                                    [disabled]="required_count !== required_temp_count">{{'button-title.add-to-order' |
+                                    translate}} - {{store_detail.country_details ?
+                                    store_detail.country_details.currency_sign : ''}} {{total | roundpipe:2}}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-overlay"></div>
+</div>
+
+<!-- product card popup end  -->
+
+<!-- Read more review popup start  -->
+
+<div class="custom-model-main my-scroll-area fix" id="review-content">
+    <div class="custom-model-inner">
+        <div class="close-btn">×</div>
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+              <div class="reviews-sections">
+                <div class="container">
+                    <div class="dropdown-title section-title-with-text">
+                        <h2>{{'label-title.rating-and-review' | translate}}</h2>
+                    </div>
+
+                    <div class="dropdown-content pb-0" style="padding-top: 100px;">
+                      <div class="product-options-block">
+                        <div class="dining-review-section">
+                          <div class="mb-3">
+                            <div class="d-flex">
+                              <div class="w-25 d-flex flex-column">
+                                <h2 class="display-4 font-weight-normal mb-0 text-center">{{ store_detail.user_rate }}</h2>
+                                <div class="d-flex justify-content-center mb-3">
+                                  <img src="../../../assets/images/star-pink.svg" alt=""
+                                    *ngFor="let item of [].constructor(store_total_rate);">
+                                </div>
+                                <p class="text-center">
+                                  <img src="../../../assets/images/people-solid.svg" alt="" class="grayscale" width="19px" height="19px">
+                                  &nbsp;{{ store_detail.user_rate_count }}
+                                </p>
+                              </div>
+                              <div class="w-75">
+                                <div class="row align-items-center" *ngFor="let item of [].constructor(5);let i = index">
+                                  <div class="col-2 text-right pr-0">
+                                    <span class="mr-1">{{5-i}}</span>
+                                    <img src="../../../assets/images/star-pink.svg" class="mb-1">
+                                  </div>
+                                  <div class="col-9">
+                                    <div class="progress" style="height: 2px;">
+                                      <div class="progress-bar theme-bg-color" role="progressbar" style="width: {{store_rating_per[5-i]}}%" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                  <div class="col-1 pl-0">
+                                    <span>{{store_rating[5-i]}}</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row mb-3">
+                              <div class="col-12" *ngFor="let review of store_review_list">
+                                  <div class="review-block mb-3">
+                                      <div class="customer-name d-flex justify-content-between">
+                                          <h4 class="">{{ review.user_detail.first_name + " " + review.user_detail.last_name }}</h4>
+                                          <span class="text-black-50 small">{{ review.created_at | date:"dd MMM yy" }}</span>
+                                      </div>
+                                      <div class="customer-review-count">
+                                          <div class="d-flex align-item-center">
+                                              <span>{{ review.user_rating_to_store }}</span> <img src="../../../assets/images/star-pink.svg" class="mb-1">
+                                          </div>
+                                      </div>
+                                      <div class="customer-text">
+                                          <p class="d-block">{{ review.user_review_to_store }}</p>
+                                      </div>
+                                      <div class="d-flex align-items-center" *ngIf="review.user_review_to_store.length != 0 && this._authService.logginUser">
+                                        <a href="javascript:;" class="like d-flex align-items-center">
+                                          <img src="../../../assets/images/thumbs-up-solid.svg" alt="" class="{{ review.is_user_like_store_comment ? '' : 'grayscale' }}" width="19px" height="19px"
+                                            (click)="likeReview(review);">
+                                          <input class="form-control border-0 text-black-50 h6 mb-0 pl-1 font-weight-normal d-inline shadow-none review-input"
+                                            readonly="readonly" type="text" [value]="review.id_of_users_like_store_comment.length" />
+                                        </a>
+                                        <a href="javascript:;" class="dislike d-flex align-items-center">
+                                          <img src="../../../assets/images/thumbs-down-solid.svg" alt="" class="{{ review.is_user_dislike_store_comment ? '' : 'grayscale' }}" width="19px" height="19px"
+                                            (click)="dislikeReview(review);">
+                                          <input class="form-control border-0 text-black-50 h6 mb-0 pl-1 font-weight-normal d-inline shadow-none review-input"
+                                            readonly="readonly" type="text" [value]="review.id_of_users_dislike_store_comment.length" />
+                                        </a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-overlay"></div>
+</div>
+
+<!-- Read more review popup start  -->
+
+<!-- Clear Cart popup start  -->
+
+<div class="custom-model-main" id="clear-cart-content">
+    <div class="custom-model-inner">
+        <div  #closeClearCartPopup class="close-btn" id="close-clear-cart" hidden>×</div>
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+                <div class="dropdown-content">
+                    <div class="customer-name">
+                        <h3>{{'heading-title.attention' | translate}}</h3>
+                    </div>
+                    <div class="customer-text-popup">
+                        <p>{{'heading-title.clear-cart-content' | translate}}</p>
+                    </div>
+                    <div>
+                      <button type="button" class="primary-btn" (click)="clearCart()">{{'button-title.continue' | translate}}</button>
+                      <button type="button" class="primary-btn secondary-btn ml-2" (click)="closeClearCartPopup.click()">{{'button-title.cancel' | translate}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-overlay"></div>
+</div>
+
+<!-- Clear Cart popup End  -->
+
+
+<!-- Table Book Popup Start -->
+<div class="custom-model-main" id="table-book">
+    <div class="custom-model-inner">
+        <!-- <div class="close-btn" id="close-table-book" (click)="closeTableBooking()">×</div> -->
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+              <div class="dropdown-title without-subtitle">
+                <div id="close-table-book" class="close-btn" (click)="closeTableBooking()">×</div>
+                <h2>{{'heading-title.table-reservation' | translate}}</h2>
+              </div>
+              <!-- <div class="customer-name">
+                <div class="close-btn float-left" id="close-table-book" (click)="closeTableBooking()">×</div>
+                <h3>{{'heading-title.table-reservation' | translate}}</h3>
+              </div> -->
+                <div class="dropdown-content">
+                    <form [formGroup]="tableForm" (ngSubmit)="reservetableBook()">
+                    <div class="customer-text-popup">
+                        <div class="row">
+
+                          <div class="col-4 col-sm-3 mb-4">
+                            <p class="mb-2 p-0">{{'label-title.date' | translate}}</p>
+                            <!-- <input type="text" placeholder="Datepicker" class="form-control" formControlName="table_book_date"
+                            [minDate]="current_date" bsDatepicker [container]="'html'" [maxDate]="table_max_date"
+                            [bsConfig]="{ adaptivePosition: true, dateInputFormat: 'MM-DD-YYYY', containerClass: 'theme-blue' }" readonly> -->
+                            <label>{{tableForm.value.table_book_date | date: 'mediumDate'}}</label>
+                          </div>
+
+                          <div class="col-4 mb-4">
+                            <p class="mb-2 p-0">{{'label-title.time' | translate}}</p>
+                            <!-- <input type="text" class="form-control" (click)="onSlotClick()" formControlName="schedule_time"> -->
+                            <!-- <input [ngxTimepicker]="timepicker" formControlName="table_book_time" [format]=24 readonly class="form-control"
+                            [ngxTimepicker]="timepicker" /> -->
+                            <!-- <ngx-material-timepicker #timepicker></ngx-material-timepicker> -->
+                            <!-- <label>{{tableForm.value.schedule_time}}</label> -->
+                            <label class="d-block">
+                              <span *ngIf="tableForm.value.schedule_time">{{tableForm.value.schedule_time}}</span>
+                              <a href="javascript:;" (click)="onSlotClick()" *ngIf="!tableForm.value.schedule_time">{{'label-title.select-date-time' | translate}}</a>
+                            </label>
+                            <span *ngIf="tableForm.touched && !tableForm.value.schedule_time" class="text-danger mb-3">{{'validation-title.this-is-required' | translate}}</span>
+                          </div>
+                          <!-- <a class="col-4 d-flex align-item-center ml-auto" (click)="onSlotClick()">{{'label-title.change-date-n-time' | translate}}</a> -->
+                          <a *ngIf="tableForm.value.schedule_time" class="col-4 d-flex align-item-center ml-auto" (click)="onSlotClick()">{{'label-title.change-date-time' | translate}}</a>
+                        </div>
+                        <!-- <div class="mb-4 mt-4"></div>
+                        <strong class="text-dark">{{'label-title.select-table' | translate}}</strong>
+                        <div class="mt-2 options-list-wrp d-flex align-item-center" style="width: 100%;float: left;">
+                            <label [class.personselected]="tno.table_no === tableForm.get('table_no').value" *ngFor="let tno of tables;let i=index" for="tn{{i}}" class="radio tablelabel mr-2">
+                                <input formControlName="table_no" (change)="selectTable()" [value]="tno.table_no" type="radio" id="tn{{i}}" name="table_no" hidden/>
+                                <b>{{tno.table_no}}</b>
+                            </label>
+                        </div> -->
+                        <div class=""><strong class="text-dark">{{'label-title.no-of-people' | translate}}</strong></div>
+                        <!-- <strong class="text-dark">{{'label-title.no-of-people' | translate}}</strong> -->
+                        <div class="mb-3 mt-2 options-list-wrp d-flex align-item-center flex-wrap" style="width: 100%;float: left;">
+                            <label [class.personselected]="tableForm.get('no_of_person').value === person" *ngFor="let person of persons;let i=index" for="totalperson{{i}}" class="radio tablelabel mr-2">
+                                <input formControlName="no_of_person" (change)="selectPerson(person)" [value]="person" type="radio" id="totalperson{{i}}" name="no_of_person" hidden/>
+                                <b>{{person}}</b>
+                            </label>
+                            <span *ngIf="tableForm.touched && tableForm.get('no_of_person')?.errors?.required" class="text-danger mb-3">{{'validation-title.this-is-required' | translate}}</span>
+                        </div>
+
+                        <!-- <div class="mb-4 mt-4"></div> -->
+                        <strong class="text-dark" *ngIf="is_store_have_table">{{'label-title.select-table' | translate}}</strong>
+                        <div *ngIf="is_store_have_table" class="mb-3 mt-2 options-list-wrp d-flex align-item-center flex-wrap" style="width: 100%;float: left;">
+                            <label [class.personselected]="tno.table_no === tableForm.get('table_no').value" *ngFor="let tno of total_tables;let i=index" for="tn{{i}}" class="radio tablelabel mr-2">
+                                <input formControlName="table_no" (change)="selectTable(tno)" [value]="tno.table_no" type="radio" id="tn{{i}}" name="table_no" hidden/>
+                                <b>{{tno.table_no}}</b>
+                            </label>
+                            <span class="text-danger mb-3" *ngIf="!is_store_have_table">{{'label-title.table-not-found' | translate}}</span>
+                            <span *ngIf="tableForm.get('table_no')?.errors?.required" class="text-danger small mb-3">{{'validation-title.this-is-required' | translate}}</span>
+                        </div>
+                        <div *ngIf="!is_store_have_table && tableForm.get('no_of_person')?.valid" class="mt-0 options-list-wrp d-flex align-item-center flex-wrap" style="width: 100%;float: left;">
+                          <span class="text-danger mb-4">{{'label-title.table-not-found' | translate}}</span>
+                        </div>
+                        <div class="mb-4 mt-4"></div>
+                        <strong class="text-dark">{{'label-title.would-you-like-order-now' | translate}}</strong>
+                        <div class="mt-2 options-list-wrp d-flex flex-column align-item-center">
+                            <label for="opt" class="radio" *ngIf="table_booking.is_table_reservation">
+                                <input type="radio" formControlName="booking_type" id="opt" value="1" name="booking_type" class="hidden" />
+                                <span class="label"></span> {{'label-title.book-at-restautant' | translate}}
+                            </label>
+                            <label for="opt1" class="radio" *ngIf="table_booking.is_table_reservation_with_order">
+                                <input type="radio" formControlName="booking_type" id="opt1" value="2" name="booking_type" class="hidden" />
+                                <span class="label"></span> {{'label-title.book-my-order-now' | translate}}
+                            </label>
+                        </div>
+                    </div>
+                    <div *ngIf="is_item_added_in_table_at_restaurant" class="mb-2 text-danger" style="font-size: 85%;">{{'label-title.is-item-added-in-table-at-restaurant' | translate}}</div>
+                    <div class="mt-4">
+                        <!-- <button type="submit" [disabled]="!is_store_have_table || tableForm.invalid" class="w-100 text-center primary-btn secondary-btn c-pointer"> -->
+                        <button type="submit" class="w-100 text-center primary-btn c-pointer">
+                            {{'button-title.reserve-a-table' | translate}}
+                        </button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-overlay"></div>
+</div>
+
+
+<!-- Table Book Popup End-->
+
+<!-- Filter menu popup start  -->
+
+<!-- <div class="custom-model-main d-sm-none" id="filter-menu-content">
+  <div class="custom-model-inner">
+    <div class="close-btn" id="close_item_model">×</div>
+    <div class="custom-model-wrap">
+        <div class="pop-up-content-wrap">
+          <div class="dropdown-title">
+            <h2>{{'label-title.filters' | translate}}</h2>
+          </div>
+          <div class="dropdown-content" >
+            <div>
+              <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="ngb-panel-0" type="light">
+                <ngb-panel *ngFor="let product_group of product_groups; let i = index" id="ngb-panel-{{i}}">
+                  <ng-template ngbPanelTitle >
+                    <div class="pl-3 py-3">
+                      <h4 class="mb-0 w-100 d-flex justify-content-between" (click)="product_item_detail(product_group)">{{ product_group.name }}
+                        <svg class="collapse-icon mr-2" viewBox="0 0 32 32"><path d="M0 9.6c0-0.205 0.078-0.409 0.234-0.566 0.312-0.312 0.819-0.312 1.131 0l13.834 13.834 13.834-13.834c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-14.4 14.4c-0.312 0.312-0.819 0.312-1.131 0l-14.4-14.4c-0.156-0.156-0.234-0.361-0.234-0.566z"></path></svg>
+                      </h4>
+                    </div>
+                  </ng-template>
+                  <ng-template ngbPanelContent>
+                    <ul class="pl-lg-5 pl-md-4 pl-sm-3 pt-0">
+                      <span *ngIf="filtered_product_item_list.length == 0 ">{{'validation-title.subcategory_not_found' |
+                          translate}}</span>
+                      <li class="tab-li" *ngFor="let product of filtered_product_item_list;let product_index=index"
+                          (click)="product_detail(product._id._id,$event)" >
+                          <a href="javascript:void();" *ngIf="product.items.length != 0 " data-tag="tab1" class=""
+                              [ngClass]="product._id._id === selected_product_id ? 'activelink text-theme' : 'text-black-50'"
+                              data-tag="tab{{product_index}}">{{product._id.name}}</a>
+                          </li>
+                    </ul>
+                  </ng-template>
+                </ngb-panel>
+              </ngb-accordion>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="bg-overlay"></div>
+</div> -->
+
+<!-- Filter menu popup End  -->
+<!-- Item With Modifier repeater modal -->
+<div class="custom-model-main medium-popup fix no-footer" id="item-repeat-modal">
+    <div class="custom-model-inner">
+        <div class="custom-model-wrap">
+            <div class="signin-box pop-up-content-wrap" style="border-bottom: 1px solid #eee;">
+                <div class="signin-title without-subtitle">
+                    <h3 class="m-0">{{'label-title.repeat-last-customization' | translate}}</h3>
+                    <div class="signinclose close-btn">×</div>
+                </div>
+                <div class="signin-container" *ngIf="lastItemSpecifications">
+                    <div>
+                        {{'label-title.customizations' | translate}}:&nbsp;<span *ngFor="let spec of lastItemSpecifications">
+                            <span *ngFor="let specification of spec.list">
+                                {{specification.name}}<span *ngIf="specification.quantity > 1">(x{{specification.quantity}})</span>
+                            </span>
+                        </span>
+                    </div>
+                    <!-- <div class="note">{{'label-title.customization' | translate}}: Last(x3), Jalapenos(x5)</div> -->
+                    <div class="justify-item-center mt-4 text-center">
+                        <input class="primary-btn secondary-btn" (click)="onCustomize()" type="button" value="{{'button-title.customize' | translate}}">
+                        <input class="ml-2 primary-btn" (click)="onRepeat()" type="button" value="{{'label-title.repeat-last-customization' | translate}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-overlay"></div>
+</div>
+<!-- Item With Modifier repeater modal -->
+
+<!-- Item With Modifier removal modal -->
+<div class="custom-model-main medium-popup fix no-footer" id="item-removal-modal">
+    <div class="custom-model-inner">
+      <div class="close-btn" id="close_item_removal_model">×</div>
+        <div class="custom-model-wrap">
+            <div class="signin-box pop-up-content-wrap" style="border-bottom: 1px solid #eee;">
+                <div class="signin-title without-subtitle">
+                    <h3 class="m-0">{{'label-title.attention' | translate}}</h3>
+                    <div class="signinclose close-btn">×</div>
+                </div>
+                <div class="signin-container">
+                    <div class="note">{{'label-title.item-removal-note' | translate}}</div>
+                    <div class="d-flex justify-item-center mt-4">
+                        <input class="primary-btn" type="button" value="{{'label-title.ok' | translate}}" (click)="closeItemRemovalModal()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-overlay"></div>
+</div>
+<!-- Item With Modifier removal modal -->
+
+<!-- Table booking slot modal -->
+<div class="custom-model-main medium-popup fix no-footer" id="table-book-slot">
+    <div class="custom-model-inner">
+      <!-- <div class="close-btn" id="close_item_removal_model">×</div> -->
+      <div class="close-btn-2" id="close_item_removal_model" (click)="closeTimeSlotPopup()">×</div>
+        <div class="custom-model-wrap">
+            <div class="signin-box pop-up-content-wrap" style="border-bottom: 1px solid #eee;">
+                <div class="signin-title without-subtitle">
+                    <h3 class="m-0">{{'label-title.attention' | translate}}</h3>
+                    <div class="signinclose close-btn" style="z-index: 100;">×</div>
+                </div>
+                <div class="signin-container schedule-form ">
+                    <div class="dropdown-wrp">
+                        <div class="dropdown-title">
+                          <h2>{{'label-title.schedule-for-later' | translate}}</h2>
+                          <p>{{'label-title.select-delivery-slot' | translate}}</p>
+                        </div>
+                        <div class="dropdown-content">
+                          <div class="date-slider">
+
+                            <div class='date-slider-wrp'>
+                              <div class=''>
+                                <!-- <ngb-carousel [interval]="false" (slide)="onSlide($event)"> -->
+                                <ngb-carousel #carousel (slide)="onSlide($event)">
+                                  <ng-template ngbSlide *ngFor="let date of date_array; let i = index;" [id]="'slideId_' + i">
+                                    <div class="date-list">
+                                      <span>{{date.date_format}}</span>
+                                    </div>
+                                    <div class="slots-list">
+                                      <ng-container *ngIf="!slot1 && !slot2 && !slot3 && !slot4">{{'label-title.no-slots-available' | translate}}</ng-container>
+                                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" *ngIf="slot1">
+                                        <ngb-panel title="{{'label-title.night-time-slot' | translate}}">
+                                        <ng-template ngbPanelContent>
+                                          <ul class="d-flex align-item-center flex-wrap">
+                                            <ng-container *ngFor="let time of time_array;">
+                                              <li *ngIf="time.type == 1"><a href="javascript:void(0)" (click)="set_time(time); closeModel('table-book-slot')" [ngStyle]="{'background-color': time == selected_time ? '#0eb6cc' : '','color': time == selected_time ? '#fff' : '' }" class="primary-btn secondary-btn">{{time.time}} </a></li>
+                                            </ng-container>
+                                          </ul>
+                                        </ng-template>
+                                        </ngb-panel>
+                                      </ngb-accordion>
+                                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" *ngIf="slot2">
+                                        <ngb-panel title="{{'label-title.morning-time-slot' | translate}}">
+                                        <ng-template ngbPanelContent>
+                                          <ul class="d-flex align-item-center flex-wrap">
+                                            <ng-container *ngFor="let time of time_array;">
+                                              <li *ngIf="time.type == 2"><a href="javascript:void(0)" (click)="set_time(time); closeModel('table-book-slot')" [ngStyle]="{'background-color': time == selected_time ? '#0eb6cc' : '','color': time == selected_time ? '#fff' : '' }" class="primary-btn secondary-btn">{{time.time}} </a></li>
+                                            </ng-container>
+                                          </ul>
+                                        </ng-template>
+                                        </ngb-panel>
+                                      </ngb-accordion>
+                                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" *ngIf="slot3">
+                                        <ngb-panel title="{{'label-title.afternoon-time-slot' | translate}}">
+                                        <ng-template ngbPanelContent>
+                                          <ul class="d-flex align-item-center flex-wrap">
+                                            <ng-container *ngFor="let time of time_array;">
+                                              <li *ngIf="time.type == 3"><a href="javascript:void(0)" (click)="set_time(time); closeModel('table-book-slot')" [ngStyle]="{'background-color': time == selected_time ? '#0eb6cc' : '','color': time == selected_time ? '#fff' : '' }" class="primary-btn secondary-btn">{{time.time}} </a></li>
+                                            </ng-container>
+                                          </ul>
+                                        </ng-template>
+                                        </ngb-panel>
+                                      </ngb-accordion>
+                                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" *ngIf="slot4">
+                                        <ngb-panel title="{{'label-title.evening-time-slot' | translate}}">
+                                        <ng-template ngbPanelContent>
+                                          <ul class="d-flex align-item-center flex-wrap">
+                                            <ng-container *ngFor="let time of time_array;">
+                                              <li *ngIf="time.type == 4"><a href="javascript:void(0)" (click)="set_time(time); closeModel('table-book-slot')" [ngStyle]="{'background-color': time == selected_time ? '#0eb6cc' : '','color': time == selected_time ? '#fff' : '' }" class="primary-btn secondary-btn">{{time.time}} </a></li>
+                                            </ng-container>
+                                          </ul>
+                                        </ng-template>
+                                        </ngb-panel>
+                                      </ngb-accordion>
+                                    </div>
+                                  </ng-template>
+                                </ngb-carousel>
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+                        <!-- <div class="popup-footer">
+                          <div class="popup-footer-wrp d-flex align-item-center">
+                            <div class="add-to-cart-btn">
+                              <a href="javascript:void(0)" *ngIf="schedule_time !== ''" class="primary-btn" (click)="set_schedule(true)">{{'button-title.schedule-delivery' | translate}}</a>
+                              <a href="javascript:void(0)" *ngIf="schedule_time === ''" disabled class="primary-btn">{{'button-title.schedule-delivery' | translate}}</a>
+                            </div>
+                          </div>
+                        </div> -->
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-overlay"></div>
+</div>
+<!-- Table booking slot modal -->
