@@ -2,6 +2,7 @@ React is JavaScript library for building user interfaces. It lets you compose co
 
 ReactJS is an open-source front-end JavaScript library for building user interfaces. ReactJS is maintained by Facebook and a community of individual developers and companies. It is widely used as a base in building single-page websites and mobile applications. It is very easy to use, and it allows users to create reusable UI components.
 
+
 JSX:
 =================
 
@@ -16,3 +17,10 @@ create new project:
 npx create-react-app my-app
 cd my-app
 npm start
+
+props:
+============================
+
+Every component can have attributes similar to HTML attributes and each attribute’s value can be accessed inside the component using properties (props).
+
+Props are properties to be used inside a component. They act as global object or variables which can be used inside the Component.
