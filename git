@@ -1,0 +1,14 @@
+To make a new branch:
+	git checkout -b BRANCHNAME
+	
+To add changes:
+	git add .
+
+To commit:
+	git commit -m "message"
+
+To push:
+	git push origin BRANCHNAME
+	
+To pull:
+	git pull origin BRANCHNAME
