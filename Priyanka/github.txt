@@ -33,5 +33,27 @@ first time add username and password
 
 put you file in created folder and in visul studio dive name and commit
 
+==================================================================================
+
+To make a new branch:
+	git checkout -b BRANCHNAME
+	
+To add changes:
+	git add .
+
+To commit:
+	git commit -m "message"
+
+To push:
+	git push origin BRANCHNAME
+	
+To pull:
+	git pull origin BRANCHNAME
+	
+	
+https://esuper.appemporio.net/store/62fc737f0e3fd7507bfad041eSuper
+
+
+
 
 

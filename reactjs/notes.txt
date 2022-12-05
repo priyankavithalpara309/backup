@@ -24,3 +24,21 @@ props:
 Every component can have attributes similar to HTML attributes and each attribute’s value can be accessed inside the component using properties (props).
 
 Props are properties to be used inside a component. They act as global object or variables which can be used inside the Component.
+
+
+state:
+====================================
+
+React components has a built-in state object.
+
+The state object is where you store property values that belongs to the component.
+When the state object changes, the component re-renders.
+
+State represents the value of a dynamic properties of a React component at a given instance. React provides a dynamic data store for each component.
+
+==> Controlled Component & Uncontrolled component:
+
+-> An input form element whose value is controlled by React in this way is called a “controlled input or Controlled Component”.
+
+-> The alternative is uncontrolled inputs or components, where form data is handled by the DOM itself. 
+
