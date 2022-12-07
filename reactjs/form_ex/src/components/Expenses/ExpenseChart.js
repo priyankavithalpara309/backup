@@ -14,7 +14,7 @@ const ExpenseChart = (props) => {
     {label: 'Sep', value:0},
     {label: 'Oct', value:0},
     {label: 'Nov', value:0},
-    {label: 'Dec', value:0},
+    {label: 'Dec', value:0}, 
   ];  
 
   for(const a1 of props.expense_data){

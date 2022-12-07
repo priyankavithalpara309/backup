@@ -1,17 +1,29 @@
 import logo from './logo.svg';
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import First1 from './components/Expenses/FirstComponent'
 import NewExpense from './components/NewExpenses/NewExpense';
 
-function App() {
+const DUMMY_DATA = [
+  { id: 1, title: 'Car Insurance', amount: 258.96, date: new Date(2020, 11, 4) },
+  { id: 2, title: 'TV Insurance', amount: 125.97, date: new Date(2022, 8, 11) },
+  { id: 3, title: 'New Desk Insurance', amount: 85.78, date: new Date(2021, 9, 5) },
+  { id: 4, title: 'bike Insurance', amount: 98.84, date: new Date(2022, 6, 9) }
+];
 
-  const expense = [
-    { id: 1, title: 'Car Insurance', price: 258.96, date: new Date(2022, 11, 4) },
-    { id: 2, title: 'TV Insurance', price: 125.97, date: new Date(2022, 8, 11) },
-    { id: 3, title: 'New Desk Insurance', price: 85.78, date: new Date(2022, 9, 5) },
-    { id: 4, title: 'bike Insurance', price: 98.84, date: new Date(2022, 6, 9) }
-  ];
+function App() {
+  // child to parent communication
+
+  const [expenses, setExpenses] = useState(DUMMY_DATA)
+
+  const addExpense = (expense) =>{
+    setExpenses((prevExpenses) => {
+      return [expense, ...prevExpenses];
+    })
+
+    console.log(expense);
+    
+  }
 
   // return React.createElement(
   //   'div',
@@ -23,8 +35,8 @@ function App() {
   return (
      <div>
       {/* <h2>Let's get started!</h2> */}
-      <NewExpense></NewExpense>
-      <First1 items={expense} />
+      <NewExpense onaddExpense={addExpense}></NewExpense>
+      <First1 items={expenses} />
     </div>    
   );
 }
