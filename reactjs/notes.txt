@@ -1,6 +1,16 @@
+notes:
+=============
+
+https://www.simplilearn.com/tutorials/reactjs-tutorial/what-is-reactjs
+https://create-react-app.dev/docs/
+
+
+
 React is JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
 
 ReactJS is an open-source front-end JavaScript library for building user interfaces. ReactJS is maintained by Facebook and a community of individual developers and companies. It is widely used as a base in building single-page websites and mobile applications. It is very easy to use, and it allows users to create reusable UI components.
+
+React is a JavaScript-based UI development library. Facebook and an open-source developer community run it. Although React is a library rather than a language, it is widely used in web development. The library first appeared in May 2013 and is now one of the most commonly used frontend libraries for web development.
 
 
 JSX:
@@ -25,20 +35,45 @@ Every component can have attributes similar to HTML attributes and each attribut
 
 Props are properties to be used inside a component. They act as global object or variables which can be used inside the Component.
 
+ The term "props" stands for "properties" and is used for passing data from one component to another. As opposed to state in React, props are read-only. So, the data coming from a parent component can't be changed by the child component.
+
 
 state:
 ====================================
 
 React components has a built-in state object.
 
+Every time the state of an object changes, React re-renders the component to the browser
+
+A state is an object that stores properties values for those attributed to a component that could change over some time. 
+
 The state object is where you store property values that belongs to the component.
 When the state object changes, the component re-renders.
 
 State represents the value of a dynamic properties of a React component at a given instance. React provides a dynamic data store for each component.
 
-==> Controlled Component & Uncontrolled component:
+
+Controlled Component & Uncontrolled component:
+===================================================
 
 -> An input form element whose value is controlled by React in this way is called a “controlled input or Controlled Component”.
 
 -> The alternative is uncontrolled inputs or components, where form data is handled by the DOM itself. 
 
+
+
+install style components:
+===============================================
+
+npm install --save styled-components
+
+
+React fragment
+==================================
+
+The limitation with JSX is that, you cannot return multiple root jsx, and it has to be just one. This is a JavaScript feature because you can only return one thing.
+
+react ref 
+==============================
+
+React Refs are a useful feature that act as a means to reference a DOM element or a class component from within a parent component. This then give us a means to read and modify that element.
