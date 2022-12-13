@@ -61,6 +61,10 @@ Controlled Component & Uncontrolled component:
 -> The alternative is uncontrolled inputs or components, where form data is handled by the DOM itself. 
 
 
+event.preventDefault()
+=======================================================
+The event.preventDefault() method stops the default action of an element from happening.
+
 
 install style components:
 ===============================================
@@ -77,3 +81,18 @@ react ref
 ==============================
 
 React Refs are a useful feature that act as a means to reference a DOM element or a class component from within a parent component. This then give us a means to read and modify that element.
+
+useeffect hook
+============================
+The word effect refers to a functional programming term called a "side effect".
+
+useEffect() hook accepts 2 arguments:
+useEffect(callback[, dependencies]);
+
+useReducer()
+==============================
+
+The useReducer(reducer, initialState) hook accept 2 arguments: the reducer function and the initial state. The hook then returns an array of 2 items: the current state and the dispatch function.
+
+
+note:(more about hook)===>https://reactjs.org/docs/hooks-reference.html
