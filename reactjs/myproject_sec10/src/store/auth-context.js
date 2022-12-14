@@ -18,17 +18,18 @@ export const AutoContextProvider = (props) => {
           setIsLoggedIn(true);
         }
       }, []);
-    
-      const loginHandler = (email, password) => {   
-        localStorage.setItem('isLoggedIn','1');
-        setIsLoggedIn(true);
-      };
-    
+
       const logoutHandler = () => {
         localStorage.removeItem('isLoggedIn');
         setIsLoggedIn(false);
       };
 
+    
+      const loginHandler = () => {   
+        localStorage.setItem('isLoggedIn','1');
+        setIsLoggedIn(true);
+      };    
+    
       return(
         <AutoContext.Provider value={{isLoggedIn: isLoggedIn, onLogin:loginHandler, onLogout:logoutHandler,}}>{props.children}</AutoContext.Provider>
       )

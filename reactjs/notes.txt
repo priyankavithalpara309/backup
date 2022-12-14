@@ -2,8 +2,9 @@ notes:
 =============
 
 https://www.simplilearn.com/tutorials/reactjs-tutorial/what-is-reactjs
-https://create-react-app.dev/docs/
+https://create-react-app.dev/docs/getting-started
 
+=>angular is framwork and react js is library
 
 
 React is JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.

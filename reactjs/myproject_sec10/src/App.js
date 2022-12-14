@@ -6,30 +6,38 @@ import MainHeader from './components/MainHeader/MainHeader';
 import AutoContext from './store/auth-context';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   /*store data in localstoreg */
-  useEffect(() => {
-    const storedUserLoggedInInformation = localStorage.getItem('isLoggedIn');
+  // useEffect(() => {
+  //   const storedUserLoggedInInformation = localStorage.getItem('isLoggedIn');
 
-    if(storedUserLoggedInInformation === '1')
-    {
-      setIsLoggedIn(true);
-    }
-  }, []);
+  //   if(storedUserLoggedInInformation === '1')
+  //   {
+  //     setIsLoggedIn(true);
+  //   }
+  // }, []);
 
-  const loginHandler = (email, password) => {   
-    localStorage.setItem('isLoggedIn','1');
-    setIsLoggedIn(true);
-  };
+  // const loginHandler = (email, password) => {   
+  //   localStorage.setItem('isLoggedIn','1');
+  //   setIsLoggedIn(true);
+  // };
 
-  const logoutHandler = () => {
-    localStorage.removeItem('isLoggedIn');
-    setIsLoggedIn(false);
-  };
+  // const logoutHandler = () => {
+  //   localStorage.removeItem('isLoggedIn');
+  //   setIsLoggedIn(false);
+  // };
 
   const ctx = useContext(AutoContext);
   return (    
+
+    <React.Fragment>
+    <MainHeader />
+    <main>
+      {!ctx.isLoggedIn && <Login />}
+      {ctx.isLoggedIn && <Home />}
+    </main>    
+  </React.Fragment>
 
     //using react context
     // <AutoContext.Provider value={{isLoggedIn: isLoggedIn}}>
@@ -38,15 +46,7 @@ function App() {
     //     {!isLoggedIn && <Login onLogin={loginHandler} />}
     //     {isLoggedIn && <Home onLogout={logoutHandler} />}
     //   </main>    
-    // </AutoContext.Provider>
-
-    <React.Fragment>
-      <MainHeader />
-      <main>
-        {!ctx.isLoggedIn && <Login />}
-        {ctx.isLoggedIn && <Home />}
-      </main>    
-    </React.Fragment>
+    // </AutoContext.Provider>  
 
     // <React.Fragment>    
     //   <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
