@@ -83,13 +83,6 @@ react ref
 
 React Refs are a useful feature that act as a means to reference a DOM element or a class component from within a parent component. This then give us a means to read and modify that element.
 
-useeffect hook
-============================
-The word effect refers to a functional programming term called a "side effect".
-
-useEffect() hook accepts 2 arguments:
-useEffect(callback[, dependencies]);
-
 useReducer()
 ==============================
 
@@ -97,3 +90,26 @@ The useReducer(reducer, initialState) hook accept 2 arguments: the reducer funct
 
 
 note:(more about hook)===>https://reactjs.org/docs/hooks-reference.html
+
+
+
+hook in react 
+================================
+
+1) useState:-----
+
+-> The React useState Hook allows us to track state in a function component.
+
+2) useeffect hook:----
+
+-> The useEffect Hook allows you to perform side effects in your components.
+-> The word effect refers to a functional programming term called a "side effect".
+
+useEffect() hook accepts 2 arguments:
+useEffect(callback[, dependencies]);
+
+3) React Context:-----
+
+-> React Context is a way to manage state globally.
+
+-> It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.

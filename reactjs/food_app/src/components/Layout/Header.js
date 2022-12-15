@@ -5,6 +5,7 @@ import mealsImage from '../../assets/meals.jpg';
 import styles from './Header.module.css';
 
 const Header = (props) => {
+    console.log(props);
     return(
         <Fragment>
             <header className={styles.header}>
