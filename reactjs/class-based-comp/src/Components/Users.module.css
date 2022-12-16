@@ -1,0 +1,15 @@
+.users {
+    margin: 32px auto;
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+    max-width: 40rem;
+    text-align: center;
+  }
+  
+  .users ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  

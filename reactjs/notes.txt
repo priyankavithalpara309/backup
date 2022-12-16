@@ -21,6 +21,15 @@ JSX stands for javascript xml
 
 install nodejs is requried
 
+without jsx in react :
+
+it become more complex
+ex:
+
+function User()
+{
+	return React.createElement('div', null, React.createElement('H1',null,'Hello!!!'));
+}
 ===================================
 create new project:
 -------------------
@@ -28,6 +37,14 @@ create new project:
 npx create-react-app my-app
 cd my-app
 npm start
+
+
+classbase component:---
+==================================
+
+React class based components are the bread and butter of most modern web apps built in ReactJS.
+
+-> 
 
 props:
 ============================
@@ -99,6 +116,7 @@ hook in react
 1) useState:-----
 
 -> The React useState Hook allows us to track state in a function component.
+-> It re-renders component for update value.
 
 2) useeffect hook:----
 
