@@ -3,6 +3,11 @@ https://outlook.office.com/mail
 pvithalpara@elluminatiinc.com
 Elluminati@123
 
+TeamLogger
+===============================
+Username : priyanka vithalpara
+password : Elluminati@123
+
 
 microsoft Teams 
 ===================================
@@ -17,6 +22,8 @@ password:priyanka_v
 192.168.0.129 
 user name : priyanka_v
 pass : priyanka
+
+http://192.168.0.1/sonicui/7/login/#/
 
 =====================================
 
@@ -62,3 +69,6 @@ If you want apply leave
 you can use below form for that 
 >>>>>>> 871194bd6f2188ba83da00f9022a60e4f9fb1b32
 https://docs.google.com/forms/d/e/1FAIpQLSdL8QVHX79ECYwEiaI6lzWSgz0Pa3L_YkLYtAG1Okj825yKlQ/viewform?usp=sf_link
+
+
+http://192.168.0.1/sonicui/7/session-status/#/status?session=eyJ3aW5kb3dOYW1lIjoibG9naW5XaW5kb3ciLCJ1c2VybmFtZSI6InByaXlhbmthX3YiLCJ0b2tlbiI6IkJlYXJlciBleUpoYkdjaU9pSklVelV4TWlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKdVlXMWxJam9pY0hKcGVXRnVhMkZmZGlKOS52Z3M0czYtZjdZb3NvYndZSXJ5cm5vUU04NjhIbV9YYWNzTmh1elRLQmRuVWZKRXV3djNBMGxpMEtIVF9NRnR1TXNQajU4blZkUTVpQWpRazdZcmJ5USIsIm1vZGVsIjoiVFogMzcwIiwiaXNSZW1vdGVVc2VyIjpmYWxzZSwiaW5hY3Rpdml0eVRpbWVvdXQiOjE1LCJzdGFydFdpdGhNZ210IjpmYWxzZSwicHJpdmlsZWdlIjoiTk9ORSIsInJlYWRPbmx5IjpmYWxzZSwibGFzdExvZ2luVGltZSI6MTY3MjM5NTgzNDQxMywiaXNHdWVzdFVzZXIiOmZhbHNlLCJjYW5NYW5hZ2UiOmZhbHNlLCJzZXNzaW9uVGltZW91dCI6MjQwLCJzaG93U2Vzc2lvblN0YXR1cyI6dHJ1ZSwicG9wdXBTZXNzaW9uU3RhdHVzIjpmYWxzZSwiaGVhcnRiZWF0SW50ZXJ2YWwiOjEyMH0%3D

@@ -55,5 +55,23 @@ https://esuper.appemporio.net/store/62fc737f0e3fd7507bfad041eSuper
 
 
 
+marge request:
+==============================
+
+create marge request
+-> chages branch
+
+-> give title which you done
+
+-> select target branch
+
+-> compare branches and continue
+
+-> uncheck marge option specially delete source
+
+
+
+
+
 
 

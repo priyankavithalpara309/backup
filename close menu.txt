@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+REACT_APP_API_URL = "https://apienance.appemporio.net/"
+REACT_APP_IMAGE_URL = https://apienance.appemporio.net/
+=======
+
+REACT_APP_API_URL = "http://localhost:7000/"
+REACT_APP_IMAGE_URL = http://localhost:7000/
+>>>>>>> 7844a7c60dde356b9678503bfb15788f35ad73dc
+
+
+REACT_APP_ENV = “development”
+
+
+close menu clickout side:
+=======================
+
+
+
+  window.addEventListener("click", function (e) {
+        if(!Tabbox.contains(e.target) && !document.getElementById("btnmenu").contains(e.target)){
+            Tabbox.classList.remove('open')
+            arrow.classList.remove('rotate')                                  
+            scroll.parentElement.classList.remove('overflow');
+        }
+    })
