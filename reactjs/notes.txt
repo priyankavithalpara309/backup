@@ -141,3 +141,10 @@ react Redux:
 -> it is third part library.
 
 ->It allows React components to read data from a Redux Store, and dispatch Actions to the Store to update data.
+
+
+react router:
+============================================
+
+
+npm install react-router-dom@5
