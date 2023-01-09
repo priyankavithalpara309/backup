@@ -14,7 +14,7 @@ const Comments = () =>{
     return(
         <section className={styles.comments}>
             <h2>User Comments</h2>
-            {!isComment && <button className='btn' onClick={addCommentHandler}>Add a Comment</button>}
+            {!isComment && (<button className='btn' onClick={addCommentHandler}>Add a Comment</button>)}
             {isComment && <NewCommentForm />}
             <p>Comment...</p>
         </section>        

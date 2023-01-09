@@ -148,3 +148,28 @@ react router:
 
 
 npm install react-router-dom@5
+
+NavLink:
+========================
+
+->NavLink is similar to Link, but it has the ability to add additional styling attributes to the element.
+
+-> router hook
+
+useHistory
+useParams
+useLocation
+useRouteMatch
+
+
+useHistory:
+================================
+
+-> it is router hook.
+
+-> The useHistory hook gives you access to the history instance that you may use to navigate.
+
+useLocation:
+=======================================
+
+the purpose useLocation() is getting information from the current route, and it will return these attributes.
