@@ -29,7 +29,7 @@ const NewCommentForm = (props) =>{
     return(
         <form className={styles.form} onSubmit={submitFormHandler}>
             {status==='pending' && (
-                <div className={styles.loading}>
+                <div className='centered'>
                     <LoadingSpinner />
                 </div>
             )};

@@ -1,38 +1,65 @@
 import { Route, Switch, Redirect } from "react-router-dom";
 
-import AllQuotes from './Prectices/Pages/AllQuotes';
-import QuoteDetail from './Prectices/Pages/QuoteDetail';
-import NewQuote from './Prectices/Pages/NewQuote';
-import NotFound from "./Prectices/Pages/NotFound";
-import Layout from "./Prectices/Components/layout/Layout";
+/*router with small app */
+// import AllQuotes from './Prectices/Pages/AllQuotes';
+// import QuoteDetail from './Prectices/Pages/QuoteDetail';
+// import NewQuote from './Prectices/Pages/NewQuote';
+// import NotFound from "./Prectices/Pages/NotFound";
+// import Layout from "./Prectices/Components/layout/Layout";
 
-import Welcome from "./Pages/Welcome";
-import Products from "./Pages/Products";
-import ProductDetail from "./Pages/ProductDetail";
-import MainHeader from "./Components/MainHeader";
-import QuoteForm from "./Prectices/Components/quotes/QuoteForm";
+/*simple router */
+// import Welcome from "./Pages/Welcome";
+// import Products from "./Pages/Products";
+// import ProductDetail from "./Pages/ProductDetail";
+// import MainHeader from "./Components/MainHeader";
+// import QuoteForm from "./Prectices/Components/quotes/QuoteForm";
+
+/*Authentication  */
+
+import HomePage from "./Authentication/Pages/HomePage";
+import AuthPage from "./Authentication/Pages/AuthPage";
+import UserProfile from "./Authentication/Components/Profile/UserProfile";
+import Layout from "./Authentication/Components/Layout/Layout";
 
 function App() {
   return (
+
     <Layout>
       <Switch>
         <Route path='/' exact>
-          <Redirect to="/quotes" />
+          <HomePage />
         </Route>
-        <Route path='/quotes' exact>          
-          <AllQuotes />
+        <Route path='/auth'>
+          <AuthPage />
         </Route>
-        <Route path='/quotes/:quoteId'>
-          <QuoteDetail />
-        </Route>
-        <Route path='/new-quote'>
-          <NewQuote />
-        </Route>
-        <Route path='*'>
-          <NotFound />
+        <Route path='/profile'> 
+          <UserProfile />
         </Route>
       </Switch>
     </Layout>
+
+    /*router with small app */
+    // <Layout>
+    //   <Switch>
+    //     <Route path='/' exact>
+    //       <Redirect to="/quotes" />
+    //     </Route>
+    //     <Route path='/quotes' exact>          
+    //       <AllQuotes />
+    //     </Route>
+    //     <Route path='/quotes/:quoteId'>
+    //       <QuoteDetail />
+    //     </Route>
+    //     <Route path='/new-quote'>
+    //       <NewQuote />
+    //     </Route>
+    //     <Route path='*'>
+    //       <NotFound />
+    //     </Route>
+    //   </Switch>
+    // </Layout>
+
+    /*simple router */
 
     // <div>
     //   <MainHeader />

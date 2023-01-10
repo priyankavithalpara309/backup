@@ -1,23 +1,58 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import { useParams } from 'react-router-dom';
+
 import styles from './Comments.module.css';
-
 import NewCommentForm from './NewCommentForm';
+import useHttp from '../../hooks/use-http';
+import { getAllComments } from '../../lib/api';
+import LoadingSpinner from '../UI/LoadingSpinner';
+import CommentsList from './CommentsList';
 
-const Comments = () =>{
+const Comments = () => {
 
-    const [isComment, setIsComment] = useState(false);
+    const [isAddingComment, setIsAddingComment] = useState(false);
+    const params = useParams();
 
-    const addCommentHandler = () => {
-        setIsComment(true);
+    const { quoteId } = params;
+
+    const { sendRequest, status, data: loadedComments } = useHttp(getAllComments);
+
+    useEffect(() => {
+        sendRequest(quoteId);
+    }, [quoteId, sendRequest]);
+
+    const startAddCommentHandler = () => {
+        setIsAddingComment(true);
     };
 
-    return(
+    const addCommentHandler = useCallback(() => {
+        sendRequest(quoteId);
+    }, [sendRequest, quoteId]);
+
+    let comments;
+
+    if (status === 'pending') {
+        comments = (
+          <div className='centered'>
+            <LoadingSpinner />
+          </div>
+        );
+      }
+    
+      if (status === 'completed' && loadedComments && loadedComments.length > 0) {
+        comments = <CommentsList comments={loadedComments} />;
+      }
+    
+      if (status === 'completed' && (!loadedComments || loadedComments.length === 0)) {
+        comments = <p className='centered'>No comments were added yet!</p>;
+      }
+    return (
         <section className={styles.comments}>
             <h2>User Comments</h2>
-            {!isComment && (<button className='btn' onClick={addCommentHandler}>Add a Comment</button>)}
-            {isComment && <NewCommentForm />}
-            <p>Comment...</p>
-        </section>        
+            {!isAddingComment && (<button className='btn' onClick={startAddCommentHandler}>Add a Comment</button>)}
+            {isAddingComment && (<NewCommentForm quoteId={quoteId} onAddedComment={addCommentHandler} />)}
+            {comments}
+        </section>
     );
 }
 

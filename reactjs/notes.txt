@@ -149,6 +149,8 @@ react router:
 
 npm install react-router-dom@5
 
+npm install react-router-dom@latest //for install latest version
+
 NavLink:
 ========================
 
