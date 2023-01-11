@@ -175,3 +175,51 @@ useLocation:
 =======================================
 
 the purpose useLocation() is getting information from the current route, and it will return these attributes.
+
+
+next js:
+==================================================
+
+-> a fullstack framwork for reactjs
+
+-> Next.js is a flexible React framework that gives you building blocks to create fast web applications.
+
+-> Next.js is a React framework that allows you to build supercharged, SEO-friendly, and extremely user-facing static websites and web applications using the React framework.
+
+create project:
+
+npx create-next-app
+
+//run project
+npm run dev
+
+Why Use Next.js:
+--------------------
+
+1) Image Optimizations
+-> Image optimization is a powerful feature prebuilt into Next.js because managing and optimizing images requires many configurations, and manually optimizing images can take a toll on your productive time.
+
+2) Internationalization
+-> Creating an enterprise application can easily be used and translated into different languages worldwide. This feature is an addition to Next.js and makes Next.js internationally recognized because it takes less configuration to get internalization set up.
+
+3) Next.js Analytics
+->Next.js provides an analytical dashboard that can be configured to show accurate visitor data and page insights from out of the box.
+
+4) Zero Config
+->Next.js compiles and builds automatically with hot refresh without any extra configuration from you, and it automatically scales and optimizes your production application.
+
+5)Prebuilt SSR, SSG, and CSR Support
+->With Next.js, you support server-side rendering, static generation, and client-side rendering in one application. You can decide the type of application you want to build and how you intend to compile your application to best suit your use case.
+
+Apps Using Next.js:
+---------------------
+
+1)TikTok
+2)Hashnode -- online blogging platform
+3)Twitch Mobile -- social platform
+4)Hulu -- similar to Netflix
+5)Binance -- cryptocurrency portal
+
+Features of Next.js:
+------------------------
+

@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 
 /*router with small app */
@@ -20,20 +21,28 @@ import HomePage from "./Authentication/Pages/HomePage";
 import AuthPage from "./Authentication/Pages/AuthPage";
 import UserProfile from "./Authentication/Components/Profile/UserProfile";
 import Layout from "./Authentication/Components/Layout/Layout";
+import AuthContext from "./Authentication/Store/auth-context";
 
 function App() {
-  return (
+  const authCtx = useContext(AuthContext);
 
+  return (
     <Layout>
       <Switch>
         <Route path='/' exact>
           <HomePage />
         </Route>
-        <Route path='/auth'>
-          <AuthPage />
+        {!authCtx.isLoggedIn && (
+          <Route path='/auth'>
+            <AuthPage />
+          </Route>
+        )}
+        <Route path='/profile'>
+          {authCtx.isLoggedIn && <UserProfile />}
+          {!authCtx.isLoggedIn && <Redirect to='/auth' />}
         </Route>
-        <Route path='/profile'> 
-          <UserProfile />
+        <Route path='*'>
+          <Redirect to='/' />
         </Route>
       </Switch>
     </Layout>

@@ -1,11 +1,18 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import AuthContext from '../../Store/auth-context';
 import styles from './AuthForm.module.css';
 
 const AuthForm = () => {
+    const history = useHistory();
+
     const emailInputRef = useRef();
     const passwordInputRef = useRef();
 
+    const authCtx = useContext(AuthContext);
+
     const [isLogin, setIsLogin] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
 
     const switchAuthModeHandler = () => {
         setIsLogin((prevState) => !prevState);
@@ -17,29 +24,51 @@ const AuthForm = () => {
         const enteredEmail = emailInputRef.current.value;
         const enteredPassword = passwordInputRef.current.value;
 
-        if (isLogin) { }
-        else {
-            fetch('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyB9tm0ECIBS3jkCmWxqMu6emClWWT2cvF8', {
-                method: 'POST',
-                body: JSON.stringify({
-                    email: enteredEmail,
-                    password: enteredPassword,
-                    returnSecureToken: true,
-                }),
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-            ).then((res) => {
-                if (res.ok) {
+        setIsLoading(true);
+        let url;
 
-                } else {
-                    return res.json().then((data) => {
-                        console.log(data);
-                    });
-                }
-            });
+        if (isLogin) {
+            url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyB9tm0ECIBS3jkCmWxqMu6emClWWT2cvF8';
         }
+        else {
+            url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyB9tm0ECIBS3jkCmWxqMu6emClWWT2cvF8';
+        }
+
+        fetch(url, {
+            method: 'POST',
+            body: JSON.stringify({
+                email: enteredEmail,
+                password: enteredPassword,
+                returnSecureToken: true,
+            }),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }).then((res) => {
+            setIsLoading(false);
+            if (res.ok) {
+                return res.json();
+            }
+            else {
+                return res.json().then((data) => {
+                    let errorMessage = 'Authentication failed!';
+                    // if (data && data.error && data.error.message) {
+                    //   errorMessage = data.error.message;
+                    // }
+
+                    throw new Error(errorMessage);
+                });
+            }
+        }).then((data) => {
+            const expirationTime = new Date(
+                new Date().getTime() + +data.expiresIn * 1000
+            );
+            authCtx.login(data.idToken, expirationTime.toISOString());
+            history.replace('/');
+        })
+            .catch((err) => {
+                alert(err.message);
+            });
     };
 
     return (
@@ -55,7 +84,8 @@ const AuthForm = () => {
                     <input type='password' id='password' required ref={passwordInputRef} />
                 </div>
                 <div className={styles.actions}>
-                    <button>{isLogin ? 'Login' : 'Create Account'}</button>
+                    {!isLoading && <button>{isLogin ? 'Login' : 'Create Account'}</button>}
+                    {isLoading && <p>Sending Request...</p>}
                     <button type='button' className={styles.toggle} onClick={switchAuthModeHandler}>{isLogin ? 'Create new Account' : 'Login with existing account'}</button>
                 </div>
             </form>
