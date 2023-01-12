@@ -223,3 +223,6 @@ Apps Using Next.js:
 Features of Next.js:
 ------------------------
 
+1)Routing:
+
+
