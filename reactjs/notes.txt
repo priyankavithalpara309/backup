@@ -135,6 +135,11 @@ useEffect(callback[, dependencies]);
 
 react Redux:
 ============================
+npm i redux
+
+npm install --save redux react-redux
+
+npm install @reduxjs/toolkit
 
 ->React Redux is the official React UI bindings layer for Redux.
 
@@ -226,3 +231,12 @@ Features of Next.js:
 1)Routing:
 
 
+recat animation:
+=================================
+
+--->  npm install react-transition-group --save
+
+->>> React-Motion =========== npm install --save react-motion
+->>> React Move  ============  // React ^16.3.0 -> npm install react-move  OR // React ^0.14.9 || ^15.3.0 || ^16.0.0  -> npm install react-move@^5.0.0
+->>> TransitionGroup
+->>> CSSTransition
